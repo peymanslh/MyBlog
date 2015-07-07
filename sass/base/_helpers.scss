@@ -1,0 +1,15 @@
+// divider line
+.divider {
+  height: 1px;
+  display: block;
+  background-color: $divider_color;
+  margin: 5px auto;
+}
+
+// margin bottom and top 5px
+.mg-5 {
+  margin-bottom: 5px !important;
+  margin-top: 5px !important;
+}
+
+

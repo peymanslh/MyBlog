@@ -1,0 +1,49 @@
+
+
+
+.pagination {
+  margin: 75px auto 0 auto;
+  text-align: center;
+
+    &>a,
+    &>span {
+      position: relative;
+      padding: 4px 10px;
+      color: #BEBEBE;
+      margin-left: 2px;
+      text-decoration: none;
+      font-size: 13px;
+      border-bottom: 3px solid #BEBEBE;
+      cursor: pointer;
+      @include transition(0.2s);
+
+      &:hover {
+        color: $lightgray;
+        border-bottom: 3px solid $lightgray;
+      }
+
+      &.current {
+        color: $lightgray;
+        border-bottom: 3px solid $lightgray;
+        cursor: default;
+      }
+
+      &.disabled {
+        color: gray;
+        cursor: default;
+      }
+    }
+
+
+  &.pagination-sm>a,
+  &.pagination-sm>span {
+    padding: 2px 8px;
+    font-size: 11px;
+  }
+
+  &.pagination-lg>a,
+  &.pagination-lg>span {
+    padding: 8px 10px;
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,112 @@
+//change style - input= text
+input[type=text],
+input[type=tel],
+input[type=password],
+input[type=email],
+input[type=number],
+textarea {
+  padding: 5px 10px;
+  margin: 0 0 !important;
+  color: $input_text_color;
+  font-size: 13px;
+  font-weight: 100;
+  font-family: $font;
+  border: 1px solid #d2d2d2;
+  border-radius: 3px;
+  @include transition(0.2ms);
+  -webkit-appearance: none;  /*Removes default chrome and safari style*/
+  -moz-appearance: none; /* Removes Default Firefox style*/
+
+  &:focus,
+  &:active {
+    border-color: $form_focus_color;
+  }
+}
+
+
+
+
+
+
+//chagne cursor of label
+label {
+  cursor: pointer;
+  font-family: $h_font;
+  font-size: $label_font_size;
+  color: $label_font_color;
+}
+
+
+
+//change style - input = radio and checkbox
+
+input[type=radio] {
+  display:none;
+  -webkit-appearance: none;  /*Removes default chrome and safari style*/
+  -moz-appearance: none; /* Removes Default Firefox style*/
+
+  & + label:before {
+    content: "";
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    max-width: 19px !important;
+    max-height: 19px !important;
+    vertical-align:middle;
+    margin-right: 8px;
+    margin-left: 8px !important;
+    padding-top: 3px !important;
+    border: 1px solid $radio_color; //change it in setting
+    border-radius: 10px;
+  }
+
+  &:checked + label:before {
+    content: "\2022"; /* Bullet */
+    color: $radio_color; //change it in setting
+    font-size:2.8em;
+    text-align:center;
+    line-height:19px;
+  }
+}
+
+input[type=checkbox] {
+  display:none;
+  -webkit-appearance: none;  /*Removes default chrome and safari style*/
+  -moz-appearance: none; /* Removes Default Firefox style*/
+
+  & + label:before {
+    content: "";
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    vertical-align:middle;
+    margin-right: 8px;
+    margin-left: 8px !important;
+    border: 1px solid $checkbox_color; //change it in setting
+    border-radius: 4px;
+  }
+
+  &:checked + label:before {
+    content:"\2713"; /* Tick */
+    color: $checkbox_color; //change it in setting
+    font-size:1em;
+    text-align:center;
+    line-height:19px;
+  }
+}
+
+
+
+
+
+//change style - input= button
+input[type=button],
+input[type=reset]{
+  @extend .btn;
+  -webkit-appearance: none;  /*Removes default chrome and safari style*/
+  -moz-appearance: none; /* Removes Default Firefox style*/
+
+  &:focus{
+    border-color: $form_focus_color !important;
+  }
+}

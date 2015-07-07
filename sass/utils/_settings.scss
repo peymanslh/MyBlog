@@ -1,0 +1,111 @@
+//header and footer bg color
+$bg_color: #F6F6F6;
+//fonts
+$h_font: $iransans;
+$p-font: $tahoma;
+
+//colors
+
+$theme-color: #1abc9c;
+
+
+$link_color: $blue;
+$input_text_color: $asphalt;
+$divider_color: $orange;
+
+//hover color
+
+$hover_color: $persian-green;
+
+/*----------------------nav menu setting------------*/
+//nav menu height
+$nav_height: 55px;
+// nav menu bg color
+$nav_bg_color: #333333;
+//nav menu border and hover color
+$nav_border_color: $persian-green;
+//nav menu text color
+$nav_text_color: #777777;
+//text hover color
+$nav_text_hover_color: #ffffff;
+//submenu a height
+$nav_submenu_height: 40px;
+
+
+
+
+
+//form setting
+$radio_color: $magenta;
+$checkbox_color: $persian-green;
+$label_font_size: 13px;
+$label_font_color: $asphalt;
+
+// ul and ol settings
+$ul_li_font_size: 13px;
+
+$ul_li_font: $h_font;
+
+$ul_list_style: square;
+
+//all object focus border color
+$form_focus_color: $green;
+
+
+//box shadow for all box
+$box_shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.1);
+//box shadow for btn
+$btn_shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.1);
+
+//border for box
+$border: 1px solid rgba(0, 0, 0, 0.08);
+
+//panel header and footer border
+$panel_border_color: #e2e2e2;
+
+
+
+
+///-------------------------------tooltip settings
+//tooltip's default height
+$tooltipHeight: 22px;
+
+//tooltip's default arrow size
+$arrowSize: 6px;
+
+//tooltip's default box color
+$tooltipColor: #323232;
+
+//tooltip's default text color
+$tooltipTextColor: #ecf0f1;
+
+// Positioning
+$left-positioning:        true!default;
+$right-positioning:       true!default;
+$top-positioning:         true!default;
+$bottom-positioning:      true!default;
+
+// Half Arrows
+$half-arrows:             true!default;
+
+// Extra Features
+$movable:                 true!default;
+$soft-edge:               true!default;
+$fade-effect:             true!default;
+$multiline:               true!default;
+
+// ---------------------------Diverse Colors
+$coloring:                true!default;
+
+//-----------------------------table settings
+$table_border: #e9e8e8;
+
+$table_radius: 4px;
+
+$table_head_bg_color: #ffffff;
+
+$table_head_color: #363636;
+
+$table_body_bg_color: #fafafa;
+
+$table_body_color: #767676;

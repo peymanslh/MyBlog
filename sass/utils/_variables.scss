@@ -1,0 +1,28 @@
+
+
+
+$lightgray : #656565;
+//colors
+$asphalt: #34495e;
+$blue: #3498db;
+$green: #2ecc71;
+$magenta: #9b59b6;
+$orange: #f39c12;
+$persian-green: #1abc9c;
+$red: #D12B3F; // #c0392b
+
+
+$colors: (
+        'asphalt': $asphalt,
+        'blue': $blue,
+        'green': $green,
+        'magenta': $magenta,
+        'orange': $orange,
+        'persian-green': $persian-green,
+        'red': $red
+);
+
+//font
+$font: IRANSans, Tahoma, Arial;
+$iransans: IRANSans, Tahoma, Arial;
+$tahoma: Tahoma, Arial;

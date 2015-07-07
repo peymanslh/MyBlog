@@ -1,0 +1,19 @@
+.alert {
+  width: 100%;
+  display: block;
+  padding: 10px 15px 10px 10px;
+  margin: 5px 0;
+  background-color: #ffffff;
+  color: #9b9b9b;
+  font-family: $h_font;
+  font-size: 14px;
+  border-right: 5px solid;
+  box-shadow: $box_shadow;
+
+  @each $color, $value in $colors {
+    &.alert-#{$color} {
+      @include alert_color($value)
+    }
+  }
+
+}

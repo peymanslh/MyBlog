@@ -1,0 +1,95 @@
+//generate custom color for button
+@mixin btn_color($color) {
+  background-color: $color;
+  color: #ffffff;
+  border: 1px solid darken($color, 3%);
+
+  &:hover {
+    background-color: darken($color, 5%);
+  }
+
+  &:active,
+//  &:focus
+  {
+    background-color: darken($color, 10%);
+    box-shadow: 0 7px 20px -6px #616161 inset;
+  }
+  &.active {
+    background-color: darken($color, 10%);
+    box-shadow: 0 7px 20px -6px #616161 inset;
+  }
+}
+
+//generate custom color for alerts
+
+@mixin alert_color($color: #000000) {
+  border-color: $color;
+}
+
+//generate custom background color for progress-bar
+
+@mixin progress-color($color:$blue) {
+  background-color: $color;
+}
+
+
+
+
+//generate custom colors for tooltip's box and the texts. we use it without argumant for default color
+@mixin applyColor($color:$tooltipColor, $textColor:$tooltipTextColor) {
+  @each $position in top, bottom, left, right {
+    &.simptip-position-#{$position}{
+      &:before{border-#{$position}-color: $color;}
+      &:after{background-color: $color; color: $textColor;}
+    }
+  }
+  @each $position in top, bottom {
+    &.simptip-position-#{$position} {
+      &.half-arrow {
+        &:before {border-right: $arrowSize+1px solid $color;}
+      }
+    }
+  }
+}
+
+@mixin border-radius($radius: 4px) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model;
+  -moz-box-sizing: $box-model;
+  box-sizing: $box-model;
+}
+
+@mixin transition($transition...) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  -ms-transition: $transition;
+  transition: $transition;
+}
+
+@mixin fade ($duration: 0.2s) {
+  @include transition(opacity $duration linear, visibility $duration linear);
+}
+
+@mixin transform($string){
+  -webkit-transform: $string;
+  -moz-transform: $string;
+  -ms-transform: $string;
+  -o-transform: $string;
+  transform: $string;
+}
+
+//generate multiline tooltips
+@mixin multiline ($width: 150px, $align: left) {
+  height: auto;
+  width: $width;
+  padding: $tooltipHeight/2;
+  line-height: $tooltipHeight - 3px;
+  white-space: normal;
+  text-align: $align;
+}
+

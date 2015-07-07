@@ -1,0 +1,80 @@
+.panels {
+  min-height: 100px;
+  overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 3px;
+  box-shadow: $box_shadow;
+  border: $border;
+
+  header {
+    width: 100%;
+    min-height: 40px;
+    display: block;
+    padding: 10px;
+    background-color: #f6f7f7;
+    font-family: $h_font;
+    font-size: 13px;
+    font-weight: normal;
+    border-bottom: 1px solid $panel_border_color;
+  }
+
+  article {
+    width: 100%;
+    display: block;
+    padding: 7px;
+    font-family: $h_font;
+    font-size: 12px;
+    font-weight: 100;
+  }
+  footer {
+    width: 100%;
+    min-height: 50px;
+    display: block;
+    padding: 10px;
+    background-color: #f6f7f7;
+    font-family: $h_font;
+    font-size: 11px;
+    font-weight: normal;
+    border-top: 1px solid $panel_border_color;
+  }
+
+  .panel-ul {
+    width: 100%;
+    height: auto;
+    display: block;
+    list-style: none;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-weight: 100;
+    font-size: 13px;
+
+    & li {
+      display: block;
+      border-bottom: 1px solid #ececec;
+      padding: 6px 5px;
+    }
+  }
+
+  .panel-ul-link {
+    width: 100%;
+    height: auto;
+    display: block;
+    list-style: none;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-weight: 100;
+    font-size: 13px;
+  }
+  & li a {
+    display: block;
+    border-bottom: 1px solid #ececec;
+    padding: 6px 5px;
+    @include transition(0.2s);
+
+    &:hover,
+    &:focus {
+      background-color: $hover_color;
+      color: #ffffff;
+    }
+  }
+}

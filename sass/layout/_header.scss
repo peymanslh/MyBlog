@@ -1,0 +1,141 @@
+
+header#header {
+  background: $bg_color center center no-repeat fixed;
+  -webkit-background-size: cover !important;
+  background-size: cover !important;
+  padding-bottom: 50px;
+  color: $lightgray;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+
+  .no-logo {
+    height: 90px;
+  }
+  img {
+    display: block;
+    margin: 70px auto 30px auto;
+  }
+
+  //round img
+  .avatar {
+    border-radius: 50%;
+    border: 7px solid rgba(0, 0, 0, 0.04);
+
+    @include transition(all 0.2s ease-in-out);
+
+    &:hover {
+      border: 7px solid rgba(0, 0, 0, 0.6);
+      cursor: pointer;
+    }
+  }
+
+  h1 {
+    font-size: 48px;
+    font-family: $h_font;
+    font-weight: 100;
+    text-align: center;
+    color: inherit;
+    padding-bottom: 20px;
+  }
+
+  .head-h-bottom {
+    width: 120px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 1px;
+    background-color: #666666;
+  }
+
+  h6 {
+    padding-top: 25px;
+    font-size: 14px;
+    font-family: $h_font;
+    font-weight: 100;
+    text-align: center;
+    color: inherit;
+  }
+
+  .social-box {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+
+    a {
+      padding: 5px;
+      font-size: 26px;
+      color: inherit;
+
+      &:hover {
+        color: $persian-green;
+      }
+    }
+  }
+}
+.show-sidebar {
+//  float: right;
+}
+
+.modal {
+  display: none;
+}
+
+#box-search {
+  width: 80%;
+  min-height: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: $h_font;
+  font-weight: 100;
+
+
+  form {
+    border-bottom: 1px solid #ffffff;
+  }
+
+  h3 {
+    color: #ffffff;
+    font-weight: inherit;
+    text-align: center;
+  }
+
+  .search-query {
+    width: 85%;
+    padding: 20px 5px;
+    color: #ffffff;
+    font-family: inherit;
+    font-weight: 100 !important;
+    font-size: 22px;
+    line-height: 30px;
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+  }
+
+
+  #searchsubmit {
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 100;
+    font-family: inherit;
+    border: none;
+    box-shadow: none;
+  }
+
+}
+
+
+header#page-header {
+  background: $bg_color;
+  padding-bottom: 50px;
+  color: $lightgray;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+
+
+
+
+
+
+
+

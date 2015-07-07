@@ -1,0 +1,64 @@
+#truethemes_container #header {
+background:#E7E7E7 url(images/admin-bg-grad-grey.jpg) repeat-x left top;
+border:1px solid #C6C6C6;
+}
+
+#truethemes_container #header .logo h2 {
+font-style:normal;
+padding-left:50px;
+background:url(images/icon_option_grey.png) 0 75% no-repeat;
+}
+
+.save_bar_top {
+background:#EFF8FF url(images/bg-save-bar-grey.jpg) repeat-x;
+border:solid #C6C6C6;
+height:35px;
+text-align:right;
+-webkit-border-bottom-right-radius:6px;
+-webkit-border-bottom-left-radius:6px;
+-moz-border-radius-bottomright:6px;
+-moz-border-radius-bottomleft:6px;
+border-bottom-right-radius:6px;
+border-bottom-left-radius:6px;
+border-width:0 1px 1px;
+padding:10px 20px 0;
+}
+
+#truethemes_container #main {
+background-color:#F1F1F1;
+border-bottom:1px solid #d8d8d8;
+border-left:1px solid #d8d8d8;
+border-right:1px solid #d8d8d8;
+}
+
+#truethemes_container #of-nav ul li a:link {
+border-bottom:1px solid #d8d8d8;
+border-right:1px solid #d8d8d8;
+color:#21759B;
+display:block;
+font-family:Georgia, Serif;
+font-size:13px;
+text-decoration:none;
+padding:15px 10px 12px 20px;
+}
+
+#truethemes_container #of-nav ul li.current a,#truethemes_container #of-nav ul li.current a:hover {
+background:#fff;
+border-right:1px solid #FFF;
+color:#333;
+}
+
+#truethemes_container #of-nav ul li a:hover {
+color:#D64E21;
+}
+
+#truethemes_container #content {
+background-color:#fff;
+border-left:1px solid #D8D8D8;
+float:left;
+font-family:"Lucida Grande", Sans-serif;
+margin-left:-1px;
+min-height:550px;
+width:559px;
+padding:5px 22px 0;
+}

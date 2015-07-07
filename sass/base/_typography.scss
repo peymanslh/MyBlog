@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'IRANSans';
+  src: url('../fonts/IRANSans.woff') format('woff');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'IRANSans';
+  src: url('../fonts/IRANSans-Light.woff') format('woff');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'IRANSans';
+  src: url('../fonts/IRANSans-Bold.woff') format('woff');
+  font-weight: bold;
+}
+
+a {
+  color: dimgray;
+  text-decoration: none;
+
+  &:hover,
+  &:focus{
+    color: $link_color;
+    text-decoration: none;
+  }
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000000;
+  margin: 0;
+  padding-right: 0 !important;
+  margin-right: 0 !important;
+  font-family:$font;
+  font-weight: normal;
+}
+
+blockquote {
+  min-height: 85px;
+  padding: 10px 10px 10px 5px;
+  color: grey;
+  font-family: $font;
+  font-weight: 100;
+  font-style: italic;
+  border-right: 5px solid $asphalt;
+
+  &:before {
+    width: 50px;
+    text-align: left;
+    float: right;
+    content: '\0201D';
+    font-size: 6em;
+    line-height: 100px;
+    max-height: 70px;
+    overflow: hidden;
+  }
+}
+

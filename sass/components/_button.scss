@@ -1,0 +1,28 @@
+.btn {
+  padding: 6px 20px;
+  display: inline-block;
+  color: #000000;
+  background-color: #ffffff;
+  font-size: 11px;
+  font-family: $h_font;
+  text-decoration: none;
+  white-space: nowrap;
+  text-align: center;
+  border: 1px solid #b5b5b5;
+  border-radius: 3px;
+  box-shadow: $btn_shadow;
+  @include transition(all 0.2s ease-in-out);
+  @include user-select(none);
+
+
+  @each $color, $value in $colors {
+    &.btn-#{$color} {
+      @include btn_color($value);
+    }
+  }
+
+  span {
+    font-size: 14px;
+  }
+
+}

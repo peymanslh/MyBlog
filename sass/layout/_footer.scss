@@ -1,0 +1,43 @@
+footer#footer {
+  padding: 90px 0 30px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.04);
+  text-align: center;
+  color: $lightgray;
+  background-color: #F6F6F6;
+
+  .social-box {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    a {
+      padding: 5px;
+      font-size: 26px;
+      color: inherit;
+
+      &:hover {
+        color: $persian-green;
+      }
+    }
+  }
+
+  .copyright {
+    padding-top: 30px;
+    font-family: $h_font;
+    font-weight: 100;
+    color: inherit;
+    font-size: 12px;
+  }
+
+  .designer {
+    padding-top: 30px;
+    font-family: $h_font;
+    font-weight: 100;
+    color: inherit;
+    font-size: 10px;
+
+    span {
+      color: $red;
+    }
+  }
+}
