@@ -28,6 +28,8 @@
 <script type="text/javascript" src="<?= esc_url( get_template_directory_uri() ); ?>/js/script.js"></script>
 
 <?php wp_footer(); ?>
+
+<div class="temp"></div>
 </div>
 </body>
 </html>
