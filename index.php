@@ -3,7 +3,7 @@
 
 
 
-<?php include ('inc/inc-query-index.php'); ?>
+<?php include ('inc/query-one.php'); ?>
 
 
 <?php get_footer();?>

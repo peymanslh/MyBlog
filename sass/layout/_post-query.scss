@@ -1,4 +1,4 @@
-article#home-post {
+article#home-post-one {
   padding: 90px 5px;
   background-color: #FFFFFF;
 
@@ -9,11 +9,12 @@ article#home-post {
     header {
 
       h1 {
-        text-align: center;
+        text-align: right;
+        font-size: 14px;
+        color: #000000;
         margin-bottom: 15px;
 
         a {
-          text-align: center;
           color: #000;
 
           &:hover {
@@ -23,14 +24,16 @@ article#home-post {
       }
 
       div {
-        text-align: center;
+        text-align: right;
         font-family: $h_font;
-        font-size: 12px;
+        font-weight: 100;
+        font-size: 11px;
+        color: #C5C5C5;
 
         span {
-          color: $lightgray;
+          color: #C5C5C5;
           a {
-            color: $lightgray;
+            color: #C5C5C5;
           }
         }
       }

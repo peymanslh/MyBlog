@@ -1,8 +1,8 @@
-<article id="home-post">
+<article id="home-post-one">
 <div class="container">
 
     <div class="row">
-        <div class="col-md-9 centered">
+        <div class="col-md-8 centered">
 <?php if ( have_posts() ) : ?>
     <?php while ( have_posts() ) : the_post(); ?>
 

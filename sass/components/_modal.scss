@@ -5,7 +5,7 @@
   &:before{
     content: "";
     display: none;
-    background: rgba(0,0,0,.6);
+    background: $modal_bg_color;
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
     z-index: 10;
@@ -26,58 +26,55 @@
 
 }
 
-//------------------Modal Dialog
 
-.modal-dialog{
-  background: #fefefe;
+
+
+
+.modal {
   display: none;
-  position: fixed;
-  top: -100%;
-  z-index: 11;
-  box-shadow: $box_shadow;
-  border-radius: 5px !important;
-  overflow: hidden;
-  @include transition(0.6s ease-out);
 }
 
-.modal-body{
-  width: 100%;
-  display: block;
-  padding: 7px;
-  font-size: 12px;
+#box-search {
+  width: 80%;
+  min-height: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: $h_font;
   font-weight: 100;
-  @include transition(0.6s ease-out);
-}
 
 
-.modal-header{
-  width: 100%;
-  min-height: 40px;
-  display: block;
-  padding: 10px;
-  background-color: #f6f7f7;
-  font-size: 13px;
-  font-weight: normal;
-  border-bottom: 1px solid $panel_border_color;
-}
+  form {
+    border-bottom: 1px solid #ffffff;
+  }
 
-.modal-footer{
-  width: 100%;
-  min-height: 50px;
-  display: block;
-  padding: 10px;
-  background-color: #f6f7f7;
-  font-size: 11px;
-  font-weight: normal;
-  border-top: 1px solid $panel_border_color;
-}
+  h3 {
+    color: #ffffff;
+    font-weight: inherit;
+    text-align: center;
+  }
 
-.btn-close {
-  float: left;
-  font-size: 22px;
-  padding: 7px;
-}
-/*ADDED TO STOP SCROLLING TO TOP*/
-#close {
-  display: none;
+  .search-query {
+    width: 85%;
+    padding: 20px 5px;
+    color: #ffffff;
+    font-family: inherit;
+    font-weight: 100 !important;
+    font-size: 22px;
+    line-height: 30px;
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+  }
+
+
+  #searchsubmit {
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 100;
+    font-family: inherit;
+    border: none;
+    box-shadow: none;
+  }
+
 }

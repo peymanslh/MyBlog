@@ -1,29 +1,47 @@
-//header and footer bg color
-$bg_color: #F6F6F6;
+
 //fonts
 $h_font: $iransans;
 $p-font: $tahoma;
 
 //colors
 
-$theme-color: #1abc9c;
+
+$theme-color: $blue;
 
 
-$link_color: $blue;
-$input_text_color: $asphalt;
-$divider_color: $orange;
+$link_color: $lightgray;
+$input_text_color: $lightgray;
+$divider_color: $theme-color;
 
 //hover color
 
-$hover_color: $persian-green;
+$hover_color: $theme-color;
+
+
+$modal_bg_color: rgba(0,0,0,.6);
+
+
+
+//------------ footer text color-----------
+
+$footer_color: $lightgray;
+
+$footer_bg_color: #FFFFFF;
+
+//------------ header text color-----------
+$header_color: $lightgray;
+
+$header_bg_color: #FFFFFF;
+
+$header_footer_border: 1px solid rgba(0, 0, 0, 0.04);
 
 /*----------------------nav menu setting------------*/
 //nav menu height
 $nav_height: 55px;
 // nav menu bg color
-$nav_bg_color: #333333;
+$nav_bg_color: rgba(255, 255, 255, 0.5);
 //nav menu border and hover color
-$nav_border_color: $persian-green;
+$nav_border_color: $theme-color;
 //nav menu text color
 $nav_text_color: #777777;
 //text hover color
@@ -32,14 +50,26 @@ $nav_text_hover_color: #ffffff;
 $nav_submenu_height: 40px;
 
 
+//----------------- off canvas -------------
+$oc_bg_color: #ffffff;
+
+$oc_color: #cccccc;
+
+$oc_border_color: #E1E1E1;
+
+$oc_box_shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 
 
+
+//----------------- pageination -------------
+
+$pi_color: #9E9E9E;
 
 //form setting
-$radio_color: $magenta;
-$checkbox_color: $persian-green;
+$radio_color: $theme-color;
+$checkbox_color: $theme-color;
 $label_font_size: 13px;
-$label_font_color: $asphalt;
+$label_font_color: $lightgray;
 
 // ul and ol settings
 $ul_li_font_size: 13px;
@@ -49,7 +79,7 @@ $ul_li_font: $h_font;
 $ul_list_style: square;
 
 //all object focus border color
-$form_focus_color: $green;
+$form_focus_color: $theme-color;
 
 
 //box shadow for all box

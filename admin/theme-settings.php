@@ -55,27 +55,30 @@ if (!function_exists('propanel_of_options')) {
         $options[] = array("name" => __('1 - هدر سایت', 'framework_localize'),
             "type" => "heading");
 
+        $options[] = array("name" => __('عنوان اصلی', 'framework_localize'),
+            "desc" => "عنوانی چند کلمه ای برای هدر.",
+            "id" => $shortname . "_head_h1",
+            "std" => "",
+            "type" => "text");
+
+        $options[] = array("name" => __('لوگوی سایت', 'framework_localize'),
+            "desc" => __(' لوگوی سایت برای هدر', 'framework_localize'),
+            "id" => $shortname . "_nav_logo",
+            "std" => "",
+            "type" => "upload");
+
+
         $options[] = array("name" => __('عکس پس زمینه', 'framework_localize'),
             "desc" => __('عکس پس زمینه برای صفحه اول را میتوانید در این قسمت آپلود کنید.', 'framework_localize'),
             "id" => $shortname . "_head_bg",
             "std" => "",
             "type" => "upload");
 
-        $options[] = array("name" => __('لوگوی سایت', 'framework_localize'),
+        $options[] = array("name" => __('عکس قسمت توضیحات', 'framework_localize'),
             "desc" => __('میتوانید لوگو و یا آواتار خود را در این قسمت آپلود کنید.', 'framework_localize'),
             "id" => $shortname . "_head_logo",
             "std" => "",
             "type" => "upload");
-
-        $options[] = array("name" => __('رنگ متن هدر', 'framework_localize'),
-            "desc" => __('این رنگ شامل رنگ عنوان، توضیح و رنگ آیکون های هدر می شود.', 'framework_localize'),
-            "id" => $shortname . "_head_txt_color",
-            "std" => "#656565",
-            "type" => "radio",
-            "options" => array(
-                '#656565' => 'سیاه',
-                '#ffffff' => 'سفید'
-            ));
 
         $options[] = array("name" => __('گرد کردن عکس', 'framework_localize'),
             "desc" => __('آیا عکسی که آپلود کرده اید آواتار است؟', 'framework_localize'),
@@ -83,17 +86,21 @@ if (!function_exists('propanel_of_options')) {
             "std" => "true",
             "type" => "checkbox");
 
-        $options[] = array("name" => __('عنوان اصلی', 'framework_localize'),
-            "desc" => "عنوانی چند کلمه ای برای هدر.",
-            "id" => $shortname . "_head_h1",
-            "std" => "",
-            "type" => "text");
+        $options[] = array("name" => __('رنگ متن توضیحات', 'framework_localize'),
+            "desc" => __('این رنگ شامل رنگ عنوان، توضیح و رنگ آیکون های هدر می شود.', 'framework_localize'),
+            "id" => $shortname . "_head_txt_color",
+            "std" => "#000000",
+            "type" => "radio",
+            "options" => array(
+                '#000000' => 'سیاه',
+                '#ffffff' => 'سفید'
+            ));
 
         $options[] = array("name" => __('توضیح کوتاه', 'framework_localize'),
-            "desc" => "زیر عنوان قرار میگیرد",
+            "desc" => "زیر عکس قرار میگیرد",
             "id" => $shortname . "_head_description",
             "std" => "",
-            "type" => "text");
+            "type" => "textarea");
 
 
         /* Option Page 2 - social pages */

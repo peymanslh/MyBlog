@@ -1,5 +1,5 @@
 <?php get_header();?>
-<?php include ('inc/page-header.php'); ?>
+<?php include ('inc/second-header.php'); ?>
 
 <section>
 	<div class="container">

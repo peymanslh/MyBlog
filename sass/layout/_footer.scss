@@ -1,9 +1,9 @@
 footer#footer {
   padding: 90px 0 30px 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.04);
+  border-top: $header_footer_border;
   text-align: center;
-  color: $lightgray;
-  background-color: #F6F6F6;
+  color: $footer_color;
+  background-color: $footer_bg_color;
 
   .social-box {
     text-align: center;
@@ -16,7 +16,7 @@ footer#footer {
       color: inherit;
 
       &:hover {
-        color: $persian-green;
+        color: $theme-color;
       }
     }
   }

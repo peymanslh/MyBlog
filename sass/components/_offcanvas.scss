@@ -272,35 +272,35 @@ li.mm-vertical.mm-opened > .mm-panel {
   right: 20px; }
 
 .mm-menu {
-  background: #f3f3f3;
-  color: rgba(0, 0, 0, 0.7); }
+  background: $oc_bg_color;
+  color: $oc_color; }
   .mm-menu .mm-navbar {
-    border-color: rgba(0, 0, 0, 0.1); }
+    border-color: $oc_border_color; }
     .mm-menu .mm-navbar > *,
     .mm-menu .mm-navbar a {
-      color: rgba(0, 0, 0, 0.3); }
+      color: $oc_color; }
     .mm-menu .mm-navbar .mm-btn:before,
     .mm-menu .mm-navbar .mm-btn:after {
-      border-color: rgba(0, 0, 0, 0.3); }
+      border-color: $oc_border_color; }
   .mm-menu .mm-listview > li:after {
-    border-color: rgba(0, 0, 0, 0.1); }
+    border-color: $oc_border_color; }
   .mm-menu .mm-listview > li .mm-prev:before,
   .mm-menu .mm-listview > li .mm-next:after,
   .mm-menu .mm-listview > li .mm-arrow:after {
-    border-color: rgba(0, 0, 0, 0.3); }
+    border-color: $oc_border_color; }
   .mm-menu .mm-listview > li .mm-prev:after,
   .mm-menu .mm-listview > li .mm-next:before {
-    border-color: rgba(0, 0, 0, 0.1); }
+    border-color: $oc_border_color; }
   .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next),
   .mm-menu .mm-listview > li.mm-selected > span {
-    background: rgba(255, 255, 255, 0.5); }
+    background: $oc_bg_color; }
   .mm-menu.mm-vertical .mm-listview li.mm-opened > a.mm-next,
   .mm-menu.mm-vertical .mm-listview li.mm-opened > .mm-panel,
   .mm-menu .mm-listview li.mm-opened.mm-vertical > a.mm-next,
   .mm-menu .mm-listview li.mm-opened.mm-vertical > .mm-panel {
-    background: rgba(0, 0, 0, 0.05); }
+    background: $oc_bg_color; }
   .mm-menu .mm-divider {
-    background: rgba(0, 0, 0, 0.05); }
+    background: $oc_bg_color; }
 
 /*
   jQuery.mmenu offcanvas addon CSS
@@ -532,4 +532,4 @@ html.mm-effect-fade-menu.mm-opening .mm-menu.mm-effect-fade-menu {
   display: none; }
 
 .mm-menu.mm-pageshadow:after {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); }
+  box-shadow: $oc_box_shadow; }

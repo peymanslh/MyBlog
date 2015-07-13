@@ -9,27 +9,28 @@
     &>span {
       position: relative;
       padding: 4px 10px;
-      color: #BEBEBE;
+      color: $pi_color;
       margin-left: 2px;
+      font-family: $tahoma;
       text-decoration: none;
       font-size: 13px;
-      border-bottom: 3px solid #BEBEBE;
+      border-bottom: 3px solid $pi_color;
       cursor: pointer;
       @include transition(0.2s);
 
       &:hover {
-        color: $lightgray;
-        border-bottom: 3px solid $lightgray;
+        color: lighten($pi_color, 10%);
+        border-bottom: 3px solid lighten($pi_color, 10%);
       }
 
       &.current {
-        color: $lightgray;
-        border-bottom: 3px solid $lightgray;
+        color: lighten($pi_color, 14%);
+        border-bottom: 3px solid lighten($pi_color, 14%);
         cursor: default;
       }
 
       &.disabled {
-        color: gray;
+        color: lighten($pi_color, 9%);
         cursor: default;
       }
     }

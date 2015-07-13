@@ -15,3 +15,10 @@ require_once(TEMPLATEPATH . '/admin/theme-settings.php');
 // Add support post formats
 add_theme_support( 'post-formats', array( 'aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat' ) );
 
+
+
+// Add thumbnail supprt
+add_theme_support( 'post-thumbnails' );
+if (function_exists('add_image_size')):
+add_image_size('film_thumbs',150,150);
+endif;

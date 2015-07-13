@@ -1,0 +1,71 @@
+// Header class
+header#second-header {
+	height: 100px;
+	width : 100%;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.02);
+
+	#nav-logo-img {
+	    height: 100px;
+	    text-align: center;
+	    vertical-align: middle;
+	    overflow: hidden;
+	    display: block !important;
+	  	margin-right: auto !important;
+		margin-left: auto !important;
+
+	     img {
+	      vertical-align: middle;
+	      display: inline-block;
+	      max-width: 100%;
+	      height: auto;
+	      margin-right: auto;
+	      margin-left: auto;
+	      overflow: hidden;
+	    }
+	}
+
+	#nav-logo-txt {
+		height: 100px;
+		font-family: $h_font;
+		font-weight: 100;
+		font-size: 15px;
+		color: #000000;
+		text-align: center;
+		padding: 35px 15px 0 15px;
+
+		a:hover {
+			color: $theme_color;
+		}
+	}
+}
+
+
+
+
+// Show Sidebar button
+#hamburger {
+  padding: 2px 20px 2px 0;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  height: 30px;
+  width: 60px;
+  color: #ffffff;
+  z-index: 9999;
+  font-family: $h_font;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-sizing : border-box;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+
+
+// Responsive Details
+@media screen and (max-width : 992px) {
+
+}
+
+
+
