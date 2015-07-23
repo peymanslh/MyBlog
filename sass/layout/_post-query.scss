@@ -3,8 +3,10 @@ article#home-post-one {
   background-color: #FFFFFF;
 
   section.my-post {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
-    margin-bottom: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    margin-bottom: 70px;
+    margin-top: 10px;
+    padding-bottom: 20px;
 
     header {
 
@@ -12,13 +14,21 @@ article#home-post-one {
         text-align: right;
         font-size: 14px;
         color: #000000;
-        margin-bottom: 15px;
+        margin-bottom: 5px;
 
         a {
           color: #000;
 
           &:hover {
             color: $theme-color;
+          }
+        }
+        .edit-link {
+          font-size: 10px;
+          padding-right: 20px;
+
+          a {
+            color: $theme_color;
           }
         }
       }
@@ -28,12 +38,15 @@ article#home-post-one {
         font-family: $h_font;
         font-weight: 100;
         font-size: 11px;
-        color: #C5C5C5;
+        color: #939393;
 
         span {
-          color: #C5C5C5;
+          color: #939393;
+          padding-left: 3px;
+          padding-right: 3px;
+          
           a {
-            color: #C5C5C5;
+            color: #939393;
           }
         }
       }
@@ -42,10 +55,13 @@ article#home-post-one {
     article {
       font-family: $h_font;
       font-weight: 100;
-      font-size: 14px;
+      font-size: 13px;
+      color: rgb(131, 131, 131);
+      // margin-top: -10px;
 
 
       img {
+        display: block;
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
@@ -58,6 +74,7 @@ article#home-post-one {
         color: #000;
         border-bottom: 1px solid #000000;
         opacity: 0.5;
+        font-size: 13px;
         padding: 0 1px 0 8px;
 
         @include transition(all 0.2s ease-in-out);
@@ -86,3 +103,29 @@ article#home-post-one {
 
   }
 }
+
+.search-query-title {
+  margin-top: 60px;
+  padding-right: 13px;
+  padding-left: 13px;
+  font-size: 15px;
+  
+
+  b {
+    font-weight: normal;
+    color: $theme-color;
+  }
+
+  span {
+    font-weight: 100;
+    padding-right: 6px;
+    border-right: 4px solid #000000;
+    color: #000000;
+  }
+}
+
+
+
+
+
+

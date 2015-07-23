@@ -45,19 +45,26 @@ header#second-header {
 
 // Show Sidebar button
 #hamburger {
-  padding: 2px 20px 2px 0;
+  padding: 3px 20px 2px 0;
   position: absolute;
   right: 0;
-  top: 30px;
-  height: 30px;
-  width: 60px;
+  top: 120px;
+  height: 35px;
+  width: 50px;
   color: #ffffff;
   z-index: 9999;
   font-family: $h_font;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 1);
   box-sizing : border-box;
-  border-radius: 4px;
-  margin-right: 10px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-right: none;
+  @include transition(all 210ms linear 20ms);
+
+  &:hover {
+	color: #000;
+	background-color: #FFF;
+  }
 }
 
 

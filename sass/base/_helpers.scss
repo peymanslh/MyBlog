@@ -6,10 +6,59 @@
   margin: 5px auto;
 }
 
+.block {
+	display : block !important;
+	width: 100%;
+}
+
 // margin bottom and top 5px
 .mg-5 {
   margin-bottom: 5px !important;
   margin-top: 5px !important;
 }
 
+.mgt-18 {
+	margin-top: 18px !important;
+}
+.mgb-80	{
+	margin-bottom: 80px;
+}
 
+.divider-mini {
+	width: 40px;
+	height: 2px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.pl-15 {
+	padding-left: 15px;
+	@media screen and (max-width: 991px) {
+		padding-left: 0px;
+	}
+}
+
+
+// Social colors
+
+.c-facebook {
+	color: #3b5998;
+}
+
+.c-twitter {
+	color: #00aced;
+}
+
+.c-google {
+	color: #dd4b39;
+}
+
+.c-pinterest {
+	color: #cb2027;
+}
+
+.c-linkedin {
+	color: #007bb6;
+}

@@ -36,6 +36,7 @@
   'components/modal',
   'components/tooltip',
   'components/offcanvas',
+  'components/lightbox',
   'components/progress-bar';
 
 //  layout
@@ -43,11 +44,13 @@
   'layout/header',
   'layout/footer',
   'layout/second-header',
-  'layout/post-query';
+  'layout/post-query',
+  'layout/comment',
+  'layout/post-format';
 
 //  pages
 @import
-  'pages/page',
+  'pages/pages',
   'pages/single';
 
 
