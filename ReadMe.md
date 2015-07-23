@@ -1,18 +1,33 @@
 
-
-I use this open source project to create this theme -->
-
-Modal ->
-http://dinbror.dk/bpopup/
-
-Tooltip ->
-http://arashm.net/lab/simptip/
-
-Off-Canvas ->
-http://mmenu.frebsite.nl/
-
-Icon ->
-https://icomoon.io/
+#MyBlog
+*Wordpress theme for RTL language*
+<br>
+<hr>
 
 
-Wordpress panel options ->
+###Features :
+
+* Responsive layout
+* Supports featured images
+* Supported post formats: gallery, image, link, quote, video, chat, audio, aside, status
+* Custom main menu
+* One-column design
+* Custom header
+* Project post-type
+
+###Used resources :  
+[bpopup](http://dinbror.dk/bpopup/)
+,
+[simptip](http://arashm.net/lab/simptip/)
+,
+[mmenu](http://mmenu.frebsite.nl/)
+,
+[icomoon](https://icomoon.io/)
+,
+[lightbox](http://lokeshdhakar.com/projects/lightbox2/)
+
+
+
+<br>
+###Copyright and License
+Copyright (c) 2015 @peymanslh - Released under [MIT license](https://github.com/peymanslh/MyBlog/blob/master/LICENSE).
