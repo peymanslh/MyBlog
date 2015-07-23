@@ -5,10 +5,17 @@
 <hr>
 
 
+###Features :
 
+* Responsive layout
+* Supports featured images
+* Supported post formats: gallery, image, link, quote, video, chat, audio, aside, status
+* Custom main menu
+* One-column design
+* Custom header
+* Project post-type
 
-
-Thanks to 
+###Used resources :  
 [bpopup](http://dinbror.dk/bpopup/)
 ,
 [simptip](http://arashm.net/lab/simptip/)
