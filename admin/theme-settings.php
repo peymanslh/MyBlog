@@ -103,8 +103,23 @@ if (!function_exists('propanel_of_options')) {
             "type" => "textarea");
 
 
+        /* Option Page 1 - All Options */
+        $options[] = array("name" => __('2 - نمایش مطالب', 'framework_localize'),
+            "type" => "heading");
+
+        $project_column_array = [2, 3, 4, 6];
+
+        $options[] = array("name" => __('آرشیو پروژه ها', 'framework_localize'),
+            "desc" => __('تعداد ستون برای نمایش مطالب در ارشیو پروژه ها را مشخص کنید.', 'framework_localize'),
+            "id" => $shortname . "_project_column",
+            "std" => "2",
+            "type" => "select",
+            "options" => $project_column_array);
+
+
+
         /* Option Page 2 - social pages */
-        $options[] = array("name" => __('2 - شبکه های اجتماعی', 'framework_localize'),
+        $options[] = array("name" => __('3 - شبکه های اجتماعی', 'framework_localize'),
             "type" => "heading");
 
         $options[] = array("name" => __('نمایش در هدر', 'framework_localize'),
@@ -188,7 +203,7 @@ if (!function_exists('propanel_of_options')) {
 
 
         /* Option Page 3 - site footer */
-        $options[] = array("name" => __('3 - فوتر سایت', 'framework_localize'),
+        $options[] = array("name" => __('4 - فوتر سایت', 'framework_localize'),
             "type" => "heading");
 
 

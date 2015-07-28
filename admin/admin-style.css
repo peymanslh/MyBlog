@@ -1,3 +1,10 @@
+/* ----------------my style ----------------*/
+.heading {
+	font-family: yekan, tahoma, "Lucida Grande", Sans-serif !important;
+}
+#of-nav ul li a {
+	font-family: yekan, tahoma, "Lucida Grande", Sans-serif !important;
+}
 /*---------------------------------------------------------------*/
 /* General Layout
 /*---------------------------------------------------------------*/
@@ -12,7 +19,7 @@ border-right:1px solid #D1E5EE;
 background-color:#fff;
 border-left:1px solid #D1E5EE;
 float:left;
-font-family:"Lucida Grande", Sans-serif;
+font-family: yekan, tahoma, "Lucida Grande", Sans-serif !important;
 margin-left:-1px;
 min-height:550px;
 width:559px;
@@ -390,7 +397,7 @@ border-width:1px;
 #truethemes_container .controls input,#truethemes_container .controls select,#truethemes_container .controls textarea {
 background-color:#F4F4F4;
 border:1px solid;
-font-family:"Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+font-family: yekan, "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
 font-size:12px;
 margin-bottom:9px;
 width:340px;

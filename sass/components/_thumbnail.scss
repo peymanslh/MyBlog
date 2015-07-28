@@ -25,6 +25,7 @@
 
 	img {
 		max-width: 100%;
+		width: 100%;
 		display: block;
 		height: auto;
 		margin-right: auto;
@@ -44,13 +45,17 @@
 		bottom: 0;
 		right: 0;
 		left: 0;
+
+		transition: all ease-in 0.3s;
 	}
 
 	.title {
 		padding: 10px;
 		position: absolute;
 		top: 10px;
-		text-align: center;
+		display: block;
+		width: 100%;
+
 		span {
 			display: block;
 			text-align: center;
@@ -63,6 +68,10 @@
 
 	&:hover .title {
 		opacity: 1;
+
+		@extend .animated;
+		animation-name: fadeInDown;
+		animation-duration: 0.3s !important;
 	}
 	&:hover .overaly {
 		opacity: 0.8;

@@ -40,6 +40,11 @@ header#second-header {
 	}
 }
 
+@media screen and (min-width: 991px) {
+	#nav-logo-txt {
+		text-align: right !important;
+	}
+}
 
 
 
