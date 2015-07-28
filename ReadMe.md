@@ -25,13 +25,11 @@
 [icomoon](https://icomoon.io/)
 ,
 [lightbox](http://lokeshdhakar.com/projects/lightbox2/)
-
-
+,
+[Animate css](https://github.com/daneden/animate.css)
 
 <br>
 ###Copyright and License
-<<<<<<< HEAD
+
 Copyright (c) 2015 @peymanslh - Released under [MIT license](https://github.com/peymanslh/MyBlog/blob/master/LICENSE).
-=======
-Copyright (c) 2015 @peymanslh - Released under [MIT license](https://github.com/peymanslh/MyBlog/blob/master/LICENSE).
->>>>>>> d921d312c090f80f9ca41ab68f50e8a6ec35e909
+
