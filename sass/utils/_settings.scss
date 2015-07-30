@@ -116,16 +116,16 @@ $top-positioning:         true!default;
 $bottom-positioning:      true!default;
 
 // Half Arrows
-$half-arrows:             true!default;
+$half-arrows:             false!default;
 
 // Extra Features
-$movable:                 true!default;
-$soft-edge:               true!default;
-$fade-effect:             true!default;
-$multiline:               true!default;
+$movable:                 false!default;
+$soft-edge:               false!default;
+$fade-effect:             false!default;
+$multiline:               false!default;
 
 // ---------------------------Diverse Colors
-$coloring:                true!default;
+$coloring:                false!default;
 
 //-----------------------------table settings
 $table_border: #e9e8e8;
