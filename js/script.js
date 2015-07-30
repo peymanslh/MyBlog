@@ -26,66 +26,6 @@ $( document ).ready(function() {
 
             });
 
-            // $('html').offcanvas({
-            // hasSidebarLeft: false,
-            // hasSidebarRight: true
-            // });
-
         });
 
-
-        // $("#my-menu").mmenu({
-        //      autoHeight: true,
-        //      extensions: ["effect-fade-menu"],
-        //      extensions: ["pageshadow"]
-        //   }, {
-        //      // configuration
-        //      offCanvas: {
-        //         pageNodetype: "div",
-        //         position: "right",
-        //         // zposition: "front"
-        //      }
-        // });
-      
-      //hide the menu
-      // $('#my-menu').hide();
-
-      // show when click on button
-      // $('#hamburger').click(function(e) {
-      //   $('#my-menu').show();
-      //   $('body').css('overflow', 'hidden');
-      //   $('#my-menu .wrapper').css();
-      //   e.preventDefault();
-      // });
-
-      // $('.overaly').click(function(e) {
-      //   $('#my-menu').hide();
-      //   $('body').css('overflow', 'auto');
-      //   e.preventDefault();
-      // });
-
-      // menuHeight();
-
-      // window.onresize = function (e) {
-      //   menuHeight();
-      // }
-
-      // function menuHeight() {
-      //   wh = $(window).height();
-      //   $('#my-menu').css({'height': wh + 'px' });
-      //   $('#my-menu .overaly').css({'height': wh + 'px' });
-      //   $('#my-menu .wrapper').css({'height': wh + 'px' });
-      // }
-
-
-
     });
-
-// jQuery(document).ready(function($) {
-//     $('html').offcanvas({
-//         hasSidebarLeft: false,
-//         hasSidebarRight: true
-//     });
-// });
-
-

@@ -1,5 +1,10 @@
 
-<?php $theme_color = get_option('mb_theme_color'); ?>
+<?php
+$theme_color = get_option('mb_theme_color');
+$theme_color = get_option('mb_theme_color');
+$theme_color = get_option('mb_theme_color');
+
+ ?>
 
 <!doctype html>
 <html <?php language_attributes() ;?>>

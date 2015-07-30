@@ -8,6 +8,7 @@
 ###Features :
 
 * Responsive layout
+* Minimal design
 * Supports featured images
 * Supported post formats: gallery, image, link, quote, video, chat, audio, aside, status
 * Custom main menu
@@ -19,8 +20,6 @@
 [bpopup](http://dinbror.dk/bpopup/)
 ,
 [simptip](http://arashm.net/lab/simptip/)
-,
-[mmenu](http://mmenu.frebsite.nl/)
 ,
 [icomoon](https://icomoon.io/)
 ,
