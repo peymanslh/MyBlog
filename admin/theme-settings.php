@@ -131,12 +131,15 @@ if (!function_exists('propanel_of_options')) {
         $options[] = array("name" => __('رنگ قالب', 'framework_localize'),
             "desc" => __('رنگ اصلی قالب را انتخاب کنید.', 'framework_localize'),
             "id" => $shortname . "_theme_color",
-            "std" => "option1",
+            "std" => "main",
             "type" => "images",
             "options" => array(
-                'main' => $sampleurl . 'sample-layout-1.png',
-                'option2' => $sampleurl . 'sample-layout-2.png',
-                'option3' => $sampleurl . 'sample-layout-3.png'
+                'main' => $sampleurl . 'main.png',
+                'blue' => $sampleurl . 'blue.png',
+                'green' => $sampleurl . 'green.png',
+                'orange' => $sampleurl . 'orange.png',
+                'flamingo' => $sampleurl . 'flamingo.png',
+                'magenta' => $sampleurl . 'magenta.png'
             ));
 
 
@@ -225,7 +228,7 @@ if (!function_exists('propanel_of_options')) {
             "type" => "text");
 
 
-        /* Option Page 3 - site footer */
+        /* Option Page 4 - site footer */
         $options[] = array("name" => __('4 - فوتر سایت', 'framework_localize'),
             "type" => "heading");
 
@@ -238,103 +241,15 @@ if (!function_exists('propanel_of_options')) {
             "std" => "",
             "type" => "text");
 
-
-
-
-
-        $options[] = array("name" => __('Text Field', 'framework_localize'),
-            "desc" => "This is a text field.",
-            "id" => $shortname . "_sample_text_field",
+        $options[] = array("name" => __('استایل های شما', 'framework_localize'),
+            "desc" => "می توانید استایل دلخواه خود را اینجا قرار دهدی.",
+            "id" => $shortname . "_footer_style",
             "std" => "",
-            "type" => "text");
+            "type" => "textarea");
 
-
-
-
-        $options[] = array("name" => __('Checkbox', 'framework_localize'),
-            "desc" => __('This is a checkbox.', 'framework_localize'),
-            "id" => $shortname . "_sample_checkbox",
-            "std" => "true",
-            "type" => "checkbox");
-
-
-        $options[] = array("name" => __('Dropdown List', 'framework_localize'),
-            "desc" => __('This is a dropdown list.', 'framework_localize'),
-            "id" => $shortname . "_sample_dropdown",
-            "std" => "1",
-            "type" => "select",
-            "options" => $sample_array);
-
-
-        $options[] = array("name" => __('Radio Buttons', 'framework_localize'),
-            "desc" => __('These are radio buttons.', 'framework_localize'),
-            "id" => $shortname . "_sample_radio",
-            "std" => "1",
-            "type" => "radio",
-            "options" => array(
-                'Red Radio' => 'Red',
-                'Green Radio' => 'Green',
-                'Blue Radio' => 'Blue'
-            ));
-
-
-        $options[] = array("name" => __('Image Radio Buttons', 'framework_localize'),
-            "desc" => __('Spice up your radio buttons by using custom images.', 'framework_localize'),
-            "id" => $shortname . "_sample_image_radio",
-            "std" => "option1",
-            "type" => "images",
-            "options" => array(
-                'option1' => $sampleurl . 'sample-layout-1.png',
-                'option2' => $sampleurl . 'sample-layout-2.png',
-                'option3' => $sampleurl . 'sample-layout-3.png'
-            ));
-
-
-        $options[] = array("name" => __('Color Picker', 'framework_localize'),
-            "desc" => __('This is a color picker.', 'framework_localize'),
-            "id" => $shortname . "_sample_color_picker",
-            "std" => "",
-            "type" => "color");
-
-
-        $options[] = array("name" => __('Wordpress Page', 'framework_localize'),
-            "desc" => __('This displays a list of every page on your website.', 'framework_localize'),
-            "id" => $shortname . "_sample_wp_pages",
-            "std" => "1",
-            "type" => "select",
-            "options" => $tt_pages);
-
-
-        $options[] = array("name" => __('Wordpress Category', 'framework_localize'),
-            "desc" => __('This displays a list of every category on your website.', 'framework_localize'),
-            "id" => $shortname . "_sample_wp_category",
-            "std" => "1",
-            "type" => "select",
-            "options" => $tt_categories);
-
-
-        /* Option Page 2 - Sample Page */
-        $options[] = array("name" => __('Sample Page', 'framework_localize'),
-            "type" => "heading");
-
-
-        $options[] = array("name" => __('Website Logo', 'framework_localize'),
-            "desc" => __('Upload a custom logo for your Website.', 'framework_localize'),
-            "id" => $shortname . "_sitelogo",
-            "std" => "",
-            "type" => "upload");
-
-
-        $options[] = array("name" => __('Favicon', 'framework_localize'),
-            "desc" => __('Upload a 16px x 16px image that will represent your website\'s favicon.<br /><br /><em>To ensure cross-browser compatibility, we recommend converting the favicon into .ico format before uploading. </em>', 'framework_localize'),
-            "id" => $shortname . "_favicon",
-            "std" => "",
-            "type" => "upload");
-
-
-        $options[] = array("name" => __('Tracking Code', 'framework_localize'),
-            "desc" => __('Paste Google Analytics (or other) tracking code here.', 'framework_localize'),
-            "id" => $shortname . "_google_analytics",
+        $options[] = array("name" => __('اسکریپت های شما', 'framework_localize'),
+            "desc" => "می توانید اسکریپت دلخواه خود را اینجا قرار دهدی.",
+            "id" => $shortname . "_footer_script",
             "std" => "",
             "type" => "textarea");
 

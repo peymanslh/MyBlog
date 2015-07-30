@@ -2,14 +2,19 @@
 
 
 $lightgray : #656565;
+
+$flamingo: #EF4547;
+
 //colors
 $asphalt: #34495e;
 $blue: #3498db;
-$green: #2ecc71;
-$magenta: #9b59b6;
-$orange: #f39c12;
-$persian-green: #1abc9c;
-$red: #D12B3F; // #c0392b
+$green: #1abc9c;
+$magenta: #2E2349;
+$orange: #FD8D17;
+$red: #D12B3F;
+
+
+
 
 
 $colors: (
@@ -18,7 +23,6 @@ $colors: (
         'green': $green,
         'magenta': $magenta,
         'orange': $orange,
-        'persian-green': $persian-green,
         'red': $red
 );
 
@@ -26,3 +30,6 @@ $colors: (
 $font: IRANSans, Tahoma, Arial;
 $iransans: IRANSans, Tahoma, Arial;
 $tahoma: Tahoma, Arial;
+
+
+$main_color: $asphalt;

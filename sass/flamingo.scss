@@ -5,7 +5,10 @@
 
 //  utils
 @import
-  'utils/variables',
+  'utils/variables';
+$main_color: $flamingo;
+
+@import
   'utils/functions',
   'utils/mixins',
   'utils/settings';
@@ -53,10 +56,4 @@
   'pages/pages',
   'pages/404',
   'pages/single';
-
-
-
-
-
-
 

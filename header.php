@@ -23,7 +23,21 @@ $apple_icon = get_option('mb_apple_icon');
     <![endif]-->
 
     <link rel="stylesheet" href="<?= esc_url( get_template_directory_uri() ); ?>/style.css">
-    <link rel="stylesheet" href="<?= esc_url( get_template_directory_uri() ); ?>/css/main.css">
+
+    <?php if($theme_color == 'main') { ?>
+        <link rel="stylesheet" href="<?= esc_url( get_template_directory_uri() ); ?>/css/main.css">
+    <?php }elseif($theme_color == 'blue') { ?>
+        <link rel="stylesheet" href="<?= esc_url( get_template_directory_uri() ); ?>/css/blue.css">
+    <?php }elseif($theme_color == 'green') { ?>
+        <link rel="stylesheet" href="<?= esc_url( get_template_directory_uri() ); ?>/css/green.css">
+    <?php }elseif($theme_color == 'orange') { ?>
+        <link rel="stylesheet" href="<?= esc_url( get_template_directory_uri() ); ?>/css/orange.css">
+    <?php }elseif($theme_color == 'flamingo') { ?>
+        <link rel="stylesheet" href="<?= esc_url( get_template_directory_uri() ); ?>/css/flamingo.css">
+    <?php }elseif($theme_color == 'magenta') { ?>
+        <link rel="stylesheet" href="<?= esc_url( get_template_directory_uri() ); ?>/css/magenta.css">
+    <?php } ?>
+    
 
     <?php wp_head(); ?>
 </head>
