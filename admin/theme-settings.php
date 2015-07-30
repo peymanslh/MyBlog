@@ -103,7 +103,7 @@ if (!function_exists('propanel_of_options')) {
             "type" => "textarea");
 
 
-        /* Option Page 1 - All Options */
+        /* Option Page 2 - main Options */
         $options[] = array("name" => __('2 - نمایش مطالب', 'framework_localize'),
             "type" => "heading");
 
@@ -116,9 +116,20 @@ if (!function_exists('propanel_of_options')) {
             "type" => "select",
             "options" => $project_column_array);
 
+        $options[] = array("name" => __('رنگ قالب', 'framework_localize'),
+            "desc" => __('رنگ اصلی قالب را انتخاب کنید.', 'framework_localize'),
+            "id" => $shortname . "_theme_color",
+            "std" => "option1",
+            "type" => "images",
+            "options" => array(
+                'main' => $sampleurl . 'sample-layout-1.png',
+                'option2' => $sampleurl . 'sample-layout-2.png',
+                'option3' => $sampleurl . 'sample-layout-3.png'
+            ));
 
 
-        /* Option Page 2 - social pages */
+
+        /* Option Page 3 - social pages */
         $options[] = array("name" => __('3 - شبکه های اجتماعی', 'framework_localize'),
             "type" => "heading");
 

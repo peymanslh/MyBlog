@@ -20,6 +20,8 @@ header#header {
 
   //round img
   .avatar {
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
     border: 7px solid rgba(0, 0, 0, 0.04);
 
@@ -64,9 +66,6 @@ header#header {
       }
     }
   }
-}
-.show-sidebar {
-//  float: right;
 }
 
 

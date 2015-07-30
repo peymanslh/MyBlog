@@ -1,4 +1,4 @@
-
+<?php include ('inc/off-canvas.php'); ?>
 
 <footer id="footer">
     <div class="container">
@@ -34,12 +34,11 @@
 <script type="text/javascript" src="<?= esc_url( get_template_directory_uri() ); ?>/js/jquery.js"></script>
 <script type="text/javascript" src="<?= esc_url( get_template_directory_uri() ); ?>/js/bpopup.js"></script>
 <script type="text/javascript" src="<?= esc_url( get_template_directory_uri() ); ?>/js/jquery.mmenu.min.js"></script>
-<script type="text/javascript" src="<?= esc_url( get_template_directory_uri() ); ?>/js/script.js"></script>
 <script type="text/javascript" src="<?= esc_url( get_template_directory_uri() ); ?>/js/dropdown.js"></script>
 <script type="text/javascript" src="<?= esc_url( get_template_directory_uri() ); ?>/js/lightbox.js"></script>
+<script type="text/javascript" src="<?= esc_url( get_template_directory_uri() ); ?>/js/off-menu.js"></script>
+<script type="text/javascript" src="<?= esc_url( get_template_directory_uri() ); ?>/js/script.js"></script>
 
 <?php wp_footer(); ?>
-
-</div>
 </body>
 </html>

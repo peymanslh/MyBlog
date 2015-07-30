@@ -1,13 +1,12 @@
-<nav id="my-menu">
-   <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about/">About us</a>
-         <ul>
-            <li><a href="/about/history/">History</a></li>
-            <li><a href="/about/team/">The team</a></li>
-            <li><a href="/about/address/">Our address</a></li>
-         </ul>
-      </li>
-      <li><a href="/contact/">Contact</a></li>
-   </ul>
+
+<nav id="show-sidebar">
+    <a href="#my-menu" id="shower" class="simptip-position-left" data-tooltip="منوی اصلی"><span class="icon-three-bars"></span></a>
 </nav>
+
+<aside id="my-menu">
+   <div class="overaly"></div>
+   <section class="wrapper">
+      <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('right-sidebar') ) : ?><?php endif; ?>
+   </section>
+
+</aside>

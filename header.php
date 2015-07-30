@@ -1,3 +1,6 @@
+
+<?php $theme_color = get_option('mb_theme_color'); ?>
+
 <!doctype html>
 <html <?php language_attributes() ;?>>
 <head>
@@ -20,6 +23,3 @@
     <?php wp_head(); ?>
 </head>
 <body>
-    <div>
-
-<?php include ('inc/off-canvas.php'); ?>

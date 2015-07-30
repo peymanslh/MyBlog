@@ -1,0 +1,108 @@
+// Show Sidebar button
+#shower {
+  padding: 3px 20px 2px 0;
+  position: absolute;
+  right: 0;
+  top: 120px;
+  height: 35px;
+  width: 50px;
+  color: #ffffff;
+  z-index: 9999;
+  font-family: $h_font;
+  background-color: rgba(0, 0, 0, 1);
+  box-sizing : border-box;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-right: none;
+  transition-property: color, background-color;
+  @include transition(all 30ms linear 10ms);
+}
+
+
+#my-menu {
+  display: none;
+  overflow: hidden;
+
+  .overaly {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    cursor: crosshair;
+    overflow: hidden;
+    @include transition(all 210ms linear 20ms);
+
+    @extend .animated;
+    animation-name: fadeIn;
+    animation-duration: 0.3s !important;
+  }
+
+  .wrapper {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: auto;
+
+    height: auto;
+    width: 350px;
+    background-color: #FFF;
+    padding: 10px 30px 10px 20px;
+
+    @extend .animated;
+    animation-name: fadeInRight;
+    animation-duration: 0.3s !important;
+  }
+}
+
+// Wordpress widget style --------------------------
+#my-menu {
+  padding: 30px 20px 10px 15px;
+
+  .wrapper {
+    overflow: scroll !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+
+      .right-sidebar {
+      margin-bottom: 70px;
+      section {
+
+        h3 {
+          font-size: 13px;
+          border-bottom: 2px solid #E3E3E3;
+
+          span {
+            color: $lightgray;
+            border-bottom: 2px solid $theme_color;
+          }
+        }
+
+        ul {
+          list-style: none;
+          padding-right: 0;
+          font-size: 13px;
+          font-weight: 100;
+
+          li {
+            color: #8A8A8A;
+
+            a {
+              color: #696969;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  
+}
+
+
+
+
+
+

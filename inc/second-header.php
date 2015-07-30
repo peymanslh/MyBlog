@@ -31,7 +31,3 @@
 	</div>
 
 </header>
-
-<nav id="show-sidebar">
-    <a href="#my-menu" id="hamburger" class="simptip-position-left" data-tooltip="منوی اصلی"><span class="icon-three-bars"></span></a>
-</nav>
