@@ -1,6 +1,6 @@
 
 #MyBlog
-*Wordpress theme for RTL language*
+*Wordpress theme for RTL languages*
 <br>
 <hr>
 
