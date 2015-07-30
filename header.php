@@ -1,8 +1,8 @@
 
 <?php
 $theme_color = get_option('mb_theme_color');
-$theme_color = get_option('mb_theme_color');
-$theme_color = get_option('mb_theme_color');
+$favicon = get_option('mb_favicon');
+$apple_icon = get_option('mb_apple_icon');
 
  ?>
 
@@ -16,8 +16,8 @@ $theme_color = get_option('mb_theme_color');
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-    <link rel="apple-touch-icon" href="<?= esc_url( get_template_directory_uri() ); ?>/apple-touch-icon.png">
-    <link rel="shortcut icon" href="<?= esc_url( get_template_directory_uri() ); ?>/favicon.ico" />
+    <link rel="apple-touch-icon" href="<?= $apple_icon; ?>">
+    <link rel="shortcut icon" href="<?= $favicon; ?>" />
     <!--[if lt IE 9]>
     <script src="<?= esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
     <![endif]-->

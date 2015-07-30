@@ -55,6 +55,18 @@ if (!function_exists('propanel_of_options')) {
         $options[] = array("name" => __('1 - هدر سایت', 'framework_localize'),
             "type" => "heading");
 
+        $options[] = array("name" => __('Favorites icon', 'framework_localize'),
+            "desc" => __('در کنار تب و یا آدرس وبسایت در مرورگر نمایش داده می شود.', 'framework_localize'),
+            "id" => $shortname . "_favicon",
+            "std" => "",
+            "type" => "upload");
+
+        $options[] = array("name" => __('Apple touch icon', 'framework_localize'),
+            "desc" => __('برای نمایش آیکون سایت شما در دیوایس های اپل.', 'framework_localize'),
+            "id" => $shortname . "_apple_icon",
+            "std" => "",
+            "type" => "upload");
+
         $options[] = array("name" => __('عنوان اصلی', 'framework_localize'),
             "desc" => "عنوانی چند کلمه ای برای هدر.",
             "id" => $shortname . "_head_h1",
