@@ -4,7 +4,10 @@
 <br>
 <hr>
 
+![Screenshot](https://github.com/peymanslh/MyBlog/blob/master/screenshot.jpg?raw=true)
 
+
+See demo : [peymansalehi.ir/myblog/](http://peymansalehi.ir/myblog/)
 ###Features :
 
 * Responsive layout
@@ -15,6 +18,7 @@
 * One-column design
 * Custom header
 * Project post-type
+
 
 ###Used resources :  
 [bpopup](http://dinbror.dk/bpopup/)
