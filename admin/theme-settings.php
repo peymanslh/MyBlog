@@ -119,7 +119,7 @@ if (!function_exists('propanel_of_options')) {
         $options[] = array("name" => __('2 - نمایش مطالب', 'framework_localize'),
             "type" => "heading");
 
-        $project_column_array = [2, 3, 4, 6];
+        $project_column_array = array(2, 3, 4, 6);
 
         $options[] = array("name" => __('آرشیو پروژه ها', 'framework_localize'),
             "desc" => __('تعداد ستون برای نمایش مطالب در ارشیو پروژه ها را مشخص کنید.', 'framework_localize'),
@@ -141,7 +141,6 @@ if (!function_exists('propanel_of_options')) {
                 'flamingo' => $sampleurl . 'flamingo.png',
                 'magenta' => $sampleurl . 'magenta.png'
             ));
-
 
 
         /* Option Page 3 - social pages */
@@ -233,8 +232,6 @@ if (!function_exists('propanel_of_options')) {
             "type" => "heading");
 
 
-
-
         $options[] = array("name" => __('متن کپی رایت', 'framework_localize'),
             "desc" => "متن کپی رایت برای پایین سایت.",
             "id" => $shortname . "_copyright_txt",
@@ -259,4 +256,3 @@ if (!function_exists('propanel_of_options')) {
 
     }
 }
-?>
