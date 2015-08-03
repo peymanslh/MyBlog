@@ -21,7 +21,7 @@ a {
   text-decoration: none;
 
   &:hover,
-  &:focus{
+  &:focus {
     color: $link_color;
     text-decoration: none;
   }
@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding-right: 0 !important;
   margin-right: 0 !important;
-  font-family:$h_font;
+  font-family: $h_font;
   font-weight: normal;
 }
 

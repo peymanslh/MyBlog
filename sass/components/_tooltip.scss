@@ -30,7 +30,7 @@
     white-space: nowrap;
   }
   @include applyColor();
-  &:hover, &:focus{
+  &:hover, &:focus {
     background-color: transparent;
     &:before, &:after {
       opacity: 1;
@@ -39,17 +39,23 @@
   }
 }
 
-
 /******************************* Position ****************************/
 
 //___________________ Left & Right Silent Classes ___________________/
 %shared--left-and-right {
-  &:before, &:after {bottom: 50%;}
-  &:before{margin-bottom: $arrowSize * -1 + 1; } // -5px
-  &:after {margin-bottom: $tooltipHeight/-1.5;}
+  &:before, &:after {
+    bottom: 50%;
+  }
+  &:before {
+    margin-bottom: $arrowSize * -1 + 1;
+  }
+  // -5px
+  &:after {
+    margin-bottom: $tooltipHeight/-1.5;
+  }
 
   @if $half-arrows == true {
-    &.half-arrow{
+    &.half-arrow {
       &:before {
         bottom: 16px;
         border-style: none;
@@ -67,39 +73,63 @@
         margin-bottom: 0;
 
       }
-      &:before{margin-bottom: 0;}
+      &:before {
+        margin-bottom: 0;
+      }
 
       @if $half-arrows == true {
-        &.half-arrow{ &:before {margin-bottom: -2px;} }
+        &.half-arrow {
+          &:before {
+            margin-bottom: -2px;
+          }
+        }
       }
     }
   }
 
 }
+
 //_____________________ End: Silent Classes _______________________/
 
 // Right Position Styling
 @if $right-positioning == true {
   .simptip-position-right {
     @extend %shared--left-and-right;
-    &:before,&:after {left: 100%;}
-    &:before{margin-left: -2px;}
-    &:after{margin-left: 10px;}
+    &:before, &:after {
+      left: 100%;
+    }
+    &:before {
+      margin-left: -2px;
+    }
+    &:after {
+      margin-left: 10px;
+    }
 
     @if $movable == true {
       &.simptip-movable {
-        &:before {margin-left: -10px;}
-        &:after {margin-left: 2px;}
-        &:hover{
-          &:before, &:after {@include transform(translateX(10px));}
+        &:before {
+          margin-left: -10px;
+        }
+        &:after {
+          margin-left: 2px;
+        }
+        &:hover {
+          &:before, &:after {
+            @include transform(translateX(10px));
+          }
         }
         @if $half-arrows == true {
-          &.half-arrow:before{margin-left: -5px;}
+          &.half-arrow:before {
+            margin-left: -5px;
+          }
         }
-        @if $multiline == true {		//here here here
+        @if $multiline == true {
+          //here here here
           &.simptip-multiline {
             &:hover {
-              &:before, &:after {@include transform(translate(10px, 50%));}
+              &:before, &:after {
+                @include transform(translate(10px, 50%));
+              }
 
             }
           }
@@ -108,7 +138,7 @@
     }
 
     @if $half-arrows == true {
-      &.half-arrow{
+      &.half-arrow {
         &:before {
           margin-left: 3px;
           border-right: $arrowSize+1px solid $tooltipColor;
@@ -122,24 +152,41 @@
 @if $left-positioning == true {
   .simptip-position-left {
     @extend %shared--left-and-right;
-    &:before,&:after {right: 100%;}
-    &:before{margin-right: -2px;}
-    &:after{margin-right: 10px;}
+    &:before, &:after {
+      right: 100%;
+    }
+    &:before {
+      margin-right: -2px;
+    }
+    &:after {
+      margin-right: 10px;
+    }
 
     @if $movable == true {
       &.simptip-movable {
-        &:before {margin-right: -10px;}
-        &:after {margin-right: 2px;}
-        &:hover{
-          &:before, &:after {@include transform(translateX(-10px));}
+        &:before {
+          margin-right: -10px;
+        }
+        &:after {
+          margin-right: 2px;
+        }
+        &:hover {
+          &:before, &:after {
+            @include transform(translateX(-10px));
+          }
         }
         @if $half-arrows == true {
-          &.half-arrow:before{margin-right: -5px;}
+          &.half-arrow:before {
+            margin-right: -5px;
+          }
         }
-        @if $multiline == true {		//here here here
+        @if $multiline == true {
+          //here here here
           &.simptip-multiline {
             &:hover {
-              &:before, &:after {@include transform(translate(-10px, 50%));}
+              &:before, &:after {
+                @include transform(translate(-10px, 50%));
+              }
 
             }
           }
@@ -148,7 +195,7 @@
     }
 
     @if $half-arrows == true {
-      &.half-arrow{
+      &.half-arrow {
         &:before {
           margin-right: 3px;
           border-left: $arrowSize+1px solid $tooltipColor;
@@ -165,10 +212,12 @@
     @include transform(translateX(-50%));
   }
 
-  &:after {width: auto;}
+  &:after {
+    width: auto;
+  }
 
   @if $half-arrows == true {
-    &.half-arrow{
+    &.half-arrow {
       &:before {
         border-style: none;
         border-right: $arrowSize+1px solid $tooltipColor;
@@ -176,37 +225,55 @@
     }
   }
 }
+
 //_____________________ End: Silent Classes _______________________/
 
 // Bottom Position Styling
 @if $bottom-positioning == true {
   .simptip-position-bottom {
     @extend %shared--top-and-bottom;
-    &:before, &:after {top: 100%;}
-    &:before {margin-top: $arrowSize * -1 + 1; } // -5px
-    &:after {margin-top: 7px;}
-    &:hover{
-      &:before, &:after {@include transform(translate(-50%, 0));}
+    &:before, &:after {
+      top: 100%;
+    }
+    &:before {
+      margin-top: $arrowSize * -1 + 1;
+    }
+    // -5px
+    &:after {
+      margin-top: 7px;
+    }
+    &:hover {
+      &:before, &:after {
+        @include transform(translate(-50%, 0));
+      }
     }
 
     @if $movable == true {
       &.simptip-movable {
-        &:before {margin-top: -15px;}
-        &:after {margin-top: -3px;}
-        &:hover{
-          &:before, &:after {@include transform(translate(-50%, 10px));}
+        &:before {
+          margin-top: -15px;
+        }
+        &:after {
+          margin-top: -3px;
+        }
+        &:hover {
+          &:before, &:after {
+            @include transform(translate(-50%, 10px));
+          }
         }
 
         @if $half-arrows == true {
           &.half-arrow {
-            &:before { margin-top: -10px; }
+            &:before {
+              margin-top: -10px;
+            }
           }
         }
       }
     }
 
     @if $half-arrows == true {
-      &.half-arrow{
+      &.half-arrow {
         &:before {
           margin-top: 0;
           border-top: $arrowSize+1px solid transparent;
@@ -220,31 +287,48 @@
 @if $top-positioning == true {
   .simptip-position-top {
     @extend %shared--top-and-bottom;
-    &:before, &:after {bottom: 100%;}
-    &:before {margin-bottom: $arrowSize * -1 + 1; } // -5px
-    &:after {margin-bottom: 7px;}
-    &:hover{
-      &:before, &:after {@include transform(translate(-50%, 0px));}
+    &:before, &:after {
+      bottom: 100%;
+    }
+    &:before {
+      margin-bottom: $arrowSize * -1 + 1;
+    }
+    // -5px
+    &:after {
+      margin-bottom: 7px;
+    }
+    &:hover {
+      &:before, &:after {
+        @include transform(translate(-50%, 0px));
+      }
     }
 
     @if $movable == true {
       &.simptip-movable {
-        &:before {margin-bottom: -15px;}
-        &:after {margin-bottom: -3px;}
-        &:hover{
-          &:before, &:after {@include transform(translate(-50%, -10px));}
+        &:before {
+          margin-bottom: -15px;
+        }
+        &:after {
+          margin-bottom: -3px;
+        }
+        &:hover {
+          &:before, &:after {
+            @include transform(translate(-50%, -10px));
+          }
         }
 
         @if $half-arrows == true {
           &.half-arrow {
-            &:before { margin-bottom: -10px; }
+            &:before {
+              margin-bottom: -10px;
+            }
           }
         }
       }
     }
 
     @if $half-arrows == true {
-      &.half-arrow{
+      &.half-arrow {
         &:before {
           margin-bottom: 0;
           border-bottom: $arrowSize+1px solid transparent;
@@ -253,7 +337,6 @@
     }
   }
 }
-
 
 /******************************* Features ****************************/
 // animate movement on hover
@@ -268,14 +351,16 @@
 //soft edge
 @if $soft-edge == true {
   .simptip-smooth {
-    &:after{ @include border-radius();}
+    &:after {
+      @include border-radius();
+    }
   }
 }
 
 //fade effect
 @if $fade-effect == true {
   .simptip-fade {
-    &:before, &:after{
+    &:before, &:after {
       @include fade();
     }
   }
@@ -284,19 +369,34 @@
 //multiline tooltip
 @if $multiline == true {
   .simptip-multiline {
-    &:after { @include multiline(); }
+    &:after {
+      @include multiline();
+    }
   }
 }
+
 /**************************** Diverse Colors *************************/
 
-.simptip-asphalt {@include applyColor($asphalt);}
+.simptip-asphalt {
+  @include applyColor($asphalt);
+}
 
-.simptip-blue {@include applyColor($blue);}
+.simptip-blue {
+  @include applyColor($blue);
+}
 
-.simptip-green {@include applyColor($green);}
+.simptip-green {
+  @include applyColor($green);
+}
 
-.simptip-magenta {@include applyColor($magenta);}
+.simptip-magenta {
+  @include applyColor($magenta);
+}
 
-.simptip-orange {@include applyColor($orange);}
+.simptip-orange {
+  @include applyColor($orange);
+}
 
-.simptip-red {@include applyColor($red);}
+.simptip-red {
+  @include applyColor($red);
+}

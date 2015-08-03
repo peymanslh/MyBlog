@@ -1,58 +1,47 @@
 //  vendor
-@import
-  'vendor/bourbon/bourbon',
-  'vendor/normalize/normalize';
-
+@import 'vendor/bourbon/bourbon',
+'vendor/normalize/normalize';
 //  utils
-@import
-  'utils/variables',
-  'utils/functions',
-  'utils/mixins',
-  'utils/settings';
-
+@import 'utils/variables',
+'utils/functions',
+'utils/mixins',
+'utils/settings';
 //  base
-@import
-  'base/reset',
-  'base/typography',
-  'base/base',
-  'base/helpers';
-
+@import 'base/reset',
+'base/typography',
+'base/base',
+'base/helpers';
 //  components
-@import
-  'components/grid',
-  'components/button',
-  'components/form',
-  'components/alerts',
-  'components/list',
-  'components/panels',
-  'components/pageination',
-  'components/table',
-  'components/thumbnail',
-  'components/navigation-bar',
-  'components/dropdown',
-  'components/icons',
-  'components/modal',
-  'components/tooltip',
-  'components/my-off',
-  'components/lightbox',
-  'components/animate',
-  'components/progress-bar';
-
+@import 'components/grid',
+'components/button',
+'components/form',
+'components/alerts',
+'components/list',
+'components/panels',
+'components/pageination',
+'components/table',
+'components/thumbnail',
+'components/navigation-bar',
+'components/dropdown',
+'components/icons',
+'components/modal',
+'components/tooltip',
+'components/my-off',
+'components/lightbox',
+'components/animate',
+'components/progress-bar';
 //  layout
-@import
-  'layout/header',
-  'layout/footer',
-  'layout/second-header',
-  'layout/post-query',
-  'layout/comment',
-  'layout/archive-project',
-  'layout/post-format';
-
+@import 'layout/header',
+'layout/footer',
+'layout/second-header',
+'layout/post-query',
+'layout/comment',
+'layout/archive-project',
+'layout/post-format';
 //  pages
-@import
-  'pages/pages',
-  'pages/404',
-  'pages/single';
+@import 'pages/pages',
+'pages/404',
+'pages/single';
 
 
 

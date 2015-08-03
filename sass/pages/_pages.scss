@@ -1,89 +1,89 @@
 #thumb-header {
-	width: 100%;
-	min-height: 300px;
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-		-moz-background-size: cover;
-			background-size: cover;
+  width: 100%;
+  min-height: 300px;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
 }
 
 #page-post {
-	margin: 50px 0 120px 0;
-	.my-post {
-		font-family: $h_font;
+  margin: 50px 0 120px 0;
+  .my-post {
+    font-family: $h_font;
 
-		header {
-			h1 {
-				font-size: 14px;
-				text-align: right;
+    header {
+      h1 {
+        font-size: 14px;
+        text-align: right;
 
-				a {
-					color: #000;
+        a {
+          color: #000;
 
-					&:hover {
-						color: $theme_color;
-					}
-				}
-				.edit-link {
-					font-size: 10px;
-					padding-right: 20px;
+          &:hover {
+            color: $theme_color;
+          }
+        }
+        .edit-link {
+          font-size: 10px;
+          padding-right: 20px;
 
-					a {
-						color: $theme_color;
-					}
-				}
-			}
-		}
+          a {
+            color: $theme_color;
+          }
+        }
+      }
+    }
 
-		article {
-			font-size: 13px;
-			font-weight: 100;
-			color: #838383;
+    article {
+      font-size: 13px;
+      font-weight: 100;
+      color: #838383;
 
-			&.about-tpl {
-				padding-right: 15px;
-			}
+      &.about-tpl {
+        padding-right: 15px;
+      }
 
-			img {
-		        display: block;
-		        max-width: 100%;
-		        margin-left: auto;
-		        margin-right: auto;
-		        height: auto;
-		        overflow: hidden;
-		        border-radius: 5px;
-		    }
+      img {
+        display: block;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        overflow: hidden;
+        border-radius: 5px;
+      }
 
-			a {
-					color: $theme_color;
-			}
-		}
+      a {
+        color: $theme_color;
+      }
+    }
 
-		section {
-			padding:19px 0px 0px 10px;
-			
-			img {
-		        display: block;
-		        max-width: 100%;
-		        margin-left: auto;
-		        margin-right: auto;
-		        height: auto;
-		        overflow: hidden;
-		        border-radius: 5px;
-		    }
+    section {
+      padding: 19px 0px 0px 10px;
 
-		}
-	}
+      img {
+        display: block;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        overflow: hidden;
+        border-radius: 5px;
+      }
+
+    }
+  }
 }
 
-@media screen and (max-width: 991px){
-	#page-post {
-		.my-post {
-			article {
-				&.about-tpl {
-					padding: 0 !important;
-				}
-			}
-		}
-	}
+@media screen and (max-width: 991px) {
+  #page-post {
+    .my-post {
+      article {
+        &.about-tpl {
+          padding: 0 !important;
+        }
+      }
+    }
+  }
 }

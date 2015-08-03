@@ -1,7 +1,7 @@
 @function _radial-arg-parser($g1, $g2, $pos, $shape-size) {
   @each $value in $g1, $g2 {
     $first-val: nth($value, 1);
-    $pos-type:  type-of($first-val);
+    $pos-type: type-of($first-val);
     $spec-at-index: null;
 
     // Determine if spec was passed to mixin
@@ -16,8 +16,7 @@
         @for $i from ($spec-at-index + 1) through length($value) {
           $pos: $pos nth($value, $i);
         }
-      }
-      @else if $spec-at-index == 1 {
+      } @else if $spec-at-index == 1 {
         @for $i from ($spec-at-index + 1) through length($value) {
           $pos: $pos nth($value, $i);
         }
@@ -25,7 +24,7 @@
       $g1: null;
     }
 
-    // If not spec calculate correct values
+      // If not spec calculate correct values
     @else {
       @if ($pos-type != color) or ($first-val != "transparent") {
         @if ($pos-type == number)
@@ -40,10 +39,7 @@
           @if $pos == $g1 {
             $g1: null;
           }
-        }
-
-        @else if
-           ($first-val == "ellipse")
+        } @else if ($first-val == "ellipse")
         or ($first-val == "circle")
         or ($first-val == "closest-side")
         or ($first-val == "closest-corner")
@@ -56,9 +52,7 @@
 
           @if $value == $g1 {
             $g1: null;
-          }
-
-          @else if $value == $g2 {
+          } @else if $value == $g2 {
             $g2: null;
           }
         }

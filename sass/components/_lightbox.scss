@@ -73,11 +73,12 @@ body:after {
   text-align: center;
   line-height: 0;
 }
+
 @-webkit-keyframes rotate {
   from {
     -webkit-transform: rotate(0deg);
   }
-  to { 
+  to {
     -webkit-transform: rotate(360deg);
   }
 }
@@ -101,9 +102,9 @@ body:after {
     text-transform: none;
     line-height: 1;
 
-    -webkit-animation-name:             rotate; 
-    -webkit-animation-duration:         0.5s; 
-    -webkit-animation-iteration-count:  infinite;
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: infinite;
     -webkit-ANIMATION-timing-function: linear;
   }
 }
@@ -132,7 +133,7 @@ body:after {
   display: block;
 }
 
-.lb-nav a.lb-next  {
+.lb-nav a.lb-next {
   width: 34%;
   text-align: left;
   left: 0;

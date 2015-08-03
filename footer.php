@@ -1,34 +1,36 @@
-<?php include ('inc/off-canvas.php'); ?>
+<?php include('inc/off-canvas.php'); ?>
 
 <?php
-    $copyright_txt = get_option('mb_copyright_txt');
-    $footer_style = get_option('mb_footer_style');
-    $footer_script = get_option('mb_footer_script');
- ?>
+$copyright_txt = get_option('mb_copyright_txt');
+$footer_style = get_option('mb_footer_style');
+$footer_script = get_option('mb_footer_script');
+?>
 
 <footer id="footer">
     <div class="container">
 
         <div class="row bt-footer">
 
-             <div class="col-md-6">
-                
+            <div class="col-md-6">
+
                 <div class="copyright"><?= $copyright_txt ?></div>
 
-                <p class="designer">طراحی شده با <span class="icon-heart"></span> توسط <a href="http://peymansalehi.ir" target="_blank">peymanslh@</a></p>
+                <p class="designer">طراحی شده با <span class="icon-heart"></span> توسط <a href="http://peymansalehi.ir"
+                                                                                          target="_blank">peymanslh@</a>
+                </p>
             </div>
 
             <div class="col-md-6">
                 <section class="social-box">
                     <?php
-                        $foot_social_check = get_option('mb_foot_social_check');
+                    $foot_social_check = get_option('mb_foot_social_check');
 
 
-                        if ($foot_social_check == 'true') {
-                            get_social();
-                        } else {
-                            echo "";
-                        }
+                    if ($foot_social_check == 'true') {
+                        my_social();
+                    } else {
+                        echo "";
+                    }
                     ?>
                 </section>
             </div>
@@ -42,12 +44,12 @@
 </style>
 
 
-<script type="text/javascript" src="<?= esc_url( get_template_directory_uri() ); ?>/js/jquery.js"></script>
-<script type="text/javascript" src="<?= esc_url( get_template_directory_uri() ); ?>/js/bpopup.js"></script>
-<script type="text/javascript" src="<?= esc_url( get_template_directory_uri() ); ?>/js/dropdown.js"></script>
-<script type="text/javascript" src="<?= esc_url( get_template_directory_uri() ); ?>/js/lightbox.js"></script>
-<script type="text/javascript" src="<?= esc_url( get_template_directory_uri() ); ?>/js/off-menu.js"></script>
-<script type="text/javascript" src="<?= esc_url( get_template_directory_uri() ); ?>/js/script.js"></script>
+<script type="text/javascript" src="<?= esc_url(get_template_directory_uri()); ?>/js/jquery.js"></script>
+<script type="text/javascript" src="<?= esc_url(get_template_directory_uri()); ?>/js/bpopup.js"></script>
+<script type="text/javascript" src="<?= esc_url(get_template_directory_uri()); ?>/js/dropdown.js"></script>
+<script type="text/javascript" src="<?= esc_url(get_template_directory_uri()); ?>/js/lightbox.js"></script>
+<script type="text/javascript" src="<?= esc_url(get_template_directory_uri()); ?>/js/off-menu.js"></script>
+<script type="text/javascript" src="<?= esc_url(get_template_directory_uri()); ?>/js/script.js"></script>
 
 <script type="text/javascript">
     <?= $footer_script ;?>

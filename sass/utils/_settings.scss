@@ -1,13 +1,10 @@
-
 //fonts
 $h_font: $iransans;
 $p-font: $tahoma;
 
 //colors
 
-
 $theme-color: $main_color;
-
 
 $link_color: $lightgray;
 $input_text_color: $lightgray;
@@ -17,10 +14,7 @@ $divider_color: $theme-color;
 
 $hover_color: $theme-color;
 
-
-$modal_bg_color: rgba(0,0,0,.6);
-
-
+$modal_bg_color: rgba(0, 0, 0, .6);
 
 //------------ footer text color-----------
 
@@ -49,7 +43,6 @@ $nav_text_hover_color: #ffffff;
 //submenu a height
 $nav_submenu_height: 40px;
 
-
 //----------------- off canvas -------------
 $oc_bg_color: #ffffff;
 
@@ -58,8 +51,6 @@ $oc_color: #cccccc;
 $oc_border_color: #E1E1E1;
 
 $oc_box_shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-
-
 
 //----------------- pageination -------------
 
@@ -81,7 +72,6 @@ $ul_list_style: square;
 //all object focus border color
 $form_focus_color: $theme-color;
 
-
 //box shadow for all box
 $box_shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.1);
 //box shadow for btn
@@ -92,9 +82,6 @@ $border: 1px solid rgba(0, 0, 0, 0.08);
 
 //panel header and footer border
 $panel_border_color: #e2e2e2;
-
-
-
 
 ///-------------------------------tooltip settings
 //tooltip's default height
@@ -110,22 +97,22 @@ $tooltipColor: #323232;
 $tooltipTextColor: #ecf0f1;
 
 // Positioning
-$left-positioning:        true!default;
-$right-positioning:       true!default;
-$top-positioning:         true!default;
-$bottom-positioning:      true!default;
+$left-positioning: true !default;
+$right-positioning: true !default;
+$top-positioning: true !default;
+$bottom-positioning: true !default;
 
 // Half Arrows
-$half-arrows:             false!default;
+$half-arrows: false !default;
 
 // Extra Features
-$movable:                 false!default;
-$soft-edge:               false!default;
-$fade-effect:             false!default;
-$multiline:               false!default;
+$movable: false !default;
+$soft-edge: false !default;
+$fade-effect: false !default;
+$multiline: false !default;
 
 // ---------------------------Diverse Colors
-$coloring:                false!default;
+$coloring: false !default;
 
 //-----------------------------table settings
 $table_border: #e9e8e8;

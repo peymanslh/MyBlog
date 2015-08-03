@@ -14,7 +14,7 @@ textarea {
   border: 1px solid #d2d2d2;
   border-radius: 3px;
   @include transition(0.2ms);
-  -webkit-appearance: none;  /*Removes default chrome and safari style*/
+  -webkit-appearance: none; /*Removes default chrome and safari style*/
   -moz-appearance: none; /* Removes Default Firefox style*/
 
   &:focus,
@@ -22,11 +22,6 @@ textarea {
     border-color: $form_focus_color;
   }
 }
-
-
-
-
-
 
 //chagne cursor of label
 label {
@@ -36,13 +31,11 @@ label {
   color: $label_font_color;
 }
 
-
-
 //change style - input = radio and checkbox
 
 input[type=radio] {
-  display:none;
-  -webkit-appearance: none;  /*Removes default chrome and safari style*/
+  display: none;
+  -webkit-appearance: none; /*Removes default chrome and safari style*/
   -moz-appearance: none; /* Removes Default Firefox style*/
 
   & + label:before {
@@ -52,7 +45,7 @@ input[type=radio] {
     height: 19px;
     max-width: 19px !important;
     max-height: 19px !important;
-    vertical-align:middle;
+    vertical-align: middle;
     margin-right: 8px;
     margin-left: 8px !important;
     padding-top: 3px !important;
@@ -63,15 +56,15 @@ input[type=radio] {
   &:checked + label:before {
     content: "\2022"; /* Bullet */
     color: $radio_color; //change it in setting
-    font-size:2.8em;
-    text-align:center;
-    line-height:19px;
+    font-size: 2.8em;
+    text-align: center;
+    line-height: 19px;
   }
 }
 
 input[type=checkbox] {
-  display:none;
-  -webkit-appearance: none;  /*Removes default chrome and safari style*/
+  display: none;
+  -webkit-appearance: none; /*Removes default chrome and safari style*/
   -moz-appearance: none; /* Removes Default Firefox style*/
 
   & + label:before {
@@ -79,7 +72,7 @@ input[type=checkbox] {
     display: inline-block;
     width: 19px;
     height: 19px;
-    vertical-align:middle;
+    vertical-align: middle;
     margin-right: 8px;
     margin-left: 8px !important;
     border: 1px solid $checkbox_color; //change it in setting
@@ -87,29 +80,25 @@ input[type=checkbox] {
   }
 
   &:checked + label:before {
-    content:"\2713"; /* Tick */
+    content: "\2713"; /* Tick */
     color: $checkbox_color; //change it in setting
-    font-size:1em;
-    text-align:center;
-    line-height:19px;
+    font-size: 1em;
+    text-align: center;
+    line-height: 19px;
   }
 }
-
-
-
-
 
 //change style - input= button
 input[type=button],
 input[type=reset],
 input[type=submit],
-button{
+button {
   @extend .btn;
   @extend .btn-send;
-  -webkit-appearance: none;  /*Removes default chrome and safari style*/
+  -webkit-appearance: none; /*Removes default chrome and safari style*/
   -moz-appearance: none; /* Removes Default Firefox style*/
 
-  &:focus{
+  &:focus {
     border-color: $form_focus_color !important;
   }
 }

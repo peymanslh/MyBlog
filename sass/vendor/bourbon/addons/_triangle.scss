@@ -31,7 +31,7 @@
     border-top: $height solid $foreground-color;
 
     @if $direction == up-right {
-      border-left:  $width solid $background-color;
+      border-left: $width solid $background-color;
     } @else if $direction == up-left {
       border-right: $width solid $background-color;
     }
@@ -39,7 +39,7 @@
     border-bottom: $height solid $foreground-color;
 
     @if $direction == down-right {
-      border-left:  $width solid $background-color;
+      border-left: $width solid $background-color;
     } @else if $direction == down-left {
       border-right: $width solid $background-color;
     }

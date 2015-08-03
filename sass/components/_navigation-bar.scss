@@ -2,6 +2,7 @@
 .my-menu > ul > li:first-child > a {
   padding: 0 0 0 15px;
 }
+
 .my-menu {
   width: 100%;
   height: $nav_height;
@@ -53,10 +54,8 @@
       // background-color: $nav_border_color;
       // color: $nav_text_hover_color;
 
-
       color: $nav_border_color;
     }
-
 
     & li a:active,
     & li.active a:active {
@@ -72,8 +71,8 @@
       padding-top: 0px;
       background-color: $nav_border_color;
       text-align: right;
-//      border-bottom: 2px solid $nav_border_color;
-//      border-radius: 0 0 3px 3px;
+      //      border-bottom: 2px solid $nav_border_color;
+      //      border-radius: 0 0 3px 3px;
       @include transition(all 210ms linear 20ms);
 
       & li.active > a,
@@ -121,18 +120,18 @@
     }
   }
 }
-@media screen and (max-width : 992px) {
+
+@media screen and (max-width: 992px) {
   .my-menu ul {
     display: none;
   }
 }
 
-
 .my-menu ul ul {
   text-align: right !important;
 }
 
-.menu-item-has-children > a{
+.menu-item-has-children > a {
 
   &:after {
     float: left;
@@ -143,5 +142,5 @@
 }
 
 .nav-sub {
-  background-color: #rgba(0, 0, 0, 0) !important;
+  background-color: #rgba (0, 0, 0, 0) !important;
 }

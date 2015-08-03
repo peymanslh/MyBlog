@@ -10,14 +10,13 @@
   z-index: 9999;
   font-family: $h_font;
   background-color: rgba(0, 0, 0, 1);
-  box-sizing : border-box;
+  box-sizing: border-box;
   border-radius: 5px 0 0 5px;
   border: 1px solid rgba(0, 0, 0, 1);
   border-right: none;
   transition-property: color, background-color;
   @include transition(all 30ms linear 10ms);
 }
-
 
 #my-menu {
   display: none;
@@ -66,7 +65,7 @@
     overflow-x: hidden !important;
     overflow-y: auto !important;
 
-      .right-sidebar {
+    .right-sidebar {
       margin-bottom: 70px;
       section {
 
@@ -98,7 +97,6 @@
     }
   }
 
-  
 }
 
 

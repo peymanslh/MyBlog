@@ -20,7 +20,6 @@
     color: #ffffff;
   }
 
-
   @each $color, $value in $colors {
     &.btn-#{$color} {
       @include btn_color($value);

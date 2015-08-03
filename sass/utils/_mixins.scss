@@ -1,6 +1,6 @@
 //generate custom color for button
 @mixin btn_color($color) {
-  background-color:  #ffffff;
+  background-color: #ffffff;
   color: $color;
   border: 1px solid $color;
 
@@ -10,7 +10,7 @@
   }
 
   &:active,
-//  &:focus
+    //  &:focus
   {
     background-color: darken($color, 10%);
     box-shadow: 0 7px 20px -6px #616161 inset;
@@ -29,25 +29,29 @@
 
 //generate custom background color for progress-bar
 
-@mixin progress-color($color:$blue) {
+@mixin progress-color($color: $blue) {
   background-color: $color;
 }
 
-
-
-
 //generate custom colors for tooltip's box and the texts. we use it without argumant for default color
-@mixin applyColor($color:$tooltipColor, $textColor:$tooltipTextColor) {
+@mixin applyColor($color: $tooltipColor, $textColor: $tooltipTextColor) {
   @each $position in top, bottom, left, right {
-    &.simptip-position-#{$position}{
-      &:before{border-#{$position}-color: $color;}
-      &:after{background-color: $color; color: $textColor;}
+    &.simptip-position-#{$position} {
+      &:before {
+        border-#{$position}-color: $color;
+      }
+      &:after {
+        background-color: $color;
+        color: $textColor;
+      }
     }
   }
   @each $position in top, bottom {
     &.simptip-position-#{$position} {
       &.half-arrow {
-        &:before {border-right: $arrowSize+1px solid $color;}
+        &:before {
+          border-right: $arrowSize+1px solid $color;
+        }
       }
     }
   }
@@ -72,11 +76,11 @@
   transition: $transition;
 }
 
-@mixin fade ($duration: 0.2s) {
+@mixin fade($duration: 0.2s) {
   @include transition(opacity $duration linear, visibility $duration linear);
 }
 
-@mixin transform($string){
+@mixin transform($string) {
   -webkit-transform: $string;
   -moz-transform: $string;
   -ms-transform: $string;
@@ -85,7 +89,7 @@
 }
 
 //generate multiline tooltips
-@mixin multiline ($width: 150px, $align: left) {
+@mixin multiline($width: 150px, $align: left) {
   height: auto;
   width: $width;
   padding: $tooltipHeight/2;

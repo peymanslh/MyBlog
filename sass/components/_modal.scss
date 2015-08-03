@@ -1,23 +1,26 @@
 
-.modal{
+.modal {
 
   // This is modal bg
-  &:before{
+  &:before {
     content: "";
     display: none;
     background: $modal_bg_color;
     position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     z-index: 10;
   }
 
-  &:target{
+  &:target {
 
     // Active animate in modal
-    &:before{
+    &:before {
       display: block;
     }
-    .modal-dialog{
+    .modal-dialog {
       display: block;
       top: 20%;
     }
@@ -25,10 +28,6 @@
   }
 
 }
-
-
-
-
 
 .modal {
   display: none;
@@ -41,7 +40,6 @@
   margin-left: auto;
   font-family: $h_font;
   font-weight: 100;
-
 
   form {
     border-bottom: 1px solid #ffffff;
@@ -65,7 +63,6 @@
     border: none;
     border-radius: 0px;
   }
-
 
   #searchsubmit {
     background-color: transparent;

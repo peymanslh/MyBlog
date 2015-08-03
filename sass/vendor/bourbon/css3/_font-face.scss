@@ -1,10 +1,9 @@
-@mixin font-face(
-  $font-family,
-  $file-path,
-  $weight: normal,
-  $style: normal,
-  $asset-pipeline: $asset-pipeline,
-  $file-formats: eot woff2 woff ttf svg) {
+@mixin font-face($font-family,
+$file-path,
+$weight: normal,
+$style: normal,
+$asset-pipeline: $asset-pipeline,
+$file-formats: eot woff2 woff ttf svg) {
 
   $font-url-prefix: font-url-prefixer($asset-pipeline);
 
@@ -14,11 +13,11 @@
     font-weight: $weight;
 
     src: font-source-declaration(
-      $font-family,
-      $file-path,
-      $asset-pipeline,
-      $file-formats,
-      $font-url-prefix
+                    $font-family,
+                    $file-path,
+                    $asset-pipeline,
+                    $file-formats,
+                    $font-url-prefix
     );
   }
 }

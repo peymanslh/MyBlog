@@ -15,8 +15,7 @@
   // put other properties that need to be prefixed here aswell
   @if $vendor and $prop == transform {
     @return unquote('-'+$vendor+'-'+$prop);
-  }
-  @else {
+  } @else {
     @return $prop;
   }
 }

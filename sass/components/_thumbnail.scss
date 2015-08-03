@@ -1,8 +1,8 @@
-.img-radius img{
+.img-radius img {
   border-radius: 50%;
 }
 
-.img-responsive img{
+.img-responsive img {
   max-width: 100% !important;
   height: auto !important;
   display: block;
@@ -10,71 +10,66 @@
   margin-right: auto;
 }
 
-.img-border img{
-	border: 3px solid $lightgray;
+.img-border img {
+  border: 3px solid $lightgray;
 }
 
-
-
-
-
-
 .project-thumb {
-	position: relative;
-	text-align: center;
+  position: relative;
+  text-align: center;
 
-	img {
-		max-width: 100%;
-		width: 100%;
-		display: block;
-		height: auto;
-		margin-right: auto;
-		margin-left: auto;
+  img {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
 
-		top: 0;
-		bottom: 0;
-		right: 0;
-		left: 0;
-	}
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
 
-	.overaly {
-		background-color: $theme_color;
-		opacity: 0;
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		right: 0;
-		left: 0;
+  .overaly {
+    background-color: $theme_color;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
 
-		transition: all ease-in 0.3s;
-	}
+    transition: all ease-in 0.3s;
+  }
 
-	.title {
-		padding: 10px;
-		position: absolute;
-		top: 10px;
-		display: block;
-		width: 100%;
+  .title {
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    display: block;
+    width: 100%;
 
-		span {
-			display: block;
-			text-align: center;
-			width: 100%;
-		}
-		opacity: 0;
-		color: #ffffff;
-		font-weight: 100;
-	}
+    span {
+      display: block;
+      text-align: center;
+      width: 100%;
+    }
+    opacity: 0;
+    color: #ffffff;
+    font-weight: 100;
+  }
 
-	&:hover .title {
-		opacity: 1;
+  &:hover .title {
+    opacity: 1;
 
-		@extend .animated;
-		animation-name: fadeInDown;
-		animation-duration: 0.3s !important;
-	}
-	&:hover .overaly {
-		opacity: 0.8;
-	}
+    @extend .animated;
+    animation-name: fadeInDown;
+    animation-duration: 0.3s !important;
+  }
+  &:hover .overaly {
+    opacity: 0.8;
+  }
 }
 
