@@ -17,7 +17,7 @@ function my_social()
 
     foreach ($social as $value => $key) {
 
-        if ($value != "") {
+        if ($key !== "") {
             echo "<a href='", $key, "' target='_blank'><span class='icon-$value'></span></a> ";
         } else {
             echo "";

@@ -147,12 +147,6 @@ if (!function_exists('propanel_of_options')) {
         $options[] = array("name" => __('3 - شبکه های اجتماعی', 'framework_localize'),
             "type" => "heading");
 
-        $options[] = array("name" => __('نمایش در هدر', 'framework_localize'),
-            "desc" => __('آیا آیکون شبکه های اجتماعی در هدر نمایش داده شود؟', 'framework_localize'),
-            "id" => $shortname . "_head_social_check",
-            "std" => "true",
-            "type" => "checkbox");
-
         $options[] = array("name" => __('نمایش در فوتر', 'framework_localize'),
             "desc" => __('آیا آیکون شبکه های اجتماعی در فوتر نمایش داده شود؟', 'framework_localize'),
             "id" => $shortname . "_foot_social_check",
