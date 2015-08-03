@@ -4,13 +4,14 @@
 </nav>
 
 <aside id="my-menu">
-    <div class="overaly">
-        <section class="wrapper" style="z-index: 99999">
-            <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
-                <?php dynamic_sidebar( 'sidebar-1' ); ?>
-            <?php endif; ?>
-        </section>
-    </div>
+    <div class="overaly"></div>
+    
+    <section class="wrapper" style="z-index: 99999">
+        <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
+            <?php dynamic_sidebar( 'sidebar-1' ); ?>
+        <?php endif; ?>
+    </section>
+    
 
 
 </aside>
