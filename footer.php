@@ -13,7 +13,7 @@ $footer_script = get_option('mb_footer_script');
 
             <div class="col-md-6">
 
-                <div class="copyright"><?= $copyright_txt ?></div>
+                <div class="copyright"><?php echo $copyright_txt ?></div>
 
                 <p class="designer">طراحی شده با <span class="icon-heart"></span> توسط <a href="http://peymansalehi.ir"
                                                                                           target="_blank">peymanslh@</a>
@@ -40,19 +40,19 @@ $footer_script = get_option('mb_footer_script');
 </footer>
 
 <style type="text/css">
-    <?= $footer_style ;?>
+    <?php echo $footer_style ;?>
 </style>
 
 
-<script type="text/javascript" src="<?= esc_url(get_template_directory_uri()); ?>/js/jquery.js"></script>
-<script type="text/javascript" src="<?= esc_url(get_template_directory_uri()); ?>/js/bpopup.js"></script>
-<script type="text/javascript" src="<?= esc_url(get_template_directory_uri()); ?>/js/dropdown.js"></script>
-<script type="text/javascript" src="<?= esc_url(get_template_directory_uri()); ?>/js/lightbox.js"></script>
-<script type="text/javascript" src="<?= esc_url(get_template_directory_uri()); ?>/js/off-menu.js"></script>
-<script type="text/javascript" src="<?= esc_url(get_template_directory_uri()); ?>/js/script.js"></script>
+<script type="text/javascript" src="<?php echo esc_url(get_template_directory_uri()); ?>/js/jquery.js"></script>
+<script type="text/javascript" src="<?php echo esc_url(get_template_directory_uri()); ?>/js/bpopup.js"></script>
+<script type="text/javascript" src="<?php echo esc_url(get_template_directory_uri()); ?>/js/dropdown.js"></script>
+<script type="text/javascript" src="<?php echo esc_url(get_template_directory_uri()); ?>/js/lightbox.js"></script>
+<script type="text/javascript" src="<?php echo esc_url(get_template_directory_uri()); ?>/js/off-menu.js"></script>
+<script type="text/javascript" src="<?php echo esc_url(get_template_directory_uri()); ?>/js/script.js"></script>
 
 <script type="text/javascript">
-    <?= $footer_script ;?>
+    <?php echo $footer_script ;?>
 </script>
 
 <?php wp_footer(); ?>

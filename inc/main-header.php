@@ -41,13 +41,13 @@ if ($head_description == "" && $head_logo == "") {
 
             <?php } else { ?>
 
-                <img class="main-head-logo<?= $yesorno ?>" src="<?= $head_logo ?>" alt="<?php bloginfo() ?>"/>
+                <img class="main-head-logo<?php echo $yesorno ?>" src="<?php echo $head_logo ?>" alt="<?php bloginfo() ?>"/>
 
             <?php } ?>
 
             <div class="row">
                 <div class="col-md-4 col-sm-7 col-xs-10 centered">
-                    <p style="color:<?= $head_txt_color ?>"><?= $head_description ?></p>
+                    <p style="color:<?php echo $head_txt_color ?>"><?php echo $head_description ?></p>
                 </div>
             </div>
 

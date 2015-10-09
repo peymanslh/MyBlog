@@ -17,7 +17,7 @@ $height = $thumbnail[2];
     </header>
 
     <article>
-        <img src="<?= $url ?>" alt="<?php the_title(); ?>">
+        <img src="<?php echo $url ?>" alt="<?php the_title(); ?>">
         <?php the_content('ادامه', false); ?>
     </article>
 </section>

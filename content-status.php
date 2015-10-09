@@ -10,7 +10,7 @@ $height = $thumbnail[2];
 
     <div class="row">
         <div class="col-md-3 img-responsive img-radius img-border">
-            <a href="<?php the_permalink() ?>"><img src="<?= $url; ?>" alt="<?php the_title(); ?>"></a>
+            <a href="<?php the_permalink() ?>"><img src="<?php echo $url; ?>" alt="<?php the_title(); ?>"></a>
 
             <div class="info"><span><?php the_time("j F Y"); ?> </span> / <span> <?php the_category(', '); ?></span> /
                 <span class="icon-bubble"></span></div>

@@ -10,7 +10,7 @@
     ?>
 
     <article>
-        <section class="wrapper" style="background-image: url('<?= $url; ?>')">
+        <section class="wrapper" style="background-image: url('<?php echo $url; ?>')">
             <section class="overaly">
                 <section class="content">
                     <?php the_content('ادامه', false); ?>

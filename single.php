@@ -15,7 +15,7 @@ if (have_posts()) : while (have_posts()) : the_post();
     } else { ?>
         <?php include('inc/second-header.php'); ?>
         <header id="thumb-header"
-                style="background:url('<?= $url; ?>') center fixed;-webkit-background-size: cover; -moz-background-size: cover; background-size: cover;">
+                style="background:url('<?php echo $url; ?>') center fixed;-webkit-background-size: cover; -moz-background-size: cover; background-size: cover;">
 
 
         </header>

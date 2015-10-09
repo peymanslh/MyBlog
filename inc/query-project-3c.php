@@ -21,7 +21,7 @@
 
                             <div class="col-md-4 col-sm-6 project-thumb">
                                 <a href="<?php the_permalink() ?>">
-                                    <img src="<?= $url ?>" alt="<?php the_title(); ?>">
+                                    <img src="<?php echo $url ?>" alt="<?php the_title(); ?>">
 
                                     <div class="overaly"></div>
                                     <div class="title"><span><?php the_title(); ?></span></div>

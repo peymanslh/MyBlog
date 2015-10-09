@@ -11,7 +11,7 @@ $nav_logo = get_option('mb_nav_logo');
 
                 <div class="col-md-2 col-xs-12">
                     <div id="nav-logo-txt">
-                        <a href="<?php echo site_url(); ?>"><?= $head_h1; ?></a>
+                        <a href="<?php echo site_url(); ?>"><?php echo $head_h1; ?></a>
                     </div>
 
                 </div>
@@ -19,7 +19,7 @@ $nav_logo = get_option('mb_nav_logo');
             <?php } else { ?>
 
                 <div class="col-md-2 col-xs-12">
-                    <a href="<?php echo site_url(); ?>" id="nav-logo-img"><img src="<?= $nav_logo; ?>"
+                    <a href="<?php echo site_url(); ?>" id="nav-logo-img"><img src="<?php echo $nav_logo; ?>"
                                                                                alt="<?php bloginfo(); ?>"></a>
                 </div>
 
