@@ -18,25 +18,22 @@ $apple_icon = get_option('mb_apple_icon');
     <link rel="apple-touch-icon" href="<?php echo $apple_icon; ?>">
     <link rel="shortcut icon" href="<?php echo $favicon; ?>"/>
     <!--[if lt IE 9]>
-    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
+    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/javascript/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/style.css">
-
     <?php if ($theme_color == 'main') { ?>
-        <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/css/main.css">
+        <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/css/main.css">
     <?php } elseif ($theme_color == 'blue') { ?>
-        <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/css/blue.css">
+        <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/css/blue.css">
     <?php } elseif ($theme_color == 'green') { ?>
-        <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/css/green.css">
+        <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/css/green.css">
     <?php } elseif ($theme_color == 'orange') { ?>
-        <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/css/orange.css">
+        <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/css/orange.css">
     <?php } elseif ($theme_color == 'flamingo') { ?>
-        <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/css/flamingo.css">
+        <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/css/flamingo.css">
     <?php } elseif ($theme_color == 'magenta') { ?>
-        <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/css/magenta.css">
+        <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/css/magenta.css">
     <?php } ?>
-
 
     <?php wp_head(); ?>
 </head>

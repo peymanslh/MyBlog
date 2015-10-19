@@ -42,5 +42,20 @@ function wpb_widgets_init() {
         'after_title' => '</h3></span>',
     ) );
 }
-
 add_action( 'widgets_init', 'wpb_widgets_init' );
+
+
+
+// import stylesheet and javascript files
+function add_theme_scripts() {
+    wp_enqueue_style( 'style', get_stylesheet_uri() );
+
+    wp_enqueue_script( 'myjquery', get_template_directory_uri() . '/assets/javascript/jquery.js', array (), 1.1, true);
+    wp_enqueue_script( 'bpopup', get_template_directory_uri() . '/assets/javascript/bpopup.js', array (), 1.1, true);
+    wp_enqueue_script( 'dropdown', get_template_directory_uri() . '/assets/javascript/dropdown.js', array (), 1.1, true);
+    wp_enqueue_script( 'lightbox', get_template_directory_uri() . '/assets/javascript/lightbox.js', array (), 1.1, true);
+    wp_enqueue_script( 'offmenu', get_template_directory_uri() . '/assets/javascript/off-menu.js', array (), 1.1, true);
+    wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/javascript/script.js', array (), 1.1, true);
+
+}
+add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );

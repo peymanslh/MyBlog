@@ -25,7 +25,6 @@ $footer_script = get_option('mb_footer_script');
                     <?php
                     $foot_social_check = get_option('mb_foot_social_check');
 
-
                     if ($foot_social_check == 'true') {
                         my_social();
                     } else {
@@ -42,14 +41,6 @@ $footer_script = get_option('mb_footer_script');
 <style type="text/css">
     <?php echo $footer_style ;?>
 </style>
-
-
-<script type="text/javascript" src="<?php echo esc_url(get_template_directory_uri()); ?>/js/jquery.js"></script>
-<script type="text/javascript" src="<?php echo esc_url(get_template_directory_uri()); ?>/js/bpopup.js"></script>
-<script type="text/javascript" src="<?php echo esc_url(get_template_directory_uri()); ?>/js/dropdown.js"></script>
-<script type="text/javascript" src="<?php echo esc_url(get_template_directory_uri()); ?>/js/lightbox.js"></script>
-<script type="text/javascript" src="<?php echo esc_url(get_template_directory_uri()); ?>/js/off-menu.js"></script>
-<script type="text/javascript" src="<?php echo esc_url(get_template_directory_uri()); ?>/js/script.js"></script>
 
 <script type="text/javascript">
     <?php echo $footer_script ;?>

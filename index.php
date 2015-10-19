@@ -1,9 +1,9 @@
-<?php get_header(); ?>
-<?php include('inc/main-header.php'); ?>
+<?php
 
+get_header();
 
+include('inc/main-header.php');
 
-<?php include('inc/query-one.php'); ?>
+include('inc/query-one.php');
 
-
-<?php get_footer(); ?>
+get_footer();
