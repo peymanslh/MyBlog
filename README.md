@@ -7,7 +7,7 @@
 ![Screenshot](https://github.com/peymanslh/MyBlog/blob/master/screenshot.jpg?raw=true)
 
 
-See demo : [peymansalehi.ir/myblog/](http://peymansalehi.ir/myblog/)
+See demo : [peymansalehi.net/myblog/](http://peymansalehi.net/myblog/)
 ###Features :
 
 * Responsive layout
@@ -35,4 +35,3 @@ See demo : [peymansalehi.ir/myblog/](http://peymansalehi.ir/myblog/)
 ###Copyright and License
 
 Copyright (c) 2015 @peymanslh - Released under [MIT license](https://github.com/peymanslh/MyBlog/blob/master/LICENSE).
-
