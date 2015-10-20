@@ -16,11 +16,11 @@ if ($head_description == "" && $head_logo == "") {
 
 
 <?php if ($head_bg != "") { ?>
-<header id="header" style='background:<?php echo "url(", $head_bg, ")"; ?>;'>
+<div id="header" style='background:<?php echo "url(", $head_bg, ")"; ?>;'>
 
     <?php }else{ ?>
 
-    <header id="header">
+    <div id="header">
         <?php } ?>
 
         <?php include('second-header.php'); ?>
@@ -52,6 +52,6 @@ if ($head_description == "" && $head_logo == "") {
             </div>
 
         </div>
-    </header>
+    </div>
 
     <?php } ?>

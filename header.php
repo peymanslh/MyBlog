@@ -11,7 +11,7 @@ $apple_icon = get_option('mb_apple_icon');
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title><?php bloginfo(); ?><?php wp_title("|"); ?></title>
-    <meta name="description" content="">
+    <meta name="description" content="<?php wp_title("|"); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
