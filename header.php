@@ -2,7 +2,6 @@
 $theme_color = get_option('mb_theme_color');
 $favicon = get_option('mb_favicon');
 $apple_icon = get_option('mb_apple_icon');
-
 ?>
 
 <!doctype html>

@@ -36,10 +36,10 @@ function wpb_widgets_init() {
         'name' => __( 'right-sidebar', 'wpb' ),
         'id' => 'sidebar-1',
         'description' => __( 'ناحیه قرار گیری ابزارک در سما راست', 'wpb' ),
-        'before_widget' => '<section class="right-sidebar"><section>',
-        'after_widget' => '</section></section>',
+        'before_widget' => '<div class="right-sidebar"><div>',
+        'after_widget' => '</div></div>',
         'before_title' => '<h3><span>',
-        'after_title' => '</h3></span>',
+        'after_title' => '</span></h3>',
     ) );
 }
 add_action( 'widgets_init', 'wpb_widgets_init' );

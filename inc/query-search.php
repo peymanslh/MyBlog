@@ -1,4 +1,4 @@
-<article id="home-post-one">
+<div id="home-post-one">
     <div class="container">
 
         <div class="row">
@@ -29,4 +29,4 @@
             </div>
         </div>
     </div>
-</article>
+</div>

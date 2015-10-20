@@ -5,7 +5,7 @@ Template Name: About me
 ?>
 
 <?php get_header(); ?>
-<?php include('inc/second-header.php'); ?>
+<?php get_template_part('inc/header'); ?>
 
     <section id="page-post">
         <div class="container">
@@ -42,7 +42,7 @@ Template Name: About me
 
 
 
-            <?php include('inc/share-this.php'); ?>
+            <?php get_template_part('inc/share', 'page'); ?>
 
         </div>
     </section>

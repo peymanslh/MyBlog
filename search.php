@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<?php include('inc/second-header.php'); ?>
+<?php get_template_part('inc/header'); ?>
 
 
     <div class="row">
@@ -9,7 +9,7 @@
             </div>
         </div>
     </div>
-<?php include('inc/search-query.php'); ?>
+<?php get_template_part('inc/query', 'search'); ?>
 
 
 <?php get_footer(); ?>

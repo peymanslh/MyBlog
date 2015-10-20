@@ -9,10 +9,11 @@
 
 #single-post {
   margin: 50px 0 120px 0;
-  .my-post {
+  .post,
+  .project {
     font-family: $h_font;
 
-    header {
+    .post-title {
       h1 {
         font-size: 14px;
         text-align: right;
@@ -33,7 +34,7 @@
           }
         }
       }
-      div {
+      .post-info {
         text-align: right;
         font-family: $h_font;
         font-weight: 100;
@@ -49,7 +50,7 @@
       }
     }
 
-    article {
+    .post-inner-content {
       font-size: 13px;
       font-weight: 100;
       color: #838383;

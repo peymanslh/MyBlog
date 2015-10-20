@@ -11,9 +11,9 @@ if (have_posts()) : while (have_posts()) : the_post();
 
 
     if ($url == "") {
-        include('inc/second-header.php');
+        get_template_part('inc/header');
     } else { ?>
-        <?php include('inc/second-header.php'); ?>
+        <?php get_template_part('inc/header'); ?>
         <header id="thumb-header"
                 style="background:url('<?php echo $url; ?>');-webkit-background-size: cover; -moz-background-size: cover; background-size: cover;">
 
@@ -51,7 +51,7 @@ else: ?>
     </section>
     </div>
 
-<?php include('inc/share-this.php'); ?>
+<?php get_template_part('inc/share', 'page'); ?>
     </div>
 
 </section>

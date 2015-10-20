@@ -1,4 +1,4 @@
-<?php include('inc/off-canvas.php'); ?>
+<?php get_template_part('inc/sidebar'); ?>
 
 <?php
 $copyright_txt = get_option('mb_copyright_txt');
@@ -15,13 +15,12 @@ $footer_script = get_option('mb_footer_script');
 
                 <div class="copyright"><?php echo $copyright_txt ?></div>
 
-                <p class="designer">طراحی شده با <span class="icon-heart"></span> توسط <a href="http://peymansalehi.net"
-                                                                                          target="_blank">peymanslh@</a>
+                <p class="designer">طراحی شده با <span class="icon-heart"></span> توسط <a href="http://peymansalehi.net" target="_blank">peymanslh@</a>
                 </p>
             </div>
 
             <div class="col-md-6">
-                <section class="social-box">
+                <div class="social-box">
                     <?php
                     $foot_social_check = get_option('mb_foot_social_check');
 
@@ -31,16 +30,18 @@ $footer_script = get_option('mb_footer_script');
                         echo "";
                     }
                     ?>
-                </section>
+                </div>
             </div>
 
         </div>
     </div>
 </footer>
 
-<style type="text/css">
+<div>
+<style type="text/css" scoped>
     <?php echo $footer_style ;?>
 </style>
+</div>
 
 <script type="text/javascript">
     <?php echo $footer_script ;?>

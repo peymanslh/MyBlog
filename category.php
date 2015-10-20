@@ -1,9 +1,9 @@
-<?php get_header(); ?>
-<?php include('inc/second-header.php'); ?>
+<?php
 
+get_header();
 
+get_template_part('inc/header');
 
-<?php include('inc/query-one.php'); ?>
+get_template_part('inc/query', 'one');
 
-
-<?php get_footer(); ?>
+get_footer();

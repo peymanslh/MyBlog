@@ -10,7 +10,7 @@ $head_description = get_option('mb_head_description');
 
 <?php
 if ($head_description == "" && $head_logo == "") {
-    include('second-header.php');
+    get_template_part('inc/header');
 } else {
 ?>
 
@@ -23,9 +23,8 @@ if ($head_description == "" && $head_logo == "") {
     <div id="header">
         <?php } ?>
 
-        <?php include('second-header.php'); ?>
+        <?php get_template_part('inc/header'); ?>
         <div class="container">
-            <!-- navbar here -->
 
             <?php
             if ($head_logo_avatar_check == "true") {

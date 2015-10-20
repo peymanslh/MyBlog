@@ -2,8 +2,8 @@
 
 get_header();
 
-include('inc/main-header.php');
+get_template_part('inc/header', 'home');
 
-include('inc/query-one.php');
+get_template_part('inc/query', 'one');
 
 get_footer();

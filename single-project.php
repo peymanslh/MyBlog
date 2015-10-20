@@ -10,47 +10,47 @@ if (have_posts()) : while (have_posts()) : the_post();
     $height = $thumbnail[2];
 
 
-    include('inc/second-header.php'); ?>
+    get_template_part('inc/header'); ?>
 
     <section id="single-post">
 
     <div class="container">
     <div class="row">
-    <section class="col-md-8 centered">
+    <div class="col-md-8 centered">
 
 
-    <section class="my-post">
+    <article id="project-<?php the_ID(); ?>"  <?php post_class(); ?>>
 
-        <header>
+        <div class="post-title">
             <h1>
                 <a href="<?php the_permalink() ?>"><?php the_title(); ?></a><?php edit_post_link("ویرایش ", "<span class='edit-link'>", "</span>"); ?>
             </h1>
 
-        </header>
+        </div>
 
-        <article>
+        <div class="post-inner-content">
             <?php the_content(); ?>
-        </article>
+        </div>
 
-    </section>
+    </article>
 
 
 <?php endwhile;
 else: ?>
     <h2>متاسفم, مطلبی ای که دنبالش میگردید یافت نشد.</h2>
 <?php endif; ?>
-    </section>
+    </div>
     </div>
 
     <div class="row">
 
         <div class="col-md-4 col-md-offset-2">
-            <?php include('inc/share-this-single.php'); ?>
+            <?php get_template_part('inc/share', 'single'); ?>
         </div>
         <div class="col-md-4">
-            <section class="next-prev">
+            <div class="next-prev">
                 مطلب <?php previous_post(' %', 'قبلی', 'no'); ?> / <?php next_post('%', 'بعدی', 'no'); ?>
-            </section>
+            </div>
         </div>
     </div>
     <div class="row">

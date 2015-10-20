@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 
-<?php include('inc/second-header.php'); ?>
+<?php get_template_part('inc/header'); ?>
 
 
     <section id="notfound">

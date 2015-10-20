@@ -142,8 +142,8 @@ function my_gallery_shortcode($attr)
      */
     if (apply_filters('use_default_gallery_style', !$html5)) {
         $gallery_style = "
-		<style type='text/css'>
-		
+		<style type='text/css' scoped>
+
 			#{$selector} {
 				margin: auto;
 			}
@@ -373,8 +373,8 @@ function content_gallery_shortcode($attr)
      */
     if (apply_filters('use_default_gallery_style', !$html5)) {
         $gallery_style = "
-		<style type='text/css'>
-		
+		<style type='text/css' scoped>
+
 			#{$selector} {
 				margin: auto;
 			}
@@ -459,7 +459,3 @@ function content_gallery_shortcode($attr)
 
     return $output;
 }
-
-
-
-

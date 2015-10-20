@@ -1,4 +1,4 @@
-footer#footer {
+#footer {
   margin-top: 50px;
   padding: 30px 0 40px 0;
   color: $footer_color;
@@ -52,7 +52,7 @@ footer#footer {
 }
 
 @media screen and (max-width: 991px) {
-  footer#footer {
+  #footer {
     .social-box,
     .copyright,
     .designer {
@@ -60,6 +60,3 @@ footer#footer {
     }
   }
 }
-
-
-

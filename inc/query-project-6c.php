@@ -1,4 +1,4 @@
-<article id="query-project">
+<div id="query-project">
     <div class="container">
 
         <div class="row">
@@ -34,4 +34,4 @@
             </div>
         </div>
     </div>
-</article>
+</div>
