@@ -1,12 +1,12 @@
 .format-quote {
 
-  article {
+  .post-inner-content {
     margin-top: 15px;
     min-height: auto;
     border: 1px solid #838383;
     border-radius: 4px;
 
-    section {
+    div {
       color: #FFFFFF;
     }
     .wrapper {
@@ -80,7 +80,7 @@
         }
       }
 
-      .info {
+      .post-info {
         text-align: left;
         font-size: 12px;
         font-weight: 100;
@@ -95,7 +95,7 @@
 }
 
 .format-aside {
-  header {
+  .post-title {
 
     .edit-link {
       font-size: 10px;
@@ -166,7 +166,7 @@
     }
   }
 
-  .info {
+  .post-info {
     margin-top: 5px;
     text-align: center;
     font-family: $h_font;
@@ -188,7 +188,7 @@
 
 .format-chat {
 
-  article {
+  .post-inner-content {
 
     p {
       padding: 5px 10px;
@@ -205,4 +205,3 @@
 
   }
 }
-

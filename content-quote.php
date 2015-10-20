@@ -1,4 +1,4 @@
-<section class="my-post format-quote">
+<article id="post-<?php the_ID(); ?>"  <?php post_class(); ?>>
 
     <?php
     $id = get_post_thumbnail_id();
@@ -9,10 +9,10 @@
     $height = $thumbnail[2];
     ?>
 
-    <article>
-        <section class="wrapper" style="background-image: url('<?php echo $url; ?>')">
-            <section class="overaly">
-                <section class="content">
+    <div class="post-inner-content">
+        <div class="wrapper" style="background-image: url('<?php echo $url; ?>')">
+            <div class="overaly">
+                <div class="content">
                     <?php the_content('ادامه', false); ?>
                     <div class="row">
                         <div class="col-md-8">
@@ -21,13 +21,13 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="info"><span><?php the_time("j F Y"); ?> </span> /
+                            <div class="post-info"><span><?php the_time("j F Y"); ?> </span> /
                                 <span> <?php the_category(', '); ?></span> / <span> <?php comments_popup_link( __('بدون دیدگاه', 'max-mag'), __( '1 دیدگاه', 'max-mag'), __('% دیدگاه', 'max-mag')); ?></span></div>
                         </div>
                     </div>
-                </section>
-            </section>
-        </section>
-    </article>
+                </div>
+            </div>
+        </div>
+    </div>
 
-</section>
+</article>
