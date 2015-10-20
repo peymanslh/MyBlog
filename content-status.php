@@ -12,7 +12,7 @@ $height = $thumbnail[2];
         <div class="col-md-3 img-responsive img-radius img-border">
             <a href="<?php the_permalink() ?>"><img src="<?php echo $url; ?>" alt="<?php the_title(); ?>"></a>
 
-            <div class="info"><span><?php the_time("j F Y"); ?> </span> / <span> <?php the_category(', '); ?></span> /
+            <div class="info"><span><?php the_time("j F Y"); ?> </span> / <span> <?php the_category(', '); ?></span> / <span> <?php comments_popup_link( __('بدون دیدگاه', 'max-mag'), __( '1 دیدگاه', 'max-mag'), __('% دیدگاه', 'max-mag')); ?></span> /
                 <span class="icon-bubble"></span></div>
         </div>
         <div class="col-md-9">
