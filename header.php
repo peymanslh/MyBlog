@@ -34,6 +34,8 @@ $apple_icon = get_option('mb_apple_icon');
         <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/css/magenta.css">
     <?php } ?>
 
+    <?php load_theme_textdomain('myblog',get_template_directory().'/language'); ?>
+
     <?php wp_head(); ?>
 </head>
 <body>

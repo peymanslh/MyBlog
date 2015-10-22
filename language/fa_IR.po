@@ -1,0 +1,404 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: myblog\n"
+"POT-Creation-Date: 2015-10-22 17:47+0330\n"
+"PO-Revision-Date: 2015-10-22 17:52+0330\n"
+"Last-Translator: \n"
+"Language-Team: peymanslh <peyman_salehi@icloud.com>\n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.5\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: admin\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+"X-Poedit-SearchPathExcluded-1: source\n"
+
+#: assets/javascript/jquery.js:3
+msgid "show"
+msgstr "نمایش"
+
+#: assets/javascript/jquery.js:3
+msgid "hide"
+msgstr "پنهان"
+
+#: assets/javascript/jquery.js:3
+msgid "toggle"
+msgstr ""
+
+#: 404.php:12 inc/posttype-taxonomy.php:15 page-about.php:37 page.php:45
+#: single-project.php:40 single.php:38
+msgid "Nothing found!"
+msgstr "صفحه ای یافت نشد!"
+
+#: 404.php:18
+msgid "404"
+msgstr "404"
+
+#: admin/admin-interface.php:24
+msgid "Theme options"
+msgstr "تنظیمات قالب"
+
+#: admin/theme-settings.php:55
+msgid "1 -Header options"
+msgstr "1 ‪-‬ تنظیمات هدر"
+
+#: admin/theme-settings.php:58
+msgid "Favorites icon"
+msgstr "‏Favorites icon"
+
+#: admin/theme-settings.php:63
+msgid "Apple touch icon"
+msgstr "‏Apple touch icon"
+
+#: admin/theme-settings.php:68
+msgid " Main title"
+msgstr "عنوان اصلی"
+
+#: admin/theme-settings.php:74
+msgid "Website logo"
+msgstr "لوگوی وبسایت"
+
+#: admin/theme-settings.php:80
+msgid "Background image"
+msgstr "تصویر پس زمینه"
+
+#: admin/theme-settings.php:85
+msgid "Header image"
+msgstr "آواتار شما در هدر"
+
+#: admin/theme-settings.php:90
+msgid "Is the image to be round?"
+msgstr "آیا عکس گرد شود؟"
+
+#: admin/theme-settings.php:95
+msgid "Text color"
+msgstr "رنگ متن"
+
+#: admin/theme-settings.php:100
+msgid "Black"
+msgstr "مشکی"
+
+#: admin/theme-settings.php:101
+msgid "White"
+msgstr "سفید"
+
+#: admin/theme-settings.php:104
+msgid "Short Description"
+msgstr "توضیح کوتاه"
+
+#: admin/theme-settings.php:111
+msgid "2 - Show Articles"
+msgstr "2 ‪-‬ نمایش مطالب"
+
+#: admin/theme-settings.php:116
+msgid "Projects archive"
+msgstr "آرشیو پروژه ها"
+
+#: admin/theme-settings.php:117
+msgid "Count of project to show"
+msgstr "تعداد نمایش پروژه ها در هر سطر"
+
+#: admin/theme-settings.php:123
+msgid "Theme color"
+msgstr "رنگ قالب"
+
+#: admin/theme-settings.php:124
+msgid "Select your theme color"
+msgstr "رنگ قالب را انتخاب کنید"
+
+#: admin/theme-settings.php:139
+msgid "3 - Social networks"
+msgstr "3 ‪-‬ شبکه های اجتماعی"
+
+#: admin/theme-settings.php:142
+msgid "Show on footer?"
+msgstr "در فوتر نمایش داده شود؟"
+
+#: admin/theme-settings.php:148
+msgid "Google"
+msgstr "گوگل"
+
+#: admin/theme-settings.php:153 inc/share-page.php:10 inc/share-single.php:8
+msgid "Facebook"
+msgstr "فیسبوک"
+
+#: admin/theme-settings.php:158
+msgid "Instagram"
+msgstr "اینستاگرام"
+
+#: admin/theme-settings.php:163 inc/share-page.php:12 inc/share-single.php:10
+msgid "Twitter"
+msgstr "توییتر"
+
+#: admin/theme-settings.php:168
+msgid "Feed"
+msgstr "خبرخوان"
+
+#: admin/theme-settings.php:173
+msgid "Youtube"
+msgstr "یوتیوب"
+
+#: admin/theme-settings.php:178
+msgid "Flicker"
+msgstr "فلیکر"
+
+#: admin/theme-settings.php:183
+msgid "Github"
+msgstr "گیت هاب"
+
+#: admin/theme-settings.php:188 inc/share-page.php:17 inc/share-single.php:15
+msgid "Linkedin"
+msgstr "لینکداین"
+
+#: admin/theme-settings.php:193
+msgid "Stackoverflow"
+msgstr "‏Stackoverflow"
+
+#: admin/theme-settings.php:198 inc/share-page.php:21 inc/share-single.php:19
+msgid "Pinterest"
+msgstr "پینترست"
+
+#: admin/theme-settings.php:205
+msgid "4 - Footer options"
+msgstr "4 ‪-‬ تنظیمات فوتر"
+
+#: admin/theme-settings.php:209
+msgid "Copyright text"
+msgstr "متن کپی رایت"
+
+#: admin/theme-settings.php:214
+msgid "Custom CSS style"
+msgstr "‏css های سفارشی شما"
+
+#: admin/theme-settings.php:219
+msgid "Custom script"
+msgstr "کد های جاوااسکریپت برای فوتر"
+
+#: comments.php:12
+#, php-format
+msgid "Theme without %1$s"
+msgstr ""
+
+#: comments.php:12
+#, php-format
+msgid "Please include a %1$s template in your theme."
+msgstr ""
+
+#: comments.php:24
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: comments.php:88
+msgid "نظرات بسته است."
+msgstr ""
+
+#: comments.php:106
+msgid "شما هم نظر خود را بیان کنید"
+msgstr ""
+
+#: comments.php:106
+#, php-format
+msgid "پاسخ دادن به %s"
+msgstr ""
+
+#: comments.php:120
+#, php-format
+msgid "برای ارسال نظر باید <a href=\"%s\">عضو سایت</a> باشید."
+msgstr ""
+
+#: comments.php:131
+#, php-format
+msgid "وارد شده با <a href=\"%1$s\">%2$s</a>."
+msgstr ""
+
+#: comments.php:133
+msgid "خروج &raquo;"
+msgstr ""
+
+#: comments.php:143
+msgid "Name"
+msgstr ""
+
+#: comments.php:143 comments.php:152
+msgid "(required)"
+msgstr ""
+
+#: comments.php:152
+msgid "Mail (will not be published)"
+msgstr ""
+
+#: comments.php:161
+msgid "Website"
+msgstr ""
+
+#: comments.php:174
+#, php-format
+msgid "<strong>XHTML:</strong> You can use these tags: <code>%s</code>"
+msgstr ""
+
+#: content-aside.php:4 content-audio.php:13 content-chat.php:13
+#: content-gallery.php:15 content-image.php:21 content-quote.php:16
+#: content-video.php:13 content.php:13
+msgid "More"
+msgstr "ادامه"
+
+#: content-aside.php:8 content-audio.php:5 content-chat.php:5
+#: content-gallery.php:7 content-link.php:6 content-quote.php:20
+#: content-status.php:22 content-video.php:5 content.php:5
+#: inc/posttype-taxonomy.php:10 inc/posttype-taxonomy.php:45 page-about.php:19
+#: page.php:34 single-project.php:26
+msgid "Edit"
+msgstr "ویرایش"
+
+#: content-aside.php:9 content-audio.php:8 content-chat.php:8
+#: content-gallery.php:10 content-image.php:15 content-link.php:8
+#: content-quote.php:25 content-status.php:15 content-video.php:8 content.php:8
+msgid "No comment"
+msgstr "بدون دیدگاه"
+
+#: content-aside.php:9 content-audio.php:8 content-chat.php:8
+#: content-gallery.php:10 content-image.php:15 content-link.php:8
+#: content-quote.php:25 content-status.php:15 content-video.php:8 content.php:8
+msgid "One comment"
+msgstr "یک دیدگاه"
+
+#: content-aside.php:9 content-audio.php:8 content-chat.php:8
+#: content-gallery.php:10 content-image.php:15 content-link.php:8
+#: content-quote.php:25 content-status.php:15 content-video.php:8 content.php:8
+#, php-format
+msgid "% comment"
+msgstr "% دیدگاه"
+
+#: footer.php:18
+msgid "Made with"
+msgstr "ساخته شده"
+
+#: footer.php:18
+msgid "by"
+msgstr "توسط"
+
+#: footer.php:18
+msgid "@peymanslh"
+msgstr "‏peymanslh‪@‬"
+
+#: functions.php:11 inc/sidebar.php:2
+msgid "Main menu"
+msgstr "منوی اصلی"
+
+#: functions.php:36
+msgid "right-sidebar"
+msgstr ""
+
+#: functions.php:38
+msgid "Right Sidebar"
+msgstr "نوار کناری سمت راست"
+
+#: inc/navbar.php:12 inc/navbar.php:21 inc/posttype-taxonomy.php:14
+#: inc/posttype-taxonomy.php:41 searchform.php:3
+msgid "Search"
+msgstr "جستجو"
+
+#: inc/navbar.php:20
+msgid "Keyword + Enter"
+msgstr "کلمه کلیدی + اینتر"
+
+#: inc/posttype-taxonomy.php:9
+msgid "Add new project"
+msgstr "اضافه کردن پروژه"
+
+#: inc/posttype-taxonomy.php:11
+msgid "New project"
+msgstr "پروژه جدید"
+
+#: inc/posttype-taxonomy.php:12
+msgid "All project"
+msgstr "همه ی پروژه ها"
+
+#: inc/posttype-taxonomy.php:13
+msgid "View Project"
+msgstr "نمایش پروژه"
+
+#: inc/posttype-taxonomy.php:16
+msgid "Trash is empty"
+msgstr "سطل زباله خالی است"
+
+#: inc/posttype-taxonomy.php:18
+msgid "Project"
+msgstr "پروژه ها"
+
+#: inc/posttype-taxonomy.php:22
+msgid "Other project"
+msgstr "سایر پروژه ها"
+
+#: inc/posttype-taxonomy.php:42
+msgid "All Categories"
+msgstr "همه ی دسته بندی ها"
+
+#: inc/posttype-taxonomy.php:43
+msgid "Parent category"
+msgstr "دسته پدر"
+
+#: inc/posttype-taxonomy.php:44
+msgid "Parent category:"
+msgstr "دسته پدر:"
+
+#: inc/posttype-taxonomy.php:46
+msgid "Update"
+msgstr "بروزرسانی"
+
+#: inc/posttype-taxonomy.php:47
+msgid "Add new"
+msgstr "اضاقه کردن"
+
+#: inc/posttype-taxonomy.php:48
+msgid "Add"
+msgstr "اضافه"
+
+#: inc/posttype-taxonomy.php:49
+msgid "Category"
+msgstr "دسته بندی"
+
+#: inc/share-page.php:5
+msgid "Share this page"
+msgstr "به اشتراک گذاری این صفحه"
+
+#: inc/share-page.php:14 inc/share-single.php:12
+msgid "Google +"
+msgstr "گوگل پلاس"
+
+#: inc/share-single.php:3
+msgid "Share this post"
+msgstr "به اشتراک گذاری این مطلب"
+
+#: search.php:8
+msgid "Search result for:"
+msgstr "نتایج جستجو برای : "
+
+#: searchform.php:2
+msgid "Search..."
+msgstr "جستجو…"
+
+#: single-project.php:52 single.php:50
+msgid "Post"
+msgstr "مطلب"
+
+#: single-project.php:52 single.php:50
+msgid "Previous"
+msgstr "قبلی"
+
+#: single-project.php:52 single.php:50
+msgid "Next"
+msgstr "بعدی"
+
+#: single-project.php:60 single.php:58
+msgid "Tags:"
+msgstr "برچسب ها:"
+
+#~ msgid "more"
+#~ msgstr "ادامه"

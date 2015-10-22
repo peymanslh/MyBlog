@@ -21,7 +21,7 @@ function propanel_siteoptions_add_admin()
         }
     }
 
-    $tt_page = add_theme_page('تنظیمات قالب', 'تنظیمات قالب', 'edit_theme_options', 'siteoptions', 'propanel_siteoptions_options_page');
+    $tt_page = add_theme_page(__('Theme options', 'myblog'), __('Theme options', 'myblog'), 'edit_theme_options', 'siteoptions', 'propanel_siteoptions_options_page');
     add_action("admin_print_scripts-$tt_page", 'propanel_of_load_only');
     add_action("admin_print_styles-$tt_page", 'propanel_of_style_only');
 }

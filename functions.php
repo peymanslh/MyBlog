@@ -8,7 +8,7 @@ require_once(TEMPLATEPATH . '/inc/pagination.php');
 require_once(TEMPLATEPATH . '/inc/posttype-taxonomy.php');
 
 //add navbar -------------------------------
-register_nav_menu('top_menu', 'منو اصلی');
+register_nav_menu('top_menu', __('Main menu', 'myblog'));
 
 // Change gallery output
 require_once(TEMPLATEPATH . '/inc/my-media.php');
@@ -35,7 +35,7 @@ function wpb_widgets_init() {
     register_sidebar( array(
         'name' => __( 'right-sidebar', 'wpb' ),
         'id' => 'sidebar-1',
-        'description' => __( 'ناحیه قرار گیری ابزارک در سما راست', 'wpb' ),
+        'description' => __( __('Right Sidebar', 'myblog'), 'wpb' ),
         'before_widget' => '<div class="right-sidebar"><div>',
         'after_widget' => '</div></div>',
         'before_title' => '<h3><span>',

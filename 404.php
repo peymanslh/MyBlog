@@ -9,13 +9,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 centered">
-                    <h3>صفحه مورد نظر یافت نشد!</h3>
+                    <h3><?php _e('Nothing found!','myblog'); ?></h3>
                     <?php get_search_form(); ?>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <h1>404</h1>
+                    <h1><?php _e('404','myblog'); ?></h1>
                 </div>
             </div>
 

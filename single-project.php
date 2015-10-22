@@ -23,7 +23,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 
         <div class="post-title">
             <h1>
-                <a href="<?php the_permalink() ?>"><?php the_title(); ?></a><?php edit_post_link("ویرایش ", "<span class='edit-link'>", "</span>"); ?>
+                <a href="<?php the_permalink() ?>"><?php the_title(); ?></a><?php edit_post_link(__('Edit', 'myblog'), "<span class='edit-link'>", "</span>"); ?>
             </h1>
 
         </div>
@@ -37,7 +37,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 
 <?php endwhile;
 else: ?>
-    <h2>متاسفم, مطلبی ای که دنبالش میگردید یافت نشد.</h2>
+    <h2><?php _e('Nothing found!','myblog'); ?></h2>
 <?php endif; ?>
     </div>
     </div>
@@ -49,7 +49,7 @@ else: ?>
         </div>
         <div class="col-md-4">
             <div class="next-prev">
-                مطلب <?php previous_post(' %', 'قبلی', 'no'); ?> / <?php next_post('%', 'بعدی', 'no'); ?>
+                <?php _e('Post','myblog'); ?> <?php previous_post(' %', __('Previous', 'myblog'), 'no'); ?> / <?php next_post('%', __('Next', 'myblog'), 'no'); ?>
             </div>
         </div>
     </div>
@@ -57,7 +57,7 @@ else: ?>
 
         <div class="col-md-8 centered">
             <div class="tags">
-                <?php the_tags("<span class='title'>کلمات کلیدی :</span> ", " , ", ""); ?>
+                <span class='title'><?php _e('Tags:','myblog'); ?></span><?php the_tags("", " , ", ""); ?>
             </div>
         </div>
 

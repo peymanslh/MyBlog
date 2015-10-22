@@ -51,85 +51,77 @@ if (!function_exists('propanel_of_options')) {
         $options = array(); // do not delete this line - sky will fall
 
 
-        /* Option Page 1 - All Options */
-        $options[] = array("name" => __('1 - هدر سایت', 'framework_localize'),
+        /* Option Page 1 - Header Options */
+        $options[] = array("name" => __('1 -Header options', 'framework_localize'),
             "type" => "heading");
 
         $options[] = array("name" => __('Favorites icon', 'framework_localize'),
-            "desc" => __('در کنار تب و یا آدرس وبسایت در مرورگر نمایش داده می شود.', 'framework_localize'),
             "id" => $shortname . "_favicon",
             "std" => "",
             "type" => "upload");
 
         $options[] = array("name" => __('Apple touch icon', 'framework_localize'),
-            "desc" => __('برای نمایش آیکون سایت شما در دیوایس های اپل.', 'framework_localize'),
             "id" => $shortname . "_apple_icon",
             "std" => "",
             "type" => "upload");
 
-        $options[] = array("name" => __('عنوان اصلی', 'framework_localize'),
-            "desc" => "عنوانی چند کلمه ای برای هدر.",
+        $options[] = array("name" => __(' Main title', 'framework_localize'),
+            "desc" => "Main title for header",
             "id" => $shortname . "_head_h1",
             "std" => "",
             "type" => "text");
 
-        $options[] = array("name" => __('لوگوی سایت', 'framework_localize'),
-            "desc" => __(' لوگوی سایت برای هدر', 'framework_localize'),
+        $options[] = array("name" => __('Website logo', 'framework_localize'),
             "id" => $shortname . "_nav_logo",
             "std" => "",
             "type" => "upload");
 
 
-        $options[] = array("name" => __('عکس پس زمینه', 'framework_localize'),
-            "desc" => __('عکس پس زمینه برای صفحه اول را میتوانید در این قسمت آپلود کنید.', 'framework_localize'),
+        $options[] = array("name" => __('Background image', 'framework_localize'),
             "id" => $shortname . "_head_bg",
             "std" => "",
             "type" => "upload");
 
-        $options[] = array("name" => __('عکس قسمت توضیحات', 'framework_localize'),
-            "desc" => __('میتوانید لوگو و یا آواتار خود را در این قسمت آپلود کنید.', 'framework_localize'),
+        $options[] = array("name" => __('Header image', 'framework_localize'),
             "id" => $shortname . "_head_logo",
             "std" => "",
             "type" => "upload");
 
-        $options[] = array("name" => __('گرد کردن عکس', 'framework_localize'),
-            "desc" => __('آیا عکسی که آپلود کرده اید آواتار است؟', 'framework_localize'),
+        $options[] = array("name" => __('Is the image to be round?', 'framework_localize'),
             "id" => $shortname . "_head_logo_avatar_check",
             "std" => "true",
             "type" => "checkbox");
 
-        $options[] = array("name" => __('رنگ متن توضیحات', 'framework_localize'),
-            "desc" => __('این رنگ شامل رنگ عنوان، توضیح و رنگ آیکون های هدر می شود.', 'framework_localize'),
+        $options[] = array("name" => __('Text color', 'framework_localize'),
             "id" => $shortname . "_head_txt_color",
             "std" => "#000000",
             "type" => "radio",
             "options" => array(
-                '#000000' => 'سیاه',
-                '#ffffff' => 'سفید'
+                '#000000' => __('Black', 'myblog'),
+                '#ffffff' => __('White', 'myblog')
             ));
 
-        $options[] = array("name" => __('توضیح کوتاه', 'framework_localize'),
-            "desc" => "زیر عکس قرار میگیرد",
+        $options[] = array("name" => __('Short Description', 'framework_localize'),
             "id" => $shortname . "_head_description",
             "std" => "",
             "type" => "textarea");
 
 
-        /* Option Page 2 - main Options */
-        $options[] = array("name" => __('2 - نمایش مطالب', 'framework_localize'),
+        /* Option Page 2 - Show Articles */
+        $options[] = array("name" => __('2 - Show Articles', 'framework_localize'),
             "type" => "heading");
 
         $project_column_array = array(2, 3, 4, 6);
 
-        $options[] = array("name" => __('آرشیو پروژه ها', 'framework_localize'),
-            "desc" => __('تعداد ستون برای نمایش مطالب در ارشیو پروژه ها را مشخص کنید.', 'framework_localize'),
+        $options[] = array("name" => __('Projects archive', 'framework_localize'),
+            "desc" => __('Count of project to show', 'framework_localize'),
             "id" => $shortname . "_project_column",
             "std" => "2",
             "type" => "select",
             "options" => $project_column_array);
 
-        $options[] = array("name" => __('رنگ قالب', 'framework_localize'),
-            "desc" => __('رنگ اصلی قالب را انتخاب کنید.', 'framework_localize'),
+        $options[] = array("name" => __('Theme color', 'framework_localize'),
+            "desc" => __('Select your theme color', 'framework_localize'),
             "id" => $shortname . "_theme_color",
             "std" => "main",
             "type" => "images",
@@ -143,103 +135,88 @@ if (!function_exists('propanel_of_options')) {
             ));
 
 
-        /* Option Page 3 - social pages */
-        $options[] = array("name" => __('3 - شبکه های اجتماعی', 'framework_localize'),
+        /* Option Page 3 - social networks */
+        $options[] = array("name" => __('3 - Social networks', 'framework_localize'),
             "type" => "heading");
 
-        $options[] = array("name" => __('نمایش در فوتر', 'framework_localize'),
-            "desc" => __('آیا آیکون شبکه های اجتماعی در فوتر نمایش داده شود؟', 'framework_localize'),
+        $options[] = array("name" => __('Show on footer?', 'framework_localize'),
             "id" => $shortname . "_foot_social_check",
             "std" => "true",
             "type" => "checkbox");
 
 
         $options[] = array("name" => __('Google', 'framework_localize'),
-            "desc" => "برای عدم نمایش فیلد را خالی بگذارید.",
             "id" => $shortname . "_google",
             "std" => "",
             "type" => "text");
 
         $options[] = array("name" => __('Facebook', 'framework_localize'),
-            "desc" => "برای عدم نمایش فیلد را خالی بگذارید.",
             "id" => $shortname . "_facebook",
             "std" => "",
             "type" => "text");
 
         $options[] = array("name" => __('Instagram', 'framework_localize'),
-            "desc" => "برای عدم نمایش فیلد را خالی بگذارید.",
             "id" => $shortname . "_instagram",
             "std" => "",
             "type" => "text");
 
         $options[] = array("name" => __('Twitter', 'framework_localize'),
-            "desc" => "برای عدم نمایش فیلد را خالی بگذارید.",
             "id" => $shortname . "_twitter",
             "std" => "",
             "type" => "text");
 
         $options[] = array("name" => __('Feed', 'framework_localize'),
-            "desc" => "برای عدم نمایش فیلد را خالی بگذارید.",
             "id" => $shortname . "_feed",
             "std" => "",
             "type" => "text");
 
         $options[] = array("name" => __('Youtube', 'framework_localize'),
-            "desc" => "برای عدم نمایش فیلد را خالی بگذارید.",
             "id" => $shortname . "_youtube",
             "std" => "",
             "type" => "text");
 
         $options[] = array("name" => __('Flicker', 'framework_localize'),
-            "desc" => "برای عدم نمایش فیلد را خالی بگذارید.",
             "id" => $shortname . "_flickr",
             "std" => "",
             "type" => "text");
 
         $options[] = array("name" => __('Github', 'framework_localize'),
-            "desc" => "برای عدم نمایش فیلد را خالی بگذارید.",
             "id" => $shortname . "_github",
             "std" => "",
             "type" => "text");
 
         $options[] = array("name" => __('Linkedin', 'framework_localize'),
-            "desc" => "برای عدم نمایش فیلد را خالی بگذارید.",
             "id" => $shortname . "_linkedin",
             "std" => "",
             "type" => "text");
 
         $options[] = array("name" => __('Stackoverflow', 'framework_localize'),
-            "desc" => "برای عدم نمایش فیلد را خالی بگذارید.",
             "id" => $shortname . "_stackoverflow",
             "std" => "",
             "type" => "text");
 
         $options[] = array("name" => __('Pinterest', 'framework_localize'),
-            "desc" => "برای عدم نمایش فیلد را خالی بگذارید.",
             "id" => $shortname . "_pinterest",
             "std" => "",
             "type" => "text");
 
 
-        /* Option Page 4 - site footer */
-        $options[] = array("name" => __('4 - فوتر سایت', 'framework_localize'),
+        /* Option Page 4 - Footer footer */
+        $options[] = array("name" => __('4 - Footer options', 'framework_localize'),
             "type" => "heading");
 
 
-        $options[] = array("name" => __('متن کپی رایت', 'framework_localize'),
-            "desc" => "متن کپی رایت برای پایین سایت.",
+        $options[] = array("name" => __('Copyright text', 'framework_localize'),
             "id" => $shortname . "_copyright_txt",
             "std" => "",
             "type" => "text");
 
-        $options[] = array("name" => __('استایل های شما', 'framework_localize'),
-            "desc" => "می توانید استایل دلخواه خود را اینجا قرار دهدی.",
+        $options[] = array("name" => __('Custom CSS style', 'framework_localize'),
             "id" => $shortname . "_footer_style",
             "std" => "",
             "type" => "textarea");
 
-        $options[] = array("name" => __('اسکریپت های شما', 'framework_localize'),
-            "desc" => "می توانید اسکریپت دلخواه خود را اینجا قرار دهدی.",
+        $options[] = array("name" => __('Custom script', 'framework_localize'),
             "id" => $shortname . "_footer_script",
             "std" => "",
             "type" => "textarea");

@@ -9,10 +9,10 @@
 
 #page-post {
   margin: 50px 0 120px 0;
-  .my-post {
+  .page {
     font-family: $h_font;
 
-    header {
+    .post-title {
       h1 {
         font-size: 14px;
         text-align: right;
@@ -35,7 +35,7 @@
       }
     }
 
-    article {
+    .post-inner-content {
       font-size: 13px;
       font-weight: 100;
       color: #838383;
@@ -59,7 +59,7 @@
       }
     }
 
-    section {
+    .about-tpl-thumb-pic {
       padding: 19px 0px 0px 10px;
 
       img {
@@ -78,8 +78,8 @@
 
 @media screen and (max-width: 991px) {
   #page-post {
-    .my-post {
-      article {
+    .page {
+      .post-inner-content {
         &.about-tpl {
           padding: 0 !important;
         }

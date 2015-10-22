@@ -16,37 +16,33 @@ if (have_posts()) : while (have_posts()) : the_post();
         <?php get_template_part('inc/header'); ?>
         <header id="thumb-header"
                 style="background:url('<?php echo $url; ?>');-webkit-background-size: cover; -moz-background-size: cover; background-size: cover;">
-
-
         </header>
-
     <?php
     }
     ?>
 
-
-    <section id="page-post">
+    <div id="page-post">
 
     <div class="container">
     <div class="row">
     <section class="col-md-8 centered">
 
-    <section class="my-post">
+    <article id="post-<?php the_ID(); ?>"  <?php post_class(); ?>>
 
-        <header>
+        <div class="post-title">
             <h1>
-                <a href="<?php the_permalink() ?>"><?php the_title(); ?></a><?php edit_post_link("ویرایش ", "<span class='edit-link'>", "</span>"); ?>
+                <a href="<?php the_permalink() ?>"><?php the_title(); ?></a><?php edit_post_link(__('Edit', 'myblog'), "<span class='edit-link'>", "</span>"); ?>
             </h1>
-        </header>
+        </div>
 
-        <article>
+        <div class="post-inner-content">
             <?php the_content(); ?>
-        </article>
-    </section>
+        </div>
+    </article>
 
 <?php endwhile;
 else: ?>
-    <h2>متاسفم, مطلبی ای که دنبالش میگردید یافت نشد.</h2>
+    <h2><?php _e('Nothing found!','myblog'); ?></h2>
 <?php endif; ?>
     </section>
     </div>
@@ -54,7 +50,7 @@ else: ?>
 <?php get_template_part('inc/share', 'page'); ?>
     </div>
 
-</section>
+</div>
 
 
 

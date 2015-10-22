@@ -15,7 +15,7 @@ $footer_script = get_option('mb_footer_script');
 
                 <div class="copyright"><?php echo $copyright_txt ?></div>
 
-                <p class="designer">طراحی شده با <span class="icon-heart"></span> توسط <a href="http://peymansalehi.net" target="_blank">peymanslh@</a>
+                <p class="designer"><?php _e('Made with','myblog'); ?> <span class="icon-heart"></span> <?php _e('by','myblog'); ?> <a href="http://peymansalehi.net" target="_blank"><?php _e('@peymanslh','myblog'); ?></a>
                 </p>
             </div>
 

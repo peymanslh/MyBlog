@@ -1,5 +1,5 @@
 <nav id="show-sidebar">
-    <a href="#my-menu" id="shower" class="simptip-position-left" data-tooltip="منوی اصلی"><span
+    <a href="#my-menu" id="shower" class="simptip-position-left" data-tooltip="<?php _e('Main menu','myblog'); ?>"><span
             class="icon-three-bars"></span></a>
 </nav>
 
