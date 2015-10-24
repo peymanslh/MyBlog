@@ -1,4 +1,4 @@
-<?php get_template_part('inc/sidebar'); ?>
+<?php get_sidebar(); ?>
 
 <?php
 $copyright_txt = get_option('mb_copyright_txt');

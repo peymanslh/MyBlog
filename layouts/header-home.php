@@ -10,7 +10,7 @@ $head_description = get_option('mb_head_description');
 
 <?php
 if ($head_description == "" && $head_logo == "") {
-    get_template_part('inc/header');
+    get_template_part('layouts/header');
 } else {
 ?>
 
@@ -23,7 +23,7 @@ if ($head_description == "" && $head_logo == "") {
     <div id="header">
         <?php } ?>
 
-        <?php get_template_part('inc/header'); ?>
+        <?php get_template_part('layouts/header'); ?>
         <div class="container">
 
             <?php

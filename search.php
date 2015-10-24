@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<?php get_template_part('inc/header'); ?>
+<?php get_template_part('layouts/header'); ?>
 
 
     <div class="row">
@@ -9,7 +9,7 @@
             </div>
         </div>
     </div>
-<?php get_template_part('inc/query', 'one'); ?>
+<?php get_template_part('layouts/query', 'one'); ?>
 
 
 <?php get_footer(); ?>

@@ -1,4 +1,6 @@
 <?php
+// Comment template
+get_template_part('inc/template-tags');
 
 // Other files -------------------------------
 require_once(TEMPLATEPATH . '/inc/my-functions.php');
@@ -17,6 +19,12 @@ require_once(TEMPLATEPATH . '/inc/my-media.php');
 require_once(TEMPLATEPATH . '/admin/admin-functions.php');
 require_once(TEMPLATEPATH . '/admin/admin-interface.php');
 require_once(TEMPLATEPATH . '/admin/theme-settings.php');
+
+
+/**
+* Add default posts and comments RSS feed links to head
+*/
+add_theme_support( 'automatic-feed-links' );
 
 // Add support post formats -------------------------------
 add_theme_support('post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat'));

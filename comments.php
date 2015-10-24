@@ -1,202 +1,76 @@
 <?php
-
 /**
- * @package WordPress
- * @subpackage Theme_Compat
- * @deprecated 3.0
+ * The template for displaying Comments.
  *
- * This file is here for Backwards compatibility with old themes and will be removed in a future version
+ * The area of the page that contains both current comments
+ * and the comment form. The actual display of comments is
+ * handled by a callback to shape_comment() which is
+ * located in the inc/template-tags.php file.
  *
+ * @package Shape
+ * @since Shape 1.0
  */
-
-_deprecated_file(sprintf(__('Theme without %1$s'), basename(__FILE__)), '3.0', null, sprintf(__('Please include a %1$s template in your theme.'), basename(__FILE__)));
-
-
-// Do not delete these lines
-
-if (!empty($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME']))
-
-    die ('Please do not load this page directly. Thanks!');
-
-
-if (post_password_required()) { ?>
-
-    <p class="nocomments"><?php _e('This post is password protected. Enter the password to view comments.'); ?></p>
-    <div class="divider-mini"></div>
-    <?php
-
-    return;
-
-}
-
 ?>
 
+<?php
+    /*
+     * If the current post is protected by a password and
+     * the visitor has not yet entered the password we will
+     * return early without loading the comments.
+     */
+    if ( post_password_required() )
+        return;
+?>
 
+    <div id="comments" class="comments-area">
 
-<!-- You can start editing here. -->
+    <?php // You can start editing here -- including this comment! ?>
 
+    <?php if ( have_comments() ) : ?>
+        <h2 class="comments-title">
+            <?php
+                printf( _n( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'shape' ),
+                    number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
+            ?>
+        </h2>
 
+        <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through? If so, show navigation ?>
+        <nav role="navigation" id="comment-nav-above" class="site-navigation comment-navigation">
+            <h1 class="assistive-text"><?php _e( 'Comment navigation', 'shape' ); ?></h1>
+            <div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'shape' ) ); ?></div>
+            <div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'shape' ) ); ?></div>
+        </nav><!-- #comment-nav-before .site-navigation .comment-navigation -->
+        <?php endif; // check for comment navigation ?>
 
-<?php if (have_comments()) : ?>
-    <div class="icon-bubble ico-cm-comment"></div>
-    <h3 id="comments">  <?php printf(_n('یک پاسخ برای %2$s', '%1$s دیدگاه برای %2$s', get_comments_number()),
+        <ol class="commentlist">
+            <?php
+                /* Loop through and list the comments. Tell wp_list_comments()
+                 * to use shape_comment() to format the comments.
+                 * If you want to overload this in a child theme then you can
+                 * define shape_comment() and that will be used instead.
+                 * See shape_comment() in inc/template-tags.php for more.
+                 */
+                wp_list_comments( array( 'callback' => 'shape_comment' ) );
+            ?>
+        </ol><!-- .commentlist -->
 
-            number_format_i18n(get_comments_number()), '&#8220;' . get_the_title() . '&#8221;'); ?></h3>
-    <div class="divider-mini mgb-80"></div>
+        <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through? If so, show navigation ?>
+        <nav role="navigation" id="comment-nav-below" class="site-navigation comment-navigation">
+            <h1 class="assistive-text"><?php _e( 'Comment navigation', 'shape' ); ?></h1>
+            <div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'shape' ) ); ?></div>
+            <div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'shape' ) ); ?></div>
+        </nav><!-- #comment-nav-below .site-navigation .comment-navigation -->
+        <?php endif; // check for comment navigation ?>
 
+    <?php endif; // have_comments() ?>
 
-    <div class="navigation">
-
-        <div class="alignleft"><?php previous_comments_link() ?></div>
-
-        <div class="alignright"><?php next_comments_link() ?></div>
-
-    </div>
-
-
-
-    <ol class="commentlist">
-
-        <?php wp_list_comments(); ?>
-
-    </ol>
-
-
-
-    <div class="navigation">
-
-        <div class="alignleft"><?php previous_comments_link() ?></div>
-
-        <div class="alignright"><?php next_comments_link() ?></div>
-
-    </div>
-
-<?php else : // this is displayed if there are no comments so far ?>
-
-
-
-    <?php if (comments_open()) : ?>
-
-        <!-- If comments are open, but there are no comments. -->
-
-
-
-    <?php else : // comments are closed ?>
-
-        <!-- If comments are closed. -->
-
-        <p class="nocomments"><?php _e('نظرات بسته است.'); ?></p>
-        <div class="divider-mini"></div>
-
-
+    <?php
+        // If comments are closed and there are comments, let's leave a little note, shall we?
+        if ( ! comments_open() && '0' != get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
+    ?>
+        <p class="nocomments"><?php _e( 'Comments are closed.', 'shape' ); ?></p>
     <?php endif; ?>
 
-<?php endif; ?>
+    <?php comment_form(); ?>
 
-
-
-<?php if (comments_open()) : ?>
-
-
-
-<div id="respond">
-
-
-
-<h3> <?php comment_form_title(__('شما هم نظر خود را بیان کنید'), __('پاسخ دادن به %s')); ?></h3>
-<div class="divider-mini"></div>
-
-
-<div id="cancel-comment-reply">
-
-	<small><?php cancel_comment_reply_link() ?></small>
-
-</div>
-
-
-
-<?php if (get_option('comment_registration') && !is_user_logged_in()) : ?>
-
-    <p><?php printf(__('برای ارسال نظر باید <a href="%s">عضو سایت</a> باشید.'), wp_login_url(get_permalink())); ?></p>
-
-<?php else : ?>
-
-    <form action="<?php echo site_url(); ?>/wp-comments-post.php" method="post" id="commentform">
-
-
-        <?php if (is_user_logged_in()) : ?>
-
-
-
-            <p class="user-signin-cm"><?php printf(__('وارد شده با <a href="%1$s">%2$s</a>.'), get_edit_user_link(), $user_identity); ?>
-                <a href="<?php echo wp_logout_url(get_permalink()); ?>"
-                   title="<?php esc_attr_e('خروج'); ?>"><?php _e('خروج &raquo;'); ?></a></p>
-
-
-
-        <?php else : ?>
-
-        <div class="row">
-            <div class="col-md-6 pl-15">
-
-                <p><label for="author">
-                        <small><?php _e('Name'); ?> <?php if ($req) _e('(required)'); ?></small>
-                    </label><br><input type="text" name="author" placeholder="نام شما" id="author"
-                                       value="<?php echo esc_attr($comment_author); ?>" class="cmd-txt" size="22"
-                                       tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> />
-
-                </p>
-
-
-                <p><label for="email">
-                        <small><?php _e('Mail (will not be published)'); ?> <?php if ($req) _e('(required)'); ?></small>
-                    </label><br><input type="text" placeholder="mail@example.com" name="email" id="email"
-                                       value="<?php echo esc_attr($comment_author_email); ?>" class="cmd-txt" size="22"
-                                       tabindex="2" <?php if ($req) echo "aria-required='true'"; ?> />
-
-                </p>
-
-
-                <p><label for="url">
-                        <small><?php _e('Website'); ?></small>
-                    </label><br><input type="text" class="cmd-txt" placeholder="www.example.com" name="url" id="url"
-                                       value="<?php echo esc_attr($comment_author_url); ?>" size="22" tabindex="3"/>
-
-                </p>
-
-            </div>
-
-
-            <?php endif; ?>
-
-
-            <div class="col-md-6">
-                <!--<p><small><?php printf(__('<strong>XHTML:</strong> You can use these tags: <code>%s</code>'), allowed_tags()); ?></small></p>-->
-
-
-                <p><label for="comment">
-                        <small>متن نظر</small>
-                    </label><textarea class="cmd-txt" name="comment" id="comment" rows="5" tabindex="9"></textarea></p>
-
-
-                <p><input name="submit" class="btn btn-send block mgt-18" placeholder="متن خود را وارد کنید"
-                          type="submit" id="submit" tabindex="5" value="<?php esc_attr_e('Submit Comment'); ?>"/>
-
-                    <?php comment_id_fields(); ?>
-                </p>
-
-                <?php do_action('comment_form', $post->ID); ?>
-
-
-    </form>
-
-<?php endif; // If registration required and not logged in ?>
-
-</div>
-</div>
-</div>
-
-
-
-<?php endif; // if you delete this the sky will fall on your head ?>
-
+</div><!-- #comments .comments-area -->

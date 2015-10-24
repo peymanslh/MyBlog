@@ -11,9 +11,9 @@ if (have_posts()) : while (have_posts()) : the_post();
 
 
     if ($url == "") {
-        get_template_part('inc/header');
+        get_template_part('layouts/header');
     } else { ?>
-        <?php get_template_part('inc/header'); ?>
+        <?php get_template_part('layouts/header'); ?>
         <header id="thumb-header"
                 style="background:url('<?php echo $url; ?>') center fixed;-webkit-background-size: cover; -moz-background-size: cover; background-size: cover;">
 
@@ -43,7 +43,7 @@ else: ?>
     <div class="row">
 
         <div class="col-md-4 col-md-offset-2">
-            <?php get_template_part('inc/share', 'single'); ?>
+            <?php get_template_part('layouts/share', 'single'); ?>
         </div>
         <div class="col-md-4">
             <section class="next-prev">

@@ -11,9 +11,9 @@ if (have_posts()) : while (have_posts()) : the_post();
 
 
     if ($url == "") {
-        get_template_part('inc/header');
+        get_template_part('layouts/header');
     } else { ?>
-        <?php get_template_part('inc/header'); ?>
+        <?php get_template_part('layouts/header'); ?>
         <header id="thumb-header"
                 style="background:url('<?php echo $url; ?>');-webkit-background-size: cover; -moz-background-size: cover; background-size: cover;">
         </header>

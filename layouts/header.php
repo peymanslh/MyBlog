@@ -24,7 +24,7 @@ $nav_logo = get_option('mb_nav_logo');
             <?php } ?>
 
             <div class="col-md-10">
-                <?php get_template_part('inc/navbar'); ?>
+                <?php get_template_part('layouts/navbar'); ?>
             </div>
         </div>
     </div>

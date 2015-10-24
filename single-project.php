@@ -10,7 +10,7 @@ if (have_posts()) : while (have_posts()) : the_post();
     $height = $thumbnail[2];
 
 
-    get_template_part('inc/header'); ?>
+    get_template_part('layouts/header'); ?>
 
     <section id="single-post">
 
@@ -45,7 +45,7 @@ else: ?>
     <div class="row">
 
         <div class="col-md-4 col-md-offset-2">
-            <?php get_template_part('inc/share', 'single'); ?>
+            <?php get_template_part('layouts/share', 'single'); ?>
         </div>
         <div class="col-md-4">
             <div class="next-prev">

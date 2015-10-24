@@ -5,7 +5,7 @@ Template Name: About me
 ?>
 
 <?php get_header(); ?>
-<?php get_template_part('inc/header'); ?>
+<?php get_template_part('layouts/header'); ?>
 
     <div id="page-post">
         <div class="container">
@@ -40,7 +40,7 @@ Template Name: About me
                 </div>
             </article>
 
-            <?php get_template_part('inc/share', 'page'); ?>
+            <?php get_template_part('layouts/share', 'page'); ?>
 
         </div>
     </div>
