@@ -17,6 +17,7 @@
   transition-property: color, background-color;
   @include transition(all 30ms linear 10ms);
 }
+
 #my-menu {
   display: none;
   overflow: hidden;

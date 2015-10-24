@@ -7,7 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "myblog", "wordpress", "php", "free", "rtl"
+    "myblog",
+    "wordpress",
+    "php",
+    "free",
+    "rtl"
   ],
   "author": "Peymanslh",
   "license": "MIT",

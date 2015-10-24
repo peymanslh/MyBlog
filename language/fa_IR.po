@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: myblog\n"
-"POT-Creation-Date: 2015-10-22 17:47+0330\n"
-"PO-Revision-Date: 2015-10-22 17:52+0330\n"
+"POT-Creation-Date: 2015-10-24 22:01+0330\n"
+"PO-Revision-Date: 2015-10-24 22:01+0330\n"
 "Last-Translator: \n"
 "Language-Team: peymanslh <peyman_salehi@icloud.com>\n"
 "Language: fa_IR\n"
@@ -19,20 +19,20 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: node_modules\n"
 "X-Poedit-SearchPathExcluded-1: source\n"
 
-#: assets/javascript/jquery.js:3
+#: assets/javascript/jquery.js:1949
 msgid "show"
 msgstr "نمایش"
 
-#: assets/javascript/jquery.js:3
+#: assets/javascript/jquery.js:1950
 msgid "hide"
 msgstr "پنهان"
 
-#: assets/javascript/jquery.js:3
+#: assets/javascript/jquery.js:1951
 msgid "toggle"
 msgstr ""
 
-#: 404.php:12 inc/posttype-taxonomy.php:15 page-about.php:37 page.php:45
-#: single-project.php:40 single.php:38
+#: 404.php:12 inc/posttype-taxonomy.php:15 page-about.php:37 page.php:46
+#: single-project.php:41 single.php:38
 msgid "Nothing found!"
 msgstr "صفحه ای یافت نشد!"
 
@@ -40,8 +40,32 @@ msgstr "صفحه ای یافت نشد!"
 msgid "404"
 msgstr "404"
 
+#: admin/admin-functions.php:47
+msgid "Activation Successful!"
+msgstr "قالب با موفقیت فعال شد!"
+
+#: admin/admin-functions.php:47
+msgid "This theme's settings are located under"
+msgstr "تنظیمات این قالب در این قسمت قرار دارد"
+
+#: admin/admin-functions.php:47
+msgid "Appearance > Site Options"
+msgstr "نمایش > ‌تنظیمات قالب"
+
 #: admin/admin-interface.php:24
 msgid "Theme options"
+msgstr "تنظیمات قالب"
+
+#: admin/admin-interface.php:64
+msgid "Options Updated"
+msgstr "تنظیمات بروزرسانی شد"
+
+#: admin/admin-interface.php:67
+msgid "Options Reset"
+msgstr "تنظیمات برگردانده شد"
+
+#: admin/admin-interface.php:72
+msgid "MyBlog Options"
 msgstr "تنظیمات قالب"
 
 #: admin/theme-settings.php:55
@@ -60,217 +84,175 @@ msgstr "‏Apple touch icon"
 msgid " Main title"
 msgstr "عنوان اصلی"
 
-#: admin/theme-settings.php:74
+#: admin/theme-settings.php:73
 msgid "Website logo"
 msgstr "لوگوی وبسایت"
 
-#: admin/theme-settings.php:80
+#: admin/theme-settings.php:79
 msgid "Background image"
 msgstr "تصویر پس زمینه"
 
-#: admin/theme-settings.php:85
+#: admin/theme-settings.php:84
 msgid "Header image"
 msgstr "آواتار شما در هدر"
 
-#: admin/theme-settings.php:90
+#: admin/theme-settings.php:89
 msgid "Is the image to be round?"
 msgstr "آیا عکس گرد شود؟"
 
-#: admin/theme-settings.php:95
-msgid "Text color"
-msgstr "رنگ متن"
-
-#: admin/theme-settings.php:100
-msgid "Black"
-msgstr "مشکی"
-
-#: admin/theme-settings.php:101
-msgid "White"
-msgstr "سفید"
-
-#: admin/theme-settings.php:104
+#: admin/theme-settings.php:94
 msgid "Short Description"
 msgstr "توضیح کوتاه"
 
-#: admin/theme-settings.php:111
+#: admin/theme-settings.php:99
+msgid "Text color"
+msgstr "رنگ متن"
+
+#: admin/theme-settings.php:104
+msgid "Black"
+msgstr "مشکی"
+
+#: admin/theme-settings.php:105
+msgid "White"
+msgstr "سفید"
+
+#: admin/theme-settings.php:110
 msgid "2 - Show Articles"
 msgstr "2 ‪-‬ نمایش مطالب"
 
-#: admin/theme-settings.php:116
+#: admin/theme-settings.php:115
 msgid "Projects archive"
 msgstr "آرشیو پروژه ها"
 
-#: admin/theme-settings.php:117
+#: admin/theme-settings.php:116
 msgid "Count of project to show"
 msgstr "تعداد نمایش پروژه ها در هر سطر"
 
-#: admin/theme-settings.php:123
+#: admin/theme-settings.php:122
 msgid "Theme color"
 msgstr "رنگ قالب"
 
-#: admin/theme-settings.php:124
+#: admin/theme-settings.php:123
 msgid "Select your theme color"
 msgstr "رنگ قالب را انتخاب کنید"
 
-#: admin/theme-settings.php:139
+#: admin/theme-settings.php:138
 msgid "3 - Social networks"
 msgstr "3 ‪-‬ شبکه های اجتماعی"
 
-#: admin/theme-settings.php:142
+#: admin/theme-settings.php:141
 msgid "Show on footer?"
 msgstr "در فوتر نمایش داده شود؟"
 
-#: admin/theme-settings.php:148
+#: admin/theme-settings.php:147
 msgid "Google"
 msgstr "گوگل"
 
-#: admin/theme-settings.php:153 inc/share-page.php:10 inc/share-single.php:8
+#: admin/theme-settings.php:152 layouts/share-page.php:11
+#: layouts/share-single.php:8
 msgid "Facebook"
 msgstr "فیسبوک"
 
-#: admin/theme-settings.php:158
+#: admin/theme-settings.php:157
 msgid "Instagram"
 msgstr "اینستاگرام"
 
-#: admin/theme-settings.php:163 inc/share-page.php:12 inc/share-single.php:10
+#: admin/theme-settings.php:162 layouts/share-page.php:13
+#: layouts/share-single.php:10
 msgid "Twitter"
 msgstr "توییتر"
 
-#: admin/theme-settings.php:168
+#: admin/theme-settings.php:167
 msgid "Feed"
 msgstr "خبرخوان"
 
-#: admin/theme-settings.php:173
+#: admin/theme-settings.php:172
 msgid "Youtube"
 msgstr "یوتیوب"
 
-#: admin/theme-settings.php:178
+#: admin/theme-settings.php:177
 msgid "Flicker"
 msgstr "فلیکر"
 
-#: admin/theme-settings.php:183
+#: admin/theme-settings.php:182
 msgid "Github"
 msgstr "گیت هاب"
 
-#: admin/theme-settings.php:188 inc/share-page.php:17 inc/share-single.php:15
+#: admin/theme-settings.php:187 layouts/share-page.php:18
+#: layouts/share-single.php:15
 msgid "Linkedin"
 msgstr "لینکداین"
 
-#: admin/theme-settings.php:193
+#: admin/theme-settings.php:192
 msgid "Stackoverflow"
 msgstr "‏Stackoverflow"
 
-#: admin/theme-settings.php:198 inc/share-page.php:21 inc/share-single.php:19
+#: admin/theme-settings.php:197 layouts/share-page.php:23
+#: layouts/share-single.php:19
 msgid "Pinterest"
 msgstr "پینترست"
 
-#: admin/theme-settings.php:205
+#: admin/theme-settings.php:204
 msgid "4 - Footer options"
 msgstr "4 ‪-‬ تنظیمات فوتر"
 
-#: admin/theme-settings.php:209
+#: admin/theme-settings.php:208
 msgid "Copyright text"
 msgstr "متن کپی رایت"
 
-#: admin/theme-settings.php:214
+#: admin/theme-settings.php:213
 msgid "Custom CSS style"
 msgstr "‏css های سفارشی شما"
 
-#: admin/theme-settings.php:219
+#: admin/theme-settings.php:218
 msgid "Custom script"
 msgstr "کد های جاوااسکریپت برای فوتر"
 
-#: comments.php:12
-#, php-format
-msgid "Theme without %1$s"
+#: comments.php:39 comments.php:60
+msgid "Comment navigation"
 msgstr ""
 
-#: comments.php:12
-#, php-format
-msgid "Please include a %1$s template in your theme."
+#: comments.php:41 comments.php:62
+msgid "&larr; Older Comments"
 msgstr ""
 
-#: comments.php:24
-msgid "This post is password protected. Enter the password to view comments."
+#: comments.php:42 comments.php:63
+msgid "Newer Comments &rarr;"
 msgstr ""
 
-#: comments.php:88
-msgid "نظرات بسته است."
+#: comments.php:73
+msgid "Comments are closed."
 msgstr ""
 
-#: comments.php:106
-msgid "شما هم نظر خود را بیان کنید"
-msgstr ""
-
-#: comments.php:106
-#, php-format
-msgid "پاسخ دادن به %s"
-msgstr ""
-
-#: comments.php:120
-#, php-format
-msgid "برای ارسال نظر باید <a href=\"%s\">عضو سایت</a> باشید."
-msgstr ""
-
-#: comments.php:131
-#, php-format
-msgid "وارد شده با <a href=\"%1$s\">%2$s</a>."
-msgstr ""
-
-#: comments.php:133
-msgid "خروج &raquo;"
-msgstr ""
-
-#: comments.php:143
-msgid "Name"
-msgstr ""
-
-#: comments.php:143 comments.php:152
-msgid "(required)"
-msgstr ""
-
-#: comments.php:152
-msgid "Mail (will not be published)"
-msgstr ""
-
-#: comments.php:161
-msgid "Website"
-msgstr ""
-
-#: comments.php:174
-#, php-format
-msgid "<strong>XHTML:</strong> You can use these tags: <code>%s</code>"
-msgstr ""
-
-#: content-aside.php:4 content-audio.php:13 content-chat.php:13
-#: content-gallery.php:15 content-image.php:21 content-quote.php:16
-#: content-video.php:13 content.php:13
+#: content-aside.php:4 content-audio.php:15 content-chat.php:15
+#: content-gallery.php:17 content-image.php:19 content-quote.php:16
+#: content-video.php:15 content.php:15
 msgid "More"
 msgstr "ادامه"
 
 #: content-aside.php:8 content-audio.php:5 content-chat.php:5
 #: content-gallery.php:7 content-link.php:6 content-quote.php:20
-#: content-status.php:22 content-video.php:5 content.php:5
+#: content-status.php:21 content-video.php:5 content.php:5
 #: inc/posttype-taxonomy.php:10 inc/posttype-taxonomy.php:45 page-about.php:19
-#: page.php:34 single-project.php:26
+#: page.php:35 single-project.php:27
 msgid "Edit"
 msgstr "ویرایش"
 
-#: content-aside.php:9 content-audio.php:8 content-chat.php:8
-#: content-gallery.php:10 content-image.php:15 content-link.php:8
-#: content-quote.php:25 content-status.php:15 content-video.php:8 content.php:8
+#: content-aside.php:10 content-audio.php:9 content-chat.php:9
+#: content-gallery.php:11 content-image.php:8 content-link.php:9
+#: content-quote.php:26 content-status.php:13 content-video.php:9 content.php:9
 msgid "No comment"
 msgstr "بدون دیدگاه"
 
-#: content-aside.php:9 content-audio.php:8 content-chat.php:8
-#: content-gallery.php:10 content-image.php:15 content-link.php:8
-#: content-quote.php:25 content-status.php:15 content-video.php:8 content.php:8
+#: content-aside.php:10 content-audio.php:9 content-chat.php:9
+#: content-gallery.php:11 content-image.php:8 content-link.php:9
+#: content-quote.php:26 content-status.php:13 content-video.php:9 content.php:9
 msgid "One comment"
 msgstr "یک دیدگاه"
 
-#: content-aside.php:9 content-audio.php:8 content-chat.php:8
-#: content-gallery.php:10 content-image.php:15 content-link.php:8
-#: content-quote.php:25 content-status.php:15 content-video.php:8 content.php:8
+#: content-aside.php:10 content-audio.php:9 content-chat.php:9
+#: content-gallery.php:11 content-image.php:8 content-link.php:9
+#: content-quote.php:26 content-status.php:13 content-video.php:9 content.php:9
 #, php-format
 msgid "% comment"
 msgstr "% دیدگاه"
@@ -279,34 +261,39 @@ msgstr "% دیدگاه"
 msgid "Made with"
 msgstr "ساخته شده"
 
-#: footer.php:18
+#: footer.php:19
 msgid "by"
 msgstr "توسط"
 
-#: footer.php:18
+#: footer.php:20
 msgid "@peymanslh"
 msgstr "‏peymanslh‪@‬"
 
-#: functions.php:11 inc/sidebar.php:2
+#: functions.php:13 sidebar.php:3
 msgid "Main menu"
 msgstr "منوی اصلی"
 
-#: functions.php:36
+#: functions.php:48
 msgid "right-sidebar"
 msgstr ""
 
-#: functions.php:38
+#: functions.php:50
 msgid "Right Sidebar"
 msgstr "نوار کناری سمت راست"
 
-#: inc/navbar.php:12 inc/navbar.php:21 inc/posttype-taxonomy.php:14
-#: inc/posttype-taxonomy.php:41 searchform.php:3
-msgid "Search"
-msgstr "جستجو"
+#: header.php:24
+#, php-format
+msgid "Page %s"
+msgstr ""
 
-#: inc/navbar.php:20
-msgid "Keyword + Enter"
-msgstr "کلمه کلیدی + اینتر"
+#: inc/posttype-taxonomy.php:6 inc/posttype-taxonomy.php:7
+#: inc/posttype-taxonomy.php:18
+msgid "Project"
+msgstr "پروژه ها"
+
+#: inc/posttype-taxonomy.php:8
+msgid "Add project"
+msgstr "اضافه کردن"
 
 #: inc/posttype-taxonomy.php:9
 msgid "Add new project"
@@ -324,17 +311,23 @@ msgstr "همه ی پروژه ها"
 msgid "View Project"
 msgstr "نمایش پروژه"
 
+#: inc/posttype-taxonomy.php:14 inc/posttype-taxonomy.php:41
+#: layouts/navbar.php:13 layouts/navbar.php:23 searchform.php:4
+msgid "Search"
+msgstr "جستجو"
+
 #: inc/posttype-taxonomy.php:16
 msgid "Trash is empty"
 msgstr "سطل زباله خالی است"
 
-#: inc/posttype-taxonomy.php:18
-msgid "Project"
-msgstr "پروژه ها"
-
 #: inc/posttype-taxonomy.php:22
 msgid "Other project"
 msgstr "سایر پروژه ها"
+
+#: inc/posttype-taxonomy.php:39 inc/posttype-taxonomy.php:40
+#: inc/posttype-taxonomy.php:49
+msgid "Category"
+msgstr "دسته بندی"
 
 #: inc/posttype-taxonomy.php:42
 msgid "All Categories"
@@ -360,19 +353,41 @@ msgstr "اضاقه کردن"
 msgid "Add"
 msgstr "اضافه"
 
-#: inc/posttype-taxonomy.php:49
-msgid "Category"
-msgstr "دسته بندی"
+#: inc/template-tags.php:28
+msgid "Pingback:"
+msgstr ""
 
-#: inc/share-page.php:5
+#: inc/template-tags.php:28 inc/template-tags.php:54
+msgid "(Edit)"
+msgstr ""
+
+#: inc/template-tags.php:38
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr ""
+
+#: inc/template-tags.php:42
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/template-tags.php:51
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: layouts/navbar.php:21
+msgid "Keyword + Enter"
+msgstr "کلمه کلیدی + اینتر"
+
+#: layouts/share-page.php:6
 msgid "Share this page"
 msgstr "به اشتراک گذاری این صفحه"
 
-#: inc/share-page.php:14 inc/share-single.php:12
+#: layouts/share-page.php:15 layouts/share-single.php:12
 msgid "Google +"
 msgstr "گوگل پلاس"
 
-#: inc/share-single.php:3
+#: layouts/share-single.php:3
 msgid "Share this post"
 msgstr "به اشتراک گذاری این مطلب"
 
@@ -380,23 +395,23 @@ msgstr "به اشتراک گذاری این مطلب"
 msgid "Search result for:"
 msgstr "نتایج جستجو برای : "
 
-#: searchform.php:2
+#: searchform.php:3
 msgid "Search..."
 msgstr "جستجو…"
 
-#: single-project.php:52 single.php:50
+#: single-project.php:53 single.php:50
 msgid "Post"
 msgstr "مطلب"
 
-#: single-project.php:52 single.php:50
+#: single-project.php:53 single.php:50
 msgid "Previous"
 msgstr "قبلی"
 
-#: single-project.php:52 single.php:50
+#: single-project.php:54 single.php:51
 msgid "Next"
 msgstr "بعدی"
 
-#: single-project.php:60 single.php:58
+#: single-project.php:62 single.php:59
 msgid "Tags:"
 msgstr "برچسب ها:"
 

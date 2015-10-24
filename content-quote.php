@@ -22,7 +22,9 @@
                         </div>
                         <div class="col-md-4">
                             <div class="post-info"><span><?php the_time("j F Y"); ?> </span> /
-                                <span> <?php the_category(', '); ?></span> / <span> <?php comments_popup_link( __('No comment', 'myblog'), __( 'One comment', 'myblog'), __('% comment', 'myblog')); ?></span></div>
+                                <span> <?php the_category(', '); ?></span> /
+                                <span> <?php comments_popup_link(__('No comment', 'myblog'), __('One comment', 'myblog'), __('% comment', 'myblog')); ?></span>
+                            </div>
                         </div>
                     </div>
                 </div>

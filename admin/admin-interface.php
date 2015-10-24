@@ -61,15 +61,15 @@ function propanel_siteoptions_options_page()
 
 <div class="wrap" id="truethemes_container">
   <div id="of-popup-save" class="of-save-popup">
-    <div class="of-save-save">تنظیمات بروزرسانی شد</div>
+    <div class="of-save-save"><?php _e('Options Updated', 'myblog'); ?></div>
   </div>
   <div id="of-popup-reset" class="of-save-popup">
-    <div class="of-save-reset">تنظیمات برگردانده شد</div>
+    <div class="of-save-reset"><?php _e('Options Reset', 'myblog'); ?></div>
   </div>
   <form action="" enctype="multipart/form-data" id="ofform">
     <div id="header">
       <div class="logo">
-        <h2>تنظیمات وبلاگ من</h2>
+        <h2><?php _e('MyBlog Options', 'myblog'); ?></h2>
       </div>
       <div class="icon-option"> </div>
       <div class="clear"></div>

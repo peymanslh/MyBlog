@@ -4,23 +4,36 @@ get_header();
 get_template_part('layouts/header');
 
 $project_column = get_option('mb_project_column');
+?>
+<div id="query-project">
+    <div class="container">
 
-if ($project_column == 2) {
+        <div class="row">
+            <div class="col-md-12 centered">
+                <?php
+                if ($project_column == 2) {
 
-    get_template_part('layouts/query-project');
+                    get_template_part('layouts/query-project');
 
-} elseif ($project_column == 3) {
+                } elseif ($project_column == 3) {
 
-    get_template_part('layouts/query-project', '3c');
+                    get_template_part('layouts/query-project', '3c');
 
-} elseif ($project_column == 4) {
+                } elseif ($project_column == 4) {
 
-    get_template_part('layouts/query-project', '4c');
+                    get_template_part('layouts/query-project', '4c');
 
-} elseif ($project_column == 6) {
+                } elseif ($project_column == 6) {
 
-    get_template_part('layouts/query-project', '6c');
+                    get_template_part('layouts/query-project', '6c');
 
-}
+                }
+                ?>
+                <?php mw_pagination(); ?>
+            </div>
+        </div>
+    </div>
+</div>
 
-get_footer();
+
+<?php get_footer(); ?>

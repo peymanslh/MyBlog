@@ -15,7 +15,9 @@ $footer_script = get_option('mb_footer_script');
 
                 <div class="copyright"><?php echo $copyright_txt ?></div>
 
-                <p class="designer"><?php _e('Made with','myblog'); ?> <span class="icon-heart"></span> <?php _e('by','myblog'); ?> <a href="http://peymansalehi.net" target="_blank"><?php _e('@peymanslh','myblog'); ?></a>
+                <p class="designer"><?php _e('Made with', 'myblog'); ?> <span
+                        class="icon-heart"></span> <?php _e('by', 'myblog'); ?> <a href="http://peymansalehi.net/"
+                                                                                   target="_blank"><?php _e('@peymanslh', 'myblog'); ?></a>
                 </p>
             </div>
 
@@ -38,9 +40,9 @@ $footer_script = get_option('mb_footer_script');
 </footer>
 
 <div>
-<style type="text/css" scoped>
-    <?php echo $footer_style ;?>
-</style>
+    <style type="text/css" scoped>
+        <?php echo $footer_style ;?>
+    </style>
 </div>
 
 <script type="text/javascript">

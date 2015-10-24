@@ -44,7 +44,7 @@ function propanel_siteoptions_admin_head()
 
     <script type="text/javascript">
         jQuery(function () {
-            var message = '<p><strong>Activation Successful!</strong> This theme\'s settings are located under <a href="<?php echo admin_url('admin.php?page=siteoptions'); ?>">Appearance > Site Options</a>.</p>';
+            var message = '<p><strong><?php _e('Activation Successful!', 'myblog'); ?></strong> <?php _e('This theme\'s settings are located under', 'myblog'); ?> <a href="<?php echo admin_url('admin.php?page=siteoptions'); ?>"><?php _e('Appearance > Site Options', 'myblog'); ?></a>.</p>';
             jQuery('.themes-php #message2').html(message);
         });
     </script>

@@ -40,7 +40,8 @@ if ($head_description == "" && $head_logo == "") {
 
             <?php } else { ?>
 
-                <img class="main-head-logo<?php echo $yesorno ?>" src="<?php echo $head_logo ?>" alt="<?php bloginfo() ?>"/>
+                <img class="main-head-logo<?php echo $yesorno ?>" src="<?php echo $head_logo ?>"
+                     alt="<?php bloginfo() ?>"/>
 
             <?php } ?>
 

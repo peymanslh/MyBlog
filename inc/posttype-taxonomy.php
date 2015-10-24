@@ -3,9 +3,9 @@
 function project()
 {
     $labels = array(
-        'name' => _x('Project', 'post type general name'),
-        'singular_name' => _x('Project', 'post type singular name'),
-        'add_new' => _x('Add project', 'myblog'),
+        'name' => __('Project', 'myblog'),
+        'singular_name' => __('Project', 'myblog'),
+        'add_new' => __('Add project', 'myblog'),
         'add_new_item' => __('Add new project', 'myblog'),
         'edit_item' => __('Edit', 'myblog'),
         'new_item' => __('New project', 'myblog'),
@@ -36,8 +36,8 @@ add_action('init', 'project');
 function cat_project()
 {
     $labels = array(
-        'name' => _x('Category', 'taxonomy general name'),
-        'singular_name' => _x('Category', 'taxonomy singular name'),
+        'name' => __('Category', 'myblog'),
+        'singular_name' => __('Category', 'myblog'),
         'search_items' => __('Search', 'myblog'),
         'all_items' => __('All Categories', 'myblog'),
         'parent_item' => __('Parent category', 'myblog'),

@@ -1,39 +1,19 @@
-<div id="query-project">
-    <div class="container">
+<div class="row">
+    <?php if (have_posts()) : ?>
+        <?php while (have_posts()) : the_post(); ?>
 
-        <div class="row">
-            <div class="col-md-12 centered">
+            <div class="col-md-4 col-sm-6 project-thumb">
+                <a href="<?php the_permalink() ?>">
+                    <?php if (has_post_thumbnail()) {
+                        the_post_thumbnail('project_thumb');
+                    } else {
+                        echo '<img src="' . esc_url(get_template_directory_uri()) . '/assets/images/no-thumbnail.png" />';
+                    } ?>
 
-                <div class="row">
-                    <?php if (have_posts()) : ?>
-                        <?php while (have_posts()) : the_post(); ?>
-
-                            <?php
-                            $id = get_post_thumbnail_id();
-                            $thumbnail_size = 'project_thumb'; // or array(width, height);
-                            $thumbnail = wp_get_attachment_image_src($id, $thumbnail_size);// the_post_thumbnail('thumbnail');
-                            $url = $thumbnail[0];
-                            $width = $thumbnail[1];
-                            $height = $thumbnail[2];
-                            ?>
-
-
-
-                            <div class="col-md-4 col-sm-6 project-thumb">
-                                <a href="<?php the_permalink() ?>">
-                                    <img src="<?php echo $url ?>" alt="<?php the_title(); ?>">
-
-                                    <div class="overaly"></div>
-                                    <div class="title"><span><?php the_title(); ?></span></div>
-                                </a>
-                            </div>
-                        <?php endwhile; ?>
-                    <?php endif; ?>
-                </div>
-
-
-                <?php mw_pagination(); ?>
+                    <div class="overaly"></div>
+                    <div class="title"><span><?php the_title(); ?></span></div>
+                </a>
             </div>
-        </div>
-    </div>
+        <?php endwhile; ?>
+    <?php endif; ?>
 </div>
