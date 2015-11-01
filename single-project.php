@@ -17,15 +17,15 @@ get_template_part('layouts/header'); ?>
 
     <div class="container">
         <div class="row">
-            <div class="col-md-8 centered">
+            <div class="col-md-8 col-center">
 
 
                 <article id="project-<?php the_ID(); ?>"  <?php post_class(); ?>>
 
                     <div class="post-title">
-                        <h1>
+                        <h2>
                             <a href="<?php the_permalink() ?>"><?php the_title(); ?></a><?php edit_post_link(__('Edit', 'myblog'), "<span class='edit-link'>", "</span>"); ?>
-                        </h1>
+                        </h2>
 
                     </div>
 
@@ -57,7 +57,7 @@ get_template_part('layouts/header'); ?>
         </div>
         <div class="row">
 
-            <div class="col-md-8 centered">
+            <div class="col-md-8 col-center">
                 <div class="tags">
                     <span class='title'><?php _e('Tags:', 'myblog'); ?></span><?php the_tags("", " , ", ""); ?>
                 </div>
@@ -67,7 +67,7 @@ get_template_part('layouts/header'); ?>
 
 
         <div class="row">
-            <div class="col-md-8 centered">
+            <div class="col-md-8 col-center">
                 <?php comments_template('', true); ?>
             </div>
         </div>

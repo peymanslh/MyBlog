@@ -1,65 +1,39 @@
 <?php
+/**
+ * Custom template tags for Twenty Fifteen
+ *
+ * Eventually, some of the functionality here could be replaced by core features.
+ *
+ * @package WordPress
+ * @subpackage Twenty_Fifteen
+ * @since Twenty Fifteen 1.0
+ */
 
-
-if (!function_exists('shape_comment')) :
+if ( ! function_exists( 'twentyfifteen_comment_nav' ) ) :
     /**
-     * Template for comments and pingbacks.
+     * Display navigation to next/previous comments when applicable.
      *
-     * Used as a callback by wp_list_comments() for displaying the comments.
-     *
-     * @since Shape 1.0
+     * @since Twenty Fifteen 1.0
      */
-    function shape_comment($comment, $args, $depth)
-    {
-        $GLOBALS['comment'] = $comment;
-        switch ($comment->comment_type) :
-            case 'pingback' :
-            case 'trackback' :
-                ?>
-                <li class="post pingback">
-                <p><?php _e('Pingback:', 'myblog'); ?> <?php comment_author_link(); ?><?php edit_comment_link(__('(Edit)', 'myblog'), ' '); ?></p>
-                <?php
-                break;
-            default :
-                ?>
-            <li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
-                <article id="comment-<?php comment_ID(); ?>" class="comment">
-                    <footer>
-                        <div class="comment-author vcard">
-                            <?php echo get_avatar($comment, 40); ?>
-                            <?php printf(__('%s <span class="says">says:</span>', 'myblog'), sprintf('<cite class="fn">%s</cite>', get_comment_author_link())); ?>
-                        </div>
-                        <!-- .comment-author .vcard -->
-                        <?php if ($comment->comment_approved == '0') : ?>
-                            <em><?php _e('Your comment is awaiting moderation.', 'myblog'); ?></em>
-                            <br/>
-                        <?php endif; ?>
+    function twentyfifteen_comment_nav() {
+        // Are there comments to navigate through?
+        if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) :
+            ?>
+            <nav class="navigation comment-navigation" role="navigation">
+                <h2 class="screen-reader-text"><?php _e( 'Comment navigation', 'myblog' ); ?></h2>
+                <div class="nav-links">
+                    <?php
+                    if ( $prev_link = get_previous_comments_link( __( 'Older Comments', 'myblog' ) ) ) :
+                        printf( '<div class="nav-previous">%s</div>', $prev_link );
+                    endif;
 
-                        <div class="comment-meta commentmetadata">
-                            <a href="<?php echo esc_url(get_comment_link($comment->comment_ID)); ?>">
-                                <time pubdate datetime="<?php comment_time('c'); ?>">
-                                    <?php
-                                    /* translators: 1: date, 2: time */
-                                    printf(__('%1$s at %2$s', 'myblog'), get_comment_date(), get_comment_time()); ?>
-                                </time>
-                            </a>
-                            <?php edit_comment_link(__('(Edit)', 'myblog'), ' ');
-                            ?>
-                        </div>
-                        <!-- .comment-meta .commentmetadata -->
-                    </footer>
-
-                    <div class="comment-content"><?php comment_text(); ?></div>
-
-                    <div class="reply">
-                        <?php comment_reply_link(array_merge($args, array('depth' => $depth, 'max_depth' => $args['max_depth']))); ?>
-                    </div>
-                    <!-- .reply -->
-                </article>
-                <!-- #comment-## -->
-
-                <?php
-                break;
-        endswitch;
+                    if ( $next_link = get_next_comments_link( __( 'Newer Comments', 'myblog' ) ) ) :
+                        printf( '<div class="nav-next">%s</div>', $next_link );
+                    endif;
+                    ?>
+                </div><!-- .nav-links -->
+            </nav><!-- .comment-navigation -->
+        <?php
+        endif;
     }
-endif; // ends check for shape_comment()
+endif;

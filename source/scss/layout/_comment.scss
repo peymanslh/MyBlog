@@ -1,203 +1,156 @@
-ol.commentlist {
-  list-style: none;
-  margin: 0 0 1em;
-  padding: 0;
-  text-indent: 0;
+/*
+ * Comment form style
+ */
+.required {
+  color: $red !important;
 }
-
-ol.commentlist li {
-}
-
-ol.commentlist li.alt {
-}
-
-ol.commentlist li.bypostauthor {
-}
-
-ol.commentlist li.byuser {
-}
-
-ol.commentlist li.comment-author-admin {
-}
-
-ol.commentlist li.comment {
-  border-bottom: 1px dotted #666;
-  padding: 1em;
-}
-
-ol.commentlist li div.comment-author {
-}
-
-ol.commentlist li div.vcard {
-  font: normal 11px $h_font;
-}
-
-ol.commentlist li div.vcard cite.fn {
-  font-style: normal;
-}
-
-ol.commentlist li div.vcard cite.fn a.url {
-}
-
-ol.commentlist li div.vcard img.avatar {
-  border: 5px solid #ccc;
-  float: right;
-  margin: 0 0 1em 1em;
-}
-
-ol.commentlist li div.vcard img.avatar-32 {
-}
-
-ol.commentlist li div.vcard img.photo {
-}
-
-ol.commentlist li div.vcard span.says {
-}
-
-ol.commentlist li div.commentmetadata {
-}
-
-ol.commentlist li div.comment-meta {
-  font-size: 9px;
-}
-
-ol.commentlist li div.comment-meta a {
-  color: #ccc;
-}
-
-ol.commentlist li p {
-  font-size: 11px;
-  margin: 0 0 1em;
-}
-
-ol.commentlist li ul {
-  font-size: 11px;
-  list-style: square;
-  margin: 0 0 1em 2em;
-}
-
-ol.commentlist li div.reply {
-  font-size: 11px;
-}
-
-ol.commentlist li div.reply a {
-  font-weight: bold;
-}
-
-ol.commentlist li ul.children {
-  list-style: none;
-  margin: 1em 0 0;
-  text-indent: 0;
-}
-
-ol.commentlist li ul.children li {
-}
-
-ol.commentlist li ul.children li.alt {
-}
-
-ol.commentlist li ul.children li.bypostauthor {
-}
-
-ol.commentlist li ul.children li.byuser {
-}
-
-ol.commentlist li ul.children li.comment {
-}
-
-ol.commentlist li ul.children li.comment-author-admin {
-}
-
-ol.commentlist li ul.children li.depth-2 {
-  border-left: 5px solid #555;
-  margin: 0 0 .25em .25em;
-}
-
-ol.commentlist li ul.children li.depth-3 {
-  border-left: 5px solid #999;
-  margin: 0 0 .25em .25em;
-}
-
-ol.commentlist li ul.children li.depth-4 {
-  border-left: 5px solid #bbb;
-  margin: 0 0 .25em .25em;
-}
-
-ol.commentlist li ul.children li.depth-5 {
-}
-
-ol.commentlist li ul.children li.odd {
-}
-
-ol.commentlist li.even {
-  background: #fff;
-}
-
-ol.commentlist li.odd {
-  background: #f6f6f6;
-}
-
-ol.commentlist li.parent {
-  border-left: 5px solid #111;
-}
-
-ol.commentlist li.pingback {
-  border-bottom: 1px dotted #666;
-  padding: 1em;
-}
-
-ol.commentlist li.thread-alt {
-}
-
-ol.commentlist li.thread-even {
-}
-
-ol.commentlist li.thread-odd {
-}
-
-.cmd-txt {
-  width: 100%;
-  // margin-left: 10px !important;
-}
-
-#respond h3 {
-  text-align: center;
+.comment-notes {
   font-weight: 100;
-  color: $lightgray;
-  margin: 55px auto 15px auto;
+  font-size: 13px;
+}
+.comment-form-author,
+.comment-form-email,
+.comment-form-url {
+  display: inline-block;
+  width: 32%;
+
+  input {
+    max-width: 100%;
+  }
+}
+.comment-form-comment {
+
+  textarea {
+    width: 100%;
+    display: block;
+  }
+}
+.form-submit {
+  .submit {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 
+/*
+ * Comment body
+ */
 #comments {
-  font-weight: 100;
-  margin-bottom: 10px;
-  text-align: center;
-  color: $lightgray;
+  margin-top: 60px;
+
+  .comments-title {
+    text-align: center;
+    vertical-align: middle;
+
+    &:after {
+      width: 60px;
+      height: 2px;
+      background-color: rgba(0, 0, 0, 0.1);
+      display: inline-block;
+      content: "";
+      vertical-align: middle;
+    }
+    &:before {
+      width: 60px;
+      height: 2px;
+      background-color: rgba(0, 0, 0, 0.1);
+      display: inline-block;
+      content: "";
+      vertical-align: middle;
+    }
+  }
+
+  .comment-list {
+    display: block;
+    list-style: none;
+    padding-right: 0;
+
+    .comment {
+
+      .comment-body {
+        margin-bottom: 20px;
+
+        .comment-author {
+          display: inline-block;
+          font-style: normal;
+
+          img {
+            float: right;
+            border-radius: 50%;
+            border: 3px solid rgb(200, 200, 200);
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+              border-color: #000000;
+            }
+          }
+          .fn {
+            font-style: normal;
+            margin-top: 20px;
+            margin-right: 10px;
+            float: right;
+          }
+          .says {
+            float: right;
+            margin-top: 20px;
+            margin-right: 5px;
+          }
+        }
+        .comment-meta {
+          display: inline-block;
+          font-size: 10px;
+          float: left;
+          margin-top: 25px;
+        }
+        p {
+          border-top: 1px solid rgba(0, 0, 0, 0.05);
+          margin-top: 5px;
+          padding-top: 5px;
+          font-size: 14px;
+          font-weight: 100;
+          color: rgb(170, 170, 170);
+        }
+
+        .reply {
+          .comment-reply-link {
+            font-size: 8px;
+            padding: 1px 10px;
+            color: rgb(200, 200, 200);
+            border: 1px solid rgb(200, 200, 200);
+
+            &:hover {
+              border-color: $theme-color;
+              color: $theme-color;
+            }
+          }
+        }
+      }
+
+      ol {
+        list-style: none;
+        display: block;
+      }
+
+      .comment-respond {
+
+        .comment-reply-title {
+          color: rgb(150, 150, 150);
+
+          small {
+            a {
+              font-size: 8px;
+              padding: 1px 10px;
+              color: rgb(200, 200, 200);
+              border: 1px solid rgb(200, 200, 200);
+
+              &:hover {
+                border-color: $theme-color;
+                color: $theme-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
-
-.ico-cm-comment {
-  margin-top: 100px;
-  text-align: center;
-  margin-bottom: 10px;
-  color: $theme_color;
-}
-
-.nocomments {
-  text-align: center;
-  font-weight: 100;
-  color: $lightgray;
-  margin: 55px auto 15px auto;
-}
-
-.user-signin-cm {
-  font-weight: 100;
-  color: $lightgray;
-  font-size: 14px;
-}
-
-
-
-
-
-
-
-

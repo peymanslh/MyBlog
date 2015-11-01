@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="col-md-8 centered">
+    <div class="col-md-8 col-center">
         <div class="btn-dd" id="share-this">
             <div class="divider-mini"></div>
             <button type="button" id="btn-share" data-toggle="dropdown"

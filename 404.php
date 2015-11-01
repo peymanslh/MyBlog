@@ -8,7 +8,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-6 centered">
+            <div class="col-md-6 col-center">
                 <h3><?php _e('Nothing found!', 'myblog'); ?></h3>
                 <?php get_search_form(); ?>
             </div>

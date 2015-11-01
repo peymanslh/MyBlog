@@ -26,7 +26,7 @@ if ($url == "") {
 
     <div class="container">
         <div class="row">
-            <section class="col-md-8 centered">
+            <section class="col-md-8 col-center">
 
                 <article id="post-<?php the_ID(); ?>"  <?php post_class(); ?>>
 

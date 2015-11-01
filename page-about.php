@@ -13,7 +13,7 @@ Template Name: About me
         the_post(); ?>
         <article id="post-<?php the_ID(); ?>"  <?php post_class(); ?>>
             <div class="row">
-                <div class="col-md-8 centered">
+                <div class="col-md-8 col-center">
                     <div class="post-title">
                         <h1>
                             <a href="<?php the_permalink() ?>"><?php the_title(); ?></a><?php edit_post_link(__('Edit', 'myblog'), "<span class='edit-link'>", "</span>"); ?>

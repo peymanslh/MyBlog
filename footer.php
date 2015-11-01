@@ -1,24 +1,20 @@
 <?php get_sidebar(); ?>
 
 <?php
-$copyright_txt = get_option('mb_copyright_txt');
 $footer_style = get_option('mb_footer_style');
 $footer_script = get_option('mb_footer_script');
+$copyright_txt = get_option('mb_copyright_txt');
 ?>
 
 <footer id="footer">
     <div class="container">
 
         <div class="row bt-footer">
-
             <div class="col-md-6">
 
                 <div class="copyright"><?php echo $copyright_txt ?></div>
 
-                <p class="designer"><?php _e('Made with', 'myblog'); ?> <span
-                        class="icon-heart"></span> <?php _e('by', 'myblog'); ?> <a href="http://peymansalehi.net/"
-                                                                                   target="_blank"><?php _e('@peymanslh', 'myblog'); ?></a>
-                </p>
+                <p class="designer"><?php _e('Made with', 'myblog'); ?> <span class="icon-heart"></span> <?php _e('by', 'myblog'); ?> <a href="<?php echo esc_url('http://peymansalehi.net/'); ?>" target="_blank"><?php _e('@peymanslh', 'myblog'); ?></a></p>
             </div>
 
             <div class="col-md-6">
@@ -34,7 +30,6 @@ $footer_script = get_option('mb_footer_script');
                     ?>
                 </div>
             </div>
-
         </div>
     </div>
 </footer>

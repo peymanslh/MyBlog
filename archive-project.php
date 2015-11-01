@@ -9,7 +9,7 @@ $project_column = get_option('mb_project_column');
     <div class="container">
 
         <div class="row">
-            <div class="col-md-12 centered">
+            <div class="col-md-12 col-center">
                 <?php
                 if ($project_column == 2) {
 
@@ -29,7 +29,13 @@ $project_column = get_option('mb_project_column');
 
                 }
                 ?>
-                <?php mw_pagination(); ?>
+                <?php
+                    the_posts_pagination( array(
+                        'prev_text'          => __( 'Previous page', 'myblog' ),
+                        'next_text'          => __( 'Next page', 'myblog' ),
+                        'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'myblog' ) . ' </span>',
+                    ) );
+                ?>
             </div>
         </div>
     </div>

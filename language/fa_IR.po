@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: myblog\n"
-"POT-Creation-Date: 2015-10-24 22:01+0330\n"
-"PO-Revision-Date: 2015-10-24 22:01+0330\n"
+"POT-Creation-Date: 2015-10-31 21:50+0330\n"
+"PO-Revision-Date: 2015-10-31 23:02+0330\n"
 "Last-Translator: \n"
 "Language-Team: peymanslh <peyman_salehi@icloud.com>\n"
 "Language: fa_IR\n"
@@ -13,7 +13,7 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-KeywordsList: _e;__;_nx\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: admin\n"
 "X-Poedit-SearchPathExcluded-0: node_modules\n"
@@ -185,7 +185,7 @@ msgstr "لینکداین"
 
 #: admin/theme-settings.php:192
 msgid "Stackoverflow"
-msgstr "‏Stackoverflow"
+msgstr "استک آورفلو"
 
 #: admin/theme-settings.php:197 layouts/share-page.php:23
 #: layouts/share-single.php:19
@@ -208,21 +208,35 @@ msgstr "‏css های سفارشی شما"
 msgid "Custom script"
 msgstr "کد های جاوااسکریپت برای فوتر"
 
-#: comments.php:39 comments.php:60
-msgid "Comment navigation"
-msgstr ""
+#: archive-project.php:34 layouts/query-one.php:15 single.php:58
+msgid "Previous page"
+msgstr "صفحه قبل"
 
-#: comments.php:41 comments.php:62
-msgid "&larr; Older Comments"
-msgstr ""
+#: archive-project.php:35 layouts/query-one.php:16 single.php:57
+msgid "Next page"
+msgstr "صفحه بعد"
 
-#: comments.php:42 comments.php:63
-msgid "Newer Comments &rarr;"
-msgstr ""
+#: archive-project.php:36 layouts/query-one.php:17
+msgid "Page"
+msgstr "صفحه"
 
-#: comments.php:73
+#: comments.php:28
+#, php-format
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgstr "یک دیدگاه برای &ldquo;%2$s&rdquo;"
+
+#: comments.php:28
+#, php-format
+msgid "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr "‏%1$s دیدگاه برای &ldquo;%2$s&rdquo;"
+
+#: comments.php:28
+msgid "comments title"
+msgstr "عنوان دیدگاه"
+
+#: comments.php:53
 msgid "Comments are closed."
-msgstr ""
+msgstr "امکان نظر دهی برای این پست بسته شده است."
 
 #: content-aside.php:4 content-audio.php:15 content-chat.php:15
 #: content-gallery.php:17 content-image.php:19 content-quote.php:16
@@ -231,8 +245,8 @@ msgid "More"
 msgstr "ادامه"
 
 #: content-aside.php:8 content-audio.php:5 content-chat.php:5
-#: content-gallery.php:7 content-link.php:6 content-quote.php:20
-#: content-status.php:21 content-video.php:5 content.php:5
+#: content-gallery.php:7 content-image.php:4 content-link.php:6
+#: content-quote.php:20 content-status.php:21 content-video.php:5 content.php:5
 #: inc/posttype-taxonomy.php:10 inc/posttype-taxonomy.php:45 page-about.php:19
 #: page.php:35 single-project.php:27
 msgid "Edit"
@@ -257,34 +271,29 @@ msgstr "یک دیدگاه"
 msgid "% comment"
 msgstr "% دیدگاه"
 
-#: footer.php:18
+#: footer.php:17
 msgid "Made with"
 msgstr "ساخته شده"
 
-#: footer.php:19
+#: footer.php:17
 msgid "by"
 msgstr "توسط"
 
-#: footer.php:20
+#: footer.php:17
 msgid "@peymanslh"
-msgstr "‏peymanslh‪@‬"
+msgstr "پیمان"
 
-#: functions.php:13 sidebar.php:3
+#: functions.php:12 sidebar.php:3
 msgid "Main menu"
 msgstr "منوی اصلی"
 
-#: functions.php:48
+#: functions.php:85
 msgid "right-sidebar"
 msgstr ""
 
-#: functions.php:50
+#: functions.php:87
 msgid "Right Sidebar"
 msgstr "نوار کناری سمت راست"
-
-#: header.php:24
-#, php-format
-msgid "Page %s"
-msgstr ""
 
 #: inc/posttype-taxonomy.php:6 inc/posttype-taxonomy.php:7
 #: inc/posttype-taxonomy.php:18
@@ -353,27 +362,17 @@ msgstr "اضاقه کردن"
 msgid "Add"
 msgstr "اضافه"
 
-#: inc/template-tags.php:28
-msgid "Pingback:"
-msgstr ""
+#: inc/template-tags.php:23
+msgid "Comment navigation"
+msgstr "صفحه بندی دیدگاه ها"
 
-#: inc/template-tags.php:28 inc/template-tags.php:54
-msgid "(Edit)"
-msgstr ""
+#: inc/template-tags.php:26
+msgid "Older Comments"
+msgstr "دیدگاه های قدیمی تر"
 
-#: inc/template-tags.php:38
-#, php-format
-msgid "%s <span class=\"says\">says:</span>"
-msgstr ""
-
-#: inc/template-tags.php:42
-msgid "Your comment is awaiting moderation."
-msgstr ""
-
-#: inc/template-tags.php:51
-#, php-format
-msgid "%1$s at %2$s"
-msgstr ""
+#: inc/template-tags.php:30
+msgid "Newer Comments"
+msgstr "دیدگاه های جدیدتر"
 
 #: layouts/navbar.php:21
 msgid "Keyword + Enter"
@@ -381,7 +380,7 @@ msgstr "کلمه کلیدی + اینتر"
 
 #: layouts/share-page.php:6
 msgid "Share this page"
-msgstr "به اشتراک گذاری این صفحه"
+msgstr "این صفحه را به اشتراک بگذارید"
 
 #: layouts/share-page.php:15 layouts/share-single.php:12
 msgid "Google +"
@@ -389,7 +388,7 @@ msgstr "گوگل پلاس"
 
 #: layouts/share-single.php:3
 msgid "Share this post"
-msgstr "به اشتراک گذاری این مطلب"
+msgstr "این مطلب را به اشتراک بگذارید"
 
 #: search.php:8
 msgid "Search result for:"
@@ -399,21 +398,25 @@ msgstr "نتایج جستجو برای : "
 msgid "Search..."
 msgstr "جستجو…"
 
-#: single-project.php:53 single.php:50
+#: single-project.php:53 single.php:69
 msgid "Post"
 msgstr "مطلب"
 
-#: single-project.php:53 single.php:50
+#: single-project.php:53 single.php:69
 msgid "Previous"
 msgstr "قبلی"
 
-#: single-project.php:54 single.php:51
+#: single-project.php:54 single.php:70
 msgid "Next"
 msgstr "بعدی"
 
-#: single-project.php:62 single.php:59
+#: single-project.php:62 single.php:78
 msgid "Tags:"
 msgstr "برچسب ها:"
+
+#: single.php:51
+msgid "Pages:"
+msgstr "صفحه ها:"
 
 #~ msgid "more"
 #~ msgstr "ادامه"

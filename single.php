@@ -29,7 +29,7 @@ if ($url == "") {
 
     <div class="container">
         <div class="row">
-            <section class="col-md-8 centered">
+            <section class="col-md-8 col-center">
 
                 <?php get_template_part('content', get_post_format()); ?>
 
@@ -45,6 +45,25 @@ if ($url == "") {
             <div class="col-md-4 col-md-offset-2">
                 <?php get_template_part('layouts/share', 'single'); ?>
             </div>
+            <div class="nav-links single">
+                <?php
+                $defaults = array(
+                    'before'           => '<p>' . __( 'Pages:', 'myblog' ),
+                    'after'            => '</p>',
+                    'link_before'      => '',
+                    'link_after'       => '',
+                    'next_or_number'   => 'number',
+                    'separator'        => ' ',
+                    'nextpagelink'     => __( 'Next page', 'myblog' ),
+                    'previouspagelink' => __( 'Previous page', 'myblog' ),
+                    'pagelink'         => '%',
+                    'echo'             => 1
+                );
+
+                wp_link_pages( $defaults );
+
+                ?>
+            </div>
             <div class="col-md-4">
                 <section class="next-prev">
                     <?php _e('Post', 'myblog'); ?> <?php previous_post_link('%link', __('Previous', 'myblog'), TRUE); ?>
@@ -54,7 +73,7 @@ if ($url == "") {
         </div>
         <div class="row">
 
-            <div class="col-md-8 centered">
+            <div class="col-md-8 col-center">
                 <div class="tags">
                     <span class='title'><?php _e('Tags:', 'myblog'); ?></span><?php the_tags("", " , ", ""); ?>
                 </div>
@@ -64,7 +83,7 @@ if ($url == "") {
 
 
         <div class="row">
-            <div class="col-md-8 centered">
+            <div class="col-md-8 col-center">
                 <?php comments_template('', true); ?>
             </div>
         </div>

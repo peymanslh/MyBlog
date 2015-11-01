@@ -46,7 +46,7 @@ if ($head_description == "" && $head_logo == "") {
             <?php } ?>
 
             <div class="row">
-                <div class="col-md-4 col-sm-7 col-xs-10 centered">
+                <div class="col-md-4 col-sm-7 col-xs-10 col-center">
                     <p style="color:<?php echo $head_txt_color ?>"><?php echo $head_description ?></p>
                 </div>
             </div>

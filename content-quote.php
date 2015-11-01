@@ -21,7 +21,7 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="post-info"><span><?php the_time("j F Y"); ?> </span> /
+                            <div class="post-info"><span><?php the_time(get_option( 'date_format' )); ?> </span> /
                                 <span> <?php the_category(', '); ?></span> /
                                 <span> <?php comments_popup_link(__('No comment', 'myblog'), __('One comment', 'myblog'), __('% comment', 'myblog')); ?></span>
                             </div>
