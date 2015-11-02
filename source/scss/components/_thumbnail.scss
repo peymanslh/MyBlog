@@ -17,6 +17,7 @@
 .project-thumb {
   position: relative;
   text-align: center;
+  margin-bottom: $grid-gutter-width;
 
   img {
     max-width: 100%;
@@ -33,7 +34,7 @@
   }
 
   .overaly {
-    background-color: $theme_color;
+    background-color: rgba(255, 255, 255, 1);
     opacity: 0;
     position: absolute;
     top: 0;
@@ -41,13 +42,13 @@
     right: 0;
     left: 0;
 
-    transition: all ease-in 0.3s;
+    transition: all ease-out 0.3s;
   }
 
   .title {
     padding: 10px;
     position: absolute;
-    top: 10px;
+    top: 40%;
     display: block;
     width: 100%;
 
@@ -57,7 +58,7 @@
       width: 100%;
     }
     opacity: 0;
-    color: #ffffff;
+    color: #000000;
     font-weight: 100;
   }
 
@@ -69,7 +70,7 @@
     animation-duration: 0.3s !important;
   }
   &:hover .overaly {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 
