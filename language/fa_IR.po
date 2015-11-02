@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: myblog\n"
-"POT-Creation-Date: 2015-10-31 21:50+0330\n"
-"PO-Revision-Date: 2015-10-31 23:02+0330\n"
+"POT-Creation-Date: 2015-11-02 11:53+0330\n"
+"PO-Revision-Date: 2015-11-02 11:53+0330\n"
 "Last-Translator: \n"
 "Language-Team: peymanslh <peyman_salehi@icloud.com>\n"
 "Language: fa_IR\n"
@@ -220,21 +220,26 @@ msgstr "صفحه بعد"
 msgid "Page"
 msgstr "صفحه"
 
-#: comments.php:28
+#: comments.php:31 content-aside.php:10 content-audio.php:9 content-chat.php:9
+#: content-gallery.php:11 content-image.php:8 content-link.php:9
+#: content-quote.php:26 content-status.php:13 content-video.php:9 content.php:9
+msgid "No comment"
+msgstr "بدون دیدگاه"
+
+#: comments.php:31 content-aside.php:10 content-audio.php:9 content-chat.php:9
+#: content-gallery.php:11 content-image.php:8 content-link.php:9
+#: content-quote.php:26 content-status.php:13 content-video.php:9 content.php:9
+msgid "One comment"
+msgstr "یک دیدگاه"
+
+#: comments.php:31 content-aside.php:10 content-audio.php:9 content-chat.php:9
+#: content-gallery.php:11 content-image.php:8 content-link.php:9
+#: content-quote.php:26 content-status.php:13 content-video.php:9 content.php:9
 #, php-format
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgstr "یک دیدگاه برای &ldquo;%2$s&rdquo;"
+msgid "% comment"
+msgstr "% دیدگاه"
 
-#: comments.php:28
-#, php-format
-msgid "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr "‏%1$s دیدگاه برای &ldquo;%2$s&rdquo;"
-
-#: comments.php:28
-msgid "comments title"
-msgstr "عنوان دیدگاه"
-
-#: comments.php:53
+#: comments.php:54
 msgid "Comments are closed."
 msgstr "امکان نظر دهی برای این پست بسته شده است."
 
@@ -252,36 +257,25 @@ msgstr "ادامه"
 msgid "Edit"
 msgstr "ویرایش"
 
-#: content-aside.php:10 content-audio.php:9 content-chat.php:9
-#: content-gallery.php:11 content-image.php:8 content-link.php:9
-#: content-quote.php:26 content-status.php:13 content-video.php:9 content.php:9
-msgid "No comment"
-msgstr "بدون دیدگاه"
-
-#: content-aside.php:10 content-audio.php:9 content-chat.php:9
-#: content-gallery.php:11 content-image.php:8 content-link.php:9
-#: content-quote.php:26 content-status.php:13 content-video.php:9 content.php:9
-msgid "One comment"
-msgstr "یک دیدگاه"
-
-#: content-aside.php:10 content-audio.php:9 content-chat.php:9
-#: content-gallery.php:11 content-image.php:8 content-link.php:9
-#: content-quote.php:26 content-status.php:13 content-video.php:9 content.php:9
-#, php-format
-msgid "% comment"
-msgstr "% دیدگاه"
-
 #: footer.php:17
 msgid "Made with"
-msgstr "ساخته شده"
+msgstr "ساخته شده با"
 
 #: footer.php:17
 msgid "by"
 msgstr "توسط"
 
 #: footer.php:17
-msgid "@peymanslh"
-msgstr "پیمان"
+msgid "@peymanslh,"
+msgstr "پیمان،"
+
+#: footer.php:17
+msgid "Powered by"
+msgstr "قدرت گرفته از"
+
+#: footer.php:17
+msgid "Wordpress"
+msgstr "وردپرس"
 
 #: functions.php:12 sidebar.php:3
 msgid "Main menu"
@@ -417,6 +411,21 @@ msgstr "برچسب ها:"
 #: single.php:51
 msgid "Pages:"
 msgstr "صفحه ها:"
+
+#~ msgid "@peymanslh ,"
+#~ msgstr "پیمان، "
+
+#~ msgid "@peymanslh"
+#~ msgstr "پیمان"
+
+#~ msgid "One thought on &ldquo;%2$s&rdquo;"
+#~ msgstr "یک دیدگاه برای &ldquo;%2$s&rdquo;"
+
+#~ msgid "%1$s thoughts on &ldquo;%2$s&rdquo;"
+#~ msgstr "‏%1$s دیدگاه برای &ldquo;%2$s&rdquo;"
+
+#~ msgid "comments title"
+#~ msgstr "عنوان دیدگاه"
 
 #~ msgid "more"
 #~ msgstr "ادامه"
