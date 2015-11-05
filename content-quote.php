@@ -15,12 +15,12 @@
                 <div class="content">
                     <?php the_content(__('More', 'myblog'), false); ?>
                     <div class="row">
-                        <div class="col-md-8">
+                        <div class="col-md-7">
                             <div class="title"><a
                                     href="<?php the_permalink() ?>">- <?php the_title(); ?></a><?php edit_post_link(__('Edit', 'myblog'), "<span class='edit-link'>", "</span>"); ?>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-5">
                             <div class="post-info"><span><?php the_time(get_option( 'date_format' )); ?> </span> /
                                 <span> <?php the_category(', '); ?></span> /
                                 <span> <?php comments_popup_link(__('No comment', 'myblog'), __('One comment', 'myblog'), __('% comment', 'myblog')); ?></span>

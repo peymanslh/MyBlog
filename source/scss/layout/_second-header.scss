@@ -1,5 +1,5 @@
 // Header class
-header#second-header {
+#second-header {
   height: 100px;
   width: 100%;
   background-color: rgba(255, 255, 255, 1);
@@ -28,9 +28,8 @@ header#second-header {
 
   #nav-logo-txt {
     height: 100px;
-    font-family: $h_font;
-    font-weight: 100;
-    font-size: 15px;
+    font-weight: bold;
+    font-size: 16px;
     color: #000000;
     text-align: center;
     padding: 35px 15px 0 15px;
@@ -51,6 +50,3 @@ header#second-header {
 @media screen and (max-width: 992px) {
 
 }
-
-
-

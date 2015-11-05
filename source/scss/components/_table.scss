@@ -48,8 +48,8 @@ table {
       padding: 0.75em 1em;
       color: $table_head_color;
       background-color: $table_head_bg_color;
-      font-size: 13px;
-      font-weight: normal;
+      font-size: 14px;
+      font-weight: bold;
       border-bottom: 0px;
       border-right: 1px solid $table_border;
       text-align: right;
@@ -63,8 +63,8 @@ table {
   tbody {
     color: $table_body_color;
     td {
-      font-size: 12px;
-      font-weight: 100;
+      font-size: 14px;
+      font-weight: normal;
       border-bottom: 0px;
       border-right: 1px solid $table_border;
       border-top: 1px solid $table_border;

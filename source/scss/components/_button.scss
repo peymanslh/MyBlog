@@ -1,17 +1,16 @@
 .btn {
-  padding: 6px 20px;
+  padding: 3px 20px 6px 20px;
   display: inline-block;
   color: #777777;
   background-color: #ffffff;
-  font-size: 11px;
+  font-size: 14px;
   font-family: $h_font;
   text-decoration: none;
   white-space: nowrap;
   text-align: center;
   border: 1px solid #777777;
   border-radius: 3px;
-  font-weight: 100;
-  // box-shadow: $btn_shadow;
+  font-weight: normal;
   @include transition(all 0.2s ease-in-out);
   @include user-select(none);
 

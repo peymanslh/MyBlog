@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: myblog\n"
-"POT-Creation-Date: 2015-11-02 11:53+0330\n"
-"PO-Revision-Date: 2015-11-02 11:53+0330\n"
+"POT-Creation-Date: 2015-11-05 20:29+0330\n"
+"PO-Revision-Date: 2015-11-05 20:30+0330\n"
 "Last-Translator: \n"
 "Language-Team: peymanslh <peyman_salehi@icloud.com>\n"
 "Language: fa_IR\n"
@@ -208,11 +208,11 @@ msgstr "‏css های سفارشی شما"
 msgid "Custom script"
 msgstr "کد های جاوااسکریپت برای فوتر"
 
-#: archive-project.php:34 layouts/query-one.php:15 single.php:58
+#: archive-project.php:34 layouts/query-one.php:15 single.php:52
 msgid "Previous page"
 msgstr "صفحه قبل"
 
-#: archive-project.php:35 layouts/query-one.php:16 single.php:57
+#: archive-project.php:35 layouts/query-one.php:16 single.php:51
 msgid "Next page"
 msgstr "صفحه بعد"
 
@@ -392,25 +392,28 @@ msgstr "نتایج جستجو برای : "
 msgid "Search..."
 msgstr "جستجو…"
 
-#: single-project.php:53 single.php:69
+#: single-project.php:53 single.php:64
 msgid "Post"
 msgstr "مطلب"
 
-#: single-project.php:53 single.php:69
+#: single-project.php:53 single.php:64
 msgid "Previous"
 msgstr "قبلی"
 
-#: single-project.php:54 single.php:70
+#: single-project.php:54 single.php:65
 msgid "Next"
 msgstr "بعدی"
 
-#: single-project.php:62 single.php:78
+#: single-project.php:62 single.php:73
 msgid "Tags:"
 msgstr "برچسب ها:"
 
-#: single.php:51
-msgid "Pages:"
-msgstr "صفحه ها:"
+#: single.php:45
+msgid "Continue this article:"
+msgstr "ادامه این مطلب :"
+
+#~ msgid "Pages:"
+#~ msgstr "صفحه ها:"
 
 #~ msgid "@peymanslh ,"
 #~ msgstr "پیمان، "

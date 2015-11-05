@@ -12,11 +12,11 @@
   .post,
   .project,
   .attachment {
-    font-family: $h_font;
 
     .post-title {
       h2 {
-        font-size: 14px;
+        font-size: 16px;
+        margin-bottom: 10px;
         text-align: right;
 
         a {
@@ -27,7 +27,8 @@
           }
         }
         .edit-link {
-          font-size: 10px;
+          font-size: 12px;
+          font-weight: normal;
           padding-right: 20px;
 
           a {
@@ -37,9 +38,8 @@
       }
       .post-info {
         text-align: right;
-        font-family: $h_font;
-        font-weight: 100;
-        font-size: 11px;
+        font-size: 12px;
+        font-weight: normal;
         color: #939393;
 
         span {
@@ -52,8 +52,8 @@
     }
 
     .post-inner-content {
-      font-size: 13px;
-      font-weight: 100;
+      font-size: 14px;
+      font-weight: normal;
       color: #838383;
 
       &.about-tpl {
@@ -78,8 +78,7 @@
   }
 
   .next-prev {
-    font-family: $h_font;
-    font-size: 11px;
+    font-size: 14px;
     text-align: left;
     margin-top: 63px;
     color: #838383;
@@ -97,9 +96,13 @@
   }
   .tags {
     margin-top: 30px;
-    font-size: 12px;
+    font-size: 14px;
     color: #838383;
     margin-right: 18px;
+
+    .title {
+      margin-left: 5px;
+    }
 
     a {
       color: #9B9B9B;

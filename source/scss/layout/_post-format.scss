@@ -37,8 +37,8 @@
       right: 0;
       left: 0;
       padding: 30px 20px;
-      font-weight: 100;
-      font-size: 15px;
+      font-weight: normal;
+      font-size: 14px;
       border-radius: 4px;
 
       &:after, &:before {
@@ -67,15 +67,16 @@
 
       .title {
         text-align: right;
-        font-size: 13px;
-        font-weight: 100;
+        font-size: 14px;
+        font-weight: normal;
 
         a {
           color: #FFFFFF !important;
         }
         .post-edit-link {
           color: $theme_color !important;
-          font-size: 10px;
+          font-size: 12px;
+          font-weight: normal;
           padding-right: 10px;
         }
       }
@@ -83,7 +84,7 @@
       .post-info {
         text-align: left;
         font-size: 12px;
-        font-weight: 100;
+        font-weight: normal;
         color: #FFFFFF;
 
         a {
@@ -98,7 +99,8 @@
   .post-title {
 
     .edit-link {
-      font-size: 10px;
+      font-size: 12px;
+      font-weight: normal;
 
       a {
         color: $theme_color;
@@ -110,18 +112,18 @@
 .format-status {
   .status-content {
     padding-top: 10px;
-    font-family: $h_font;
-    font-weight: 100;
-    font-size: 13px;
+    font-weight: normal;
+    font-size: 14px;
     color: rgb(131, 131, 131);
     // margin-top: -10px;
 
     .title {
-      font-weight: normal;
+      font-weight: bold;
     }
 
     .edit-link {
-      font-size: 10px;
+      font-size: 12px;
+      font-weight: normal;
       padding-right: 20px;
 
       a {
@@ -169,9 +171,8 @@
   .post-info {
     margin-top: 5px;
     text-align: center;
-    font-family: $h_font;
-    font-weight: 100;
-    font-size: 11px;
+    font-weight: normal;
+    font-size: 12px;
     color: #939393;
 
     span {

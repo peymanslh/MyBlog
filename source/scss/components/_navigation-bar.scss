@@ -47,8 +47,8 @@
         display: block;
         height: $nav_height;
         padding: 0 15px;
-        font: 12px/#{$nav_height} $h_font;
-        font-weight: 100;
+        font: 14px/#{$nav_height} $h_font;
+        font-weight: normal;
         color: inherit;
         @include transition(background 190ms ease-in, 190ms ease-in);
       }

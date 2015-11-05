@@ -4,7 +4,7 @@
   display: inline-block;
   @include box-sizing(content-box);
   &:before, &:after {
-    font-weight: 100;
+    font-weight: normal;
     position: absolute;
     visibility: hidden;
     opacity: 0;
@@ -24,7 +24,7 @@
   &:after {
     height: $tooltipHeight;
     padding: $tooltipHeight/2 $tooltipHeight/2 0 $tooltipHeight/2;
-    font-size: 13px;
+    font-size: 14px;
     line-height: $tooltipHeight/2;
     content: attr(data-tooltip);
     white-space: nowrap;

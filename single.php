@@ -40,29 +40,24 @@ if ($url == "") {
             </section>
         </div>
 
+            <?php
+            $defaults = array(
+                'before'           => '<div class="single-nav-links">'. '<span class="text">'  . __( 'Continue this article:', 'myblog' ) . '</span>',
+                'after'            => '</div>',
+                'link_before'      => '',
+                'link_after'       => '',
+                'next_or_number'   => 'number',
+                'separator'        => ' ',
+                'nextpagelink'     => __( 'Next page', 'myblog' ),
+                'previouspagelink' => __( 'Previous page', 'myblog' ),
+                'pagelink'         => '%',
+                'echo'             => 1
+            );
+            wp_link_pages( $defaults );
+            ?>
         <div class="row">
-
             <div class="col-md-4 col-md-offset-2">
                 <?php get_template_part('layouts/share', 'single'); ?>
-            </div>
-            <div class="nav-links single">
-                <?php
-                $defaults = array(
-                    'before'           => '<p>' . __( 'Pages:', 'myblog' ),
-                    'after'            => '</p>',
-                    'link_before'      => '',
-                    'link_after'       => '',
-                    'next_or_number'   => 'number',
-                    'separator'        => ' ',
-                    'nextpagelink'     => __( 'Next page', 'myblog' ),
-                    'previouspagelink' => __( 'Previous page', 'myblog' ),
-                    'pagelink'         => '%',
-                    'echo'             => 1
-                );
-
-                wp_link_pages( $defaults );
-
-                ?>
             </div>
             <div class="col-md-4">
                 <section class="next-prev">

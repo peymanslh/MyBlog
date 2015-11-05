@@ -48,7 +48,7 @@ if ($url == "") {
             </section>
         </div>
 
-        <?php get_template_part('inc/share', 'page'); ?>
+        <?php get_template_part('layouts/share', 'page'); ?>
     </div>
 
 </div>

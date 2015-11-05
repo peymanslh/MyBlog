@@ -1,15 +1,13 @@
-
-.pagination {
+.nav-links {
   margin: 75px auto 0 auto;
   text-align: center;
 
-  & > a,
-  & > span {
+  .page-numbers {
     position: relative;
     padding: 4px 10px;
     color: $pi_color;
     margin-left: 2px;
-    font-family: $tahoma;
+    font-family: $h_font;
     text-decoration: none;
     font-size: 13px;
     border-bottom: 3px solid $pi_color;
@@ -22,26 +20,44 @@
     }
 
     &.current {
-      color: lighten($pi_color, 14%);
-      border-bottom: 3px solid lighten($pi_color, 14%);
-      cursor: default;
+      color: lighten($pi_color, 25%);
+      border-bottom: 3px solid lighten($pi_color, 25%);
     }
 
-    &.disabled {
-      color: lighten($pi_color, 9%);
-      cursor: default;
+
+  }
+}
+.single-nav-links {
+  text-align: center;
+  margin: 30px auto;
+
+  &:before,
+  &:after {
+    font-size: 20px;
+    display: block;
+    text-align: center;
+  }
+  &:after {
+    content: '\2235';
+  }
+  &:before {
+    content: '\2234';
+  }
+
+  .text {
+    padding: 4px 10px;
+    color: $pi_color;
+    margin-left: 2px;
+  }
+
+  a {
+    padding: 0 5px;
+    border-radius: 5px;
+
+    &:hover{
+      background-color: $theme-color;
+      color: #ffffff;
     }
-  }
 
-  &.pagination-sm > a,
-  &.pagination-sm > span {
-    padding: 2px 8px;
-    font-size: 11px;
-  }
-
-  &.pagination-lg > a,
-  &.pagination-lg > span {
-    padding: 8px 10px;
-    font-size: 15px;
   }
 }

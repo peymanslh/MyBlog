@@ -1,18 +1,11 @@
 @font-face {
-  font-family: 'IRANSans';
-  src: url('../fonts/IRANSans.woff') format('woff');
+  font-family: 'vazir';
+  src: url('../fonts/vazir.woff') format('woff');
   font-weight: normal;
 }
-
 @font-face {
-  font-family: 'IRANSans';
-  src: url('../fonts/IRANSans-Light.woff') format('woff');
-  font-weight: 100;
-}
-
-@font-face {
-  font-family: 'IRANSans';
-  src: url('../fonts/IRANSans-Bold.woff') format('woff');
+  font-family: 'vazir';
+  src: url('../fonts/vazir-bold.woff') format('woff');
   font-weight: bold;
 }
 
@@ -33,18 +26,15 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding-right: 0 !important;
   margin-right: 0 !important;
-  font-family: $h_font;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 blockquote {
   min-height: 85px;
   padding: 10px 10px 10px 5px;
   color: grey;
-  font-family: $h_font;
-  font-weight: 100;
+  font-weight: normal;
   font-style: italic;
-  border-right: 5px solid $lightgray;
 
   &:before {
     width: 50px;
@@ -57,4 +47,3 @@ blockquote {
     overflow: hidden;
   }
 }
-
