@@ -1,4 +1,4 @@
-<?php add_shortcode('gallery', 'content_gallery_shortcode'); ?>
+<?php add_filter('post_gallery', 'content_gallery_output', 10, 2); ?>
 
 <article id="post-<?php the_ID(); ?>"  <?php post_class(); ?>>
 

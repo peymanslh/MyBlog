@@ -1,3 +1,13 @@
+// generate gallery-item width
+@mixin gallery_width($columns) {
+  @for $i from 1 through $columns {
+    &.gallery-columns-#{$i} {
+      .gallery-item {
+        width: (100% / $i);
+      }
+    }
+  }
+}
 //generate custom color for button
 @mixin btn_color($color) {
   background-color: #ffffff;

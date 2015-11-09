@@ -283,3 +283,21 @@ body:after {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
+
+/*
+ * gallery output
+ */
+
+.gallery {
+  display: block;
+  width: 100%;
+  margin: 15px auto;
+  overflow: hidden;
+
+  @include gallery_width(9);
+
+  .gallery-item {
+    float: right;
+    padding: 5px;
+  }
+}

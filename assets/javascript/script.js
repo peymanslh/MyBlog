@@ -1,10 +1,1 @@
-$(document).ready(function () {
-    $(".my-att a").attr({"data-lightbox": "mygallery"}), lightbox.option({
-        resizeDuration: 100,
-        fadeDuration: 100
-    }), $(function () {
-        $("#btn-search").bind("click", function (t) {
-            t.preventDefault(), $("#box-search").bPopup()
-        })
-    })
-});
+"use strickt";$(document).ready(function(){lightbox.option({resizeDuration:100,fadeDuration:100}),$(function(){$("#btn-search").bind("click",function(e){e.preventDefault(),$("#box-search").bPopup()})}),$(".gallery-output-slide").responsiveSlides({speed:1e3,auto:!0,nav:!0})});

@@ -12,7 +12,7 @@ require_once(TEMPLATEPATH . '/inc/posttype-taxonomy.php');
 register_nav_menu('top_menu', __('Main menu', 'myblog'));
 
 // Change gallery output
-require_once(TEMPLATEPATH . '/inc/my-media.php');
+require_once(TEMPLATEPATH . '/inc/gallery.php');
 
 //admin panel -------------------------------
 require_once(TEMPLATEPATH . '/admin/admin-functions.php');
@@ -109,6 +109,7 @@ function add_theme_scripts()
     wp_enqueue_script('dropdown', get_template_directory_uri() . '/assets/javascript/dropdown.js', array(), 1.1, true);
     wp_enqueue_script('lightbox', get_template_directory_uri() . '/assets/javascript/lightbox.js', array(), 1.1, true);
     wp_enqueue_script('offmenu', get_template_directory_uri() . '/assets/javascript/off-menu.js', array(), 1.1, true);
+    wp_enqueue_script('slider', get_template_directory_uri() . '/assets/javascript/responsiveslides.js', array(), 1.1, true);
     wp_enqueue_script('script', get_template_directory_uri() . '/assets/javascript/script.js', array(), 1.1, true);
 
 }

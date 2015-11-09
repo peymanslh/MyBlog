@@ -34,6 +34,7 @@ $main_color: $green;
 'components/my-off',
 'components/lightbox',
 'components/animate',
+'components/slider',
 'components/progress-bar';
 
 //  layout
@@ -50,4 +51,3 @@ $main_color: $green;
 @import 'pages/pages',
 'pages/404',
 'pages/single';
-
