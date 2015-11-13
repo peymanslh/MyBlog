@@ -19,16 +19,12 @@
   @include gen_row;
 }
 
-
-
-
 // Extra small grid
 //
 // Columns and offsets for extra small devices like
 // smartphones.
 
 @include make-grid(xs);
-
 
 // Small grid
 //
@@ -39,7 +35,6 @@
   @include make-grid(sm);
 }
 
-
 // Medium grid
 //
 // Columns and offsets for the desktop device range.
@@ -47,7 +42,6 @@
 @media (min-width: $media-md) {
   @include make-grid(md);
 }
-
 
 // Large grid
 //
@@ -57,7 +51,6 @@
   @include make-grid(lg);
 }
 
-
 // Helper Class
 
 .col-center {
@@ -65,6 +58,7 @@
   margin-right: auto;
   float: none !important;
 }
+
 .clearfix {
   @include clearfix;
 }
@@ -73,14 +67,17 @@
   @include create_show(xs);
   @include create_hide(xs);
 }
+
 @media (min-width: $media-sm) and (max-width: $media-md) {
   @include create_show(sm);
   @include create_hide(sm);
 }
+
 @media (min-width: $media-md) and (max-width: $media-lg) {
   @include create_show(md);
   @include create_hide(md);
 }
+
 @media (min-width: $media-lg) {
   @include create_show(lg);
   @include create_hide(lg);

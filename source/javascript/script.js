@@ -22,9 +22,9 @@ $(document).ready(function () {
 
     //Active content-gallery slider
     $(".gallery-output-slide").responsiveSlides({
-      speed: 1000,
-      auto: true,
-      nav: true
+        speed: 1000,
+        auto: true,
+        nav: true
     });
 
 });

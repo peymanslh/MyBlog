@@ -8,6 +8,7 @@
     }
   }
 }
+
 //generate custom color for button
 @mixin btn_color($color) {
   background-color: #ffffff;
@@ -108,11 +109,6 @@
   text-align: $align;
 }
 
-
-
-
-
-
 // Bootstrap
 // Framework grid generation
 //
@@ -128,11 +124,10 @@
     // Prevent columns from collapsing when empty
     min-height: 1px;
     // Inner gutter via padding
-    padding-left:  ($grid-gutter-width / 2);
+    padding-left: ($grid-gutter-width / 2);
     padding-right: ($grid-gutter-width / 2);
   }
 }
-
 
 // [converter] This is defined recursively in LESS, but Sass supports real loops
 @mixin float-grid-columns($class, $i: 1, $list: ".col-#{$class}-#{$i}") {
@@ -141,11 +136,10 @@
   }
   #{$list} {
     float: $float;
-    padding-left:  ($grid-gutter-width / 2);
+    padding-left: ($grid-gutter-width / 2);
     padding-right: ($grid-gutter-width / 2);
   }
 }
-
 
 @mixin calc-grid-column($index, $class, $type) {
   @if ($type == width) and ($index > 0) {
@@ -167,15 +161,12 @@
   }
 }
 
-
 // Create grid for specific class
 @mixin make-grid($class) {
   @include float-grid-columns($class);
   @include loop-grid-columns($grid-columns, $class, width);
   @include loop-grid-columns($grid-columns, $class, offset);
 }
-
-
 
 //clearfix
 @mixin clearfix() {
@@ -192,7 +183,7 @@
 @mixin container() {
   margin-right: auto;
   margin-left: auto;
-  padding-left:  ($grid-gutter-width / 2);
+  padding-left: ($grid-gutter-width / 2);
   padding-right: ($grid-gutter-width / 2);
   max-width: 100%;
 

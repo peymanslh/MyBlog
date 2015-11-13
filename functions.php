@@ -8,9 +8,6 @@ require_once(TEMPLATEPATH . '/inc/my-functions.php');
 // project post type -------------------------------
 require_once(TEMPLATEPATH . '/inc/posttype-taxonomy.php');
 
-//add navbar -------------------------------
-register_nav_menu('top_menu', __('Main menu', 'myblog'));
-
 // Change gallery output
 require_once(TEMPLATEPATH . '/inc/gallery.php');
 
@@ -19,23 +16,35 @@ require_once(TEMPLATEPATH . '/admin/admin-functions.php');
 require_once(TEMPLATEPATH . '/admin/admin-interface.php');
 require_once(TEMPLATEPATH . '/admin/theme-settings.php');
 
+/**
+ * Implement the Custom Header feature.
+ *
+ */
+require_once(TEMPLATEPATH . '/inc/custom-header.php');
+require_once(TEMPLATEPATH . '/inc/home-header.php');
+
 //Load theme text domain
 load_theme_textdomain('myblog', get_template_directory() . '/language');
 
+
+//add navbar -------------------------------
+register_nav_menu('top_menu', __('Main menu', 'myblog'));
+
 // Content width
-if ( ! isset( $content_width ) ) {
+if (!isset($content_width)) {
     $content_width = 726;
 }
 
 // add page break button to wysiwyg_editor
-add_filter('mce_buttons','wysiwyg_editor');
+add_filter('mce_buttons', 'wysiwyg_editor');
 
-function wysiwyg_editor($mce_buttons) {
-    $pos = array_search('wp_more',$mce_buttons,true);
+function wysiwyg_editor($mce_buttons)
+{
+    $pos = array_search('wp_more', $mce_buttons, true);
     if ($pos !== false) {
-        $tmp_buttons = array_slice($mce_buttons, 0, $pos+1);
+        $tmp_buttons = array_slice($mce_buttons, 0, $pos + 1);
         $tmp_buttons[] = 'wp_page';
-        $mce_buttons = array_merge($tmp_buttons, array_slice($mce_buttons, $pos+1));
+        $mce_buttons = array_merge($tmp_buttons, array_slice($mce_buttons, $pos + 1));
     }
     return $mce_buttons;
 }
@@ -46,16 +55,20 @@ function wysiwyg_editor($mce_buttons) {
  * hard-coded <title> tag in the document head, and expect WordPress to
  * provide it for us.
  */
-function theme_slug_setup() {
-    add_theme_support( 'title-tag' );
+function theme_slug_setup()
+{
+    add_theme_support('title-tag');
 }
-add_action( 'after_setup_theme', 'theme_slug_setup' );
 
-if ( ! function_exists( '_wp_render_title_tag' ) ) :
-    function theme_slug_render_title() {
-        echo "<title>" . wp_title( '|', true, 'right' ) . "</title>";
+add_action('after_setup_theme', 'theme_slug_setup');
+
+if (!function_exists('_wp_render_title_tag')) :
+    function theme_slug_render_title()
+    {
+        echo "<title>" . wp_title('|', true, 'right') . "</title>";
     }
-    add_action( 'wp_head', 'theme_slug_render_title' );
+
+    add_action('wp_head', 'theme_slug_render_title');
 endif;
 
 /**
@@ -64,7 +77,7 @@ endif;
 add_theme_support('automatic-feed-links');
 
 // add support title
-add_theme_support( "title-tag" );
+add_theme_support("title-tag");
 
 // Add support post formats -------------------------------
 add_theme_support('post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat'));
@@ -100,10 +113,13 @@ function add_theme_scripts()
 {
     wp_enqueue_style('style', get_stylesheet_uri());
 
-    if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-        wp_enqueue_script( 'comment-reply' );
+    if (is_singular() && comments_open() && get_option('thread_comments')) {
+        wp_enqueue_script('comment-reply');
     }
 
+    $css = '.main-head-title{color: red !important;}';
+    if (!empty($css))
+        wp_add_inline_style('custom-css', $css);
     wp_enqueue_script('myjquery', get_template_directory_uri() . '/assets/javascript/jquery.js', array(), 1.1, true);
     wp_enqueue_script('bpopup', get_template_directory_uri() . '/assets/javascript/bpopup.js', array(), 1.1, true);
     wp_enqueue_script('dropdown', get_template_directory_uri() . '/assets/javascript/dropdown.js', array(), 1.1, true);
@@ -117,29 +133,27 @@ function add_theme_scripts()
 add_action('wp_enqueue_scripts', 'add_theme_scripts');
 
 
-add_action( 'init', 'cd_add_editor_styles' );
+add_action('init', 'cd_add_editor_styles');
 /**
  * Apply theme's stylesheet to the visual editor.
  *
  * @uses add_editor_style() Links a stylesheet to visual editor
  * @uses get_stylesheet_uri() Returns URI of theme stylesheet
  */
-function cd_add_editor_styles() {
-
-    add_editor_style( esc_url( get_template_directory_uri() ) . '/assets/css/main.css' );
-
+function cd_add_editor_styles()
+{
+    add_editor_style(esc_url(get_template_directory_uri()) . '/assets/css/main.css');
 }
 
 
-// // Enable WP_DEBUG mode
-// define('WP_DEBUG', true);
-//
-// // Enable Debug logging to the /wp-content/debug.log file
-// define(‘WP_DEBUG_LOG’, true);
-//
-// // Disable display of errors and warnings
-// define(‘WP_DEBUG_DISPLAY’, false);
-// @ini_set(‘display_errors’,0);
-//
-// // Use dev versions of core JS and CSS files (only needed if you are modifying these core files)
-// define(‘SCRIPT_DEBUG’, true);
+//Enable WP_DEBUG mode
+define('WP_DEBUG', true);
+// Enable Debug logging to the /wp-content/debug.log file
+define('WP_DEBUG_LOG', true);
+
+// Disable display of errors and warnings
+define('WP_DEBUG_DISPLAY', true);
+@ini_set('display_errors',0);
+
+// Use dev versions of core JS and CSS files (only needed if you are modifying these core files)
+define('SCRIPT_DEBUG', true);

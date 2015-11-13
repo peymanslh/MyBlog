@@ -3,7 +3,8 @@
  * Change gallery output for content-gallery and all post
  */
 
-function content_gallery_output($output, $attr) {
+function content_gallery_output($output, $attr)
+{
     global $post;
 
     if (isset($attr['orderby'])) {
@@ -65,7 +66,8 @@ function content_gallery_output($output, $attr) {
 
 // All post output
 add_filter('post_gallery', 'post_gallery_output', 10, 2);
-function post_gallery_output($output, $attr) {
+function post_gallery_output($output, $attr)
+{
     global $post;
 
     if (isset($attr['orderby'])) {
@@ -105,7 +107,7 @@ function post_gallery_output($output, $attr) {
     $itemtag = tag_escape($itemtag);
     $captiontag = tag_escape($captiontag);
     $columns = intval($columns);
-    $itemwidth = $columns > 0 ? floor(100/$columns) : 100;
+    $itemwidth = $columns > 0 ? floor(100 / $columns) : 100;
 
 
     // Here's your actual output, you may customize it to your need

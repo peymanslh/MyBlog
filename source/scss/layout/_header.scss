@@ -1,3 +1,53 @@
+#home-header {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  min-height: 390px;
+  border-bottom: $header_footer_border;
+
+  .bg-image {
+    display: block;
+    text-align: center;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .main-head-logo {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    //round img
+    &.avatar {
+      margin-top: 90px;
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 7px solid rgba(0, 0, 0, 0.04);
+
+      @include transition(all 0.2s ease-in-out);
+
+      &:hover {
+        border: 7px solid rgba(0, 0, 0, 0.6);
+        cursor: pointer;
+      }
+    }
+  }
+  .main-head-title {
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: normal;
+    font-size: 18px;
+    color: #000;
+  }
+}
 
 #header {
   background: $header_bg_color center center no-repeat fixed;

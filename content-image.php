@@ -4,7 +4,8 @@
             <a href="<?php the_permalink() ?>"><?php the_title(); ?></a><?php edit_post_link(__('Edit', 'myblog'), "<span class='edit-link'>", "</span>"); ?>
         </h2>
 
-        <div class="post-info"><span><?php the_time(get_option( 'date_format' )); ?> </span> / <span> <?php the_category(', '); ?></span> /
+        <div class="post-info"><span><?php the_time(get_option('date_format')); ?> </span> /
+            <span> <?php the_category(', '); ?></span> /
             <span> <?php comments_popup_link(__('No comment', 'myblog'), __('One comment', 'myblog'), __('% comment', 'myblog')); ?></span>
             / <span
                 class="icon-camera"></span></div>

@@ -14,7 +14,12 @@ $copyright_txt = get_option('mb_copyright_txt');
 
                 <div class="copyright"><?php echo $copyright_txt ?></div>
 
-                <p class="designer"><?php _e('Made with', 'myblog'); ?> <span class="icon-heart"></span> <?php _e('by', 'myblog'); ?> <a href="<?php echo esc_url('http://peymansalehi.net/'); ?>" target="_blank"><?php _e('@peymanslh,', 'myblog'); ?></a> <?php _e('Powered by', 'myblog'); ?> <a href="<?php echo esc_url('https://wordpress.org/'); ?>" target="_blank"><?php _e('Wordpress', 'myblog'); ?></a></p>
+                <p class="designer"><?php _e('Made with', 'myblog'); ?> <span
+                        class="icon-heart"></span> <?php _e('by', 'myblog'); ?> <a
+                        href="<?php echo esc_url('http://peymansalehi.net/'); ?>"
+                        target="_blank"><?php _e('@peymanslh,', 'myblog'); ?></a> <?php _e('Powered by', 'myblog'); ?>
+                    <a href="<?php echo esc_url('https://wordpress.org/'); ?>"
+                       target="_blank"><?php _e('Wordpress', 'myblog'); ?></a></p>
             </div>
 
             <div class="col-md-6">

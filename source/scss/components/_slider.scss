@@ -7,7 +7,7 @@
   width: 100%;
   padding: 0;
   margin: 0;
-  }
+}
 
 .rslides li {
   -webkit-backface-visibility: hidden;
@@ -16,13 +16,13 @@
   width: 100%;
   left: 0;
   top: 0;
-  }
+}
 
 .rslides li:first-child {
   position: relative;
   display: block;
   float: left;
-  }
+}
 
 .rslides img {
   display: block;
@@ -30,56 +30,56 @@
   float: left;
   width: 100%;
   border: 0;
-  }
+}
 
 // Custom style for content-gallery slider
 .slideshow-wrapper {
-    position: relative;
-    
-    .gallery-output-slide {
-        margin-top: 10px;
+  position: relative;
+
+  .gallery-output-slide {
+    margin-top: 10px;
+  }
+
+  .rslides_nav {
+    position: absolute;
+    top: 45%;
+    font-size: 0;
+    z-index: 100;
+
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    opacity: 0.5;
+    color: #ffffff !important;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+      opacity: 1;
     }
-    
-    .rslides_nav {
-        position: absolute;
-        top: 45%;
-        font-size: 0;
-        z-index: 100;
-        
-        font-family: 'icomoon';
-        speak: none;
-        font-style: normal;
-        font-weight: normal;
-        font-variant: normal;
-        text-transform: none;
-        line-height: 1;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        
-        opacity: 0.5;
-        color: #ffffff !important;
-        transition: all 0.2s ease-out;
-        
-        &:hover {
-            opacity: 1;
-        }
-        
-        &.prev {
-            right: 10px;
-            padding-left: 50px;
-            &:before {
-                font-size: 52px;
-                content: "\f078";
-            }
-        }
-        
-        &.next {
-            left: 10px;
-            padding-right: 50px;
-            &:before {
-                font-size: 52px;
-                content: "\f0a4";
-            }
-        }
+
+    &.prev {
+      right: 10px;
+      padding-left: 50px;
+      &:before {
+        font-size: 52px;
+        content: "\f078";
+      }
     }
+
+    &.next {
+      left: 10px;
+      padding-right: 50px;
+      &:before {
+        font-size: 52px;
+        content: "\f0a4";
+      }
+    }
+  }
 }

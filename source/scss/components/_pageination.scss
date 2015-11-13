@@ -24,9 +24,9 @@
       border-bottom: 3px solid lighten($pi_color, 25%);
     }
 
-
   }
 }
+
 .single-nav-links {
   text-align: center;
   margin: 30px auto;
@@ -54,7 +54,7 @@
     padding: 0 5px;
     border-radius: 5px;
 
-    &:hover{
+    &:hover {
       background-color: $theme-color;
       color: #ffffff;
     }

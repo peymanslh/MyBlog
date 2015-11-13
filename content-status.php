@@ -8,7 +8,7 @@
                     echo '<img src="' . esc_url(get_template_directory_uri()) . '/assets/images/no-thumbnail.png" />';
                 } ?></a>
 
-            <div class="post-info"><span><?php the_time(get_option( 'date_format' )); ?> </span> /
+            <div class="post-info"><span><?php the_time(get_option('date_format')); ?> </span> /
                 <span> <?php the_category(', '); ?></span> /
                 <span> <?php comments_popup_link(__('No comment', 'myblog'), __('One comment', 'myblog'), __('% comment', 'myblog')); ?></span>
                 /

@@ -4,10 +4,12 @@
 .required {
   color: $red !important;
 }
+
 .comment-notes {
   font-weight: normal;
   font-size: 14px;
 }
+
 .comment-form-author,
 .comment-form-email,
 .comment-form-url {
@@ -18,6 +20,7 @@
     max-width: 100%;
   }
 }
+
 .comment-form-comment {
 
   textarea {
@@ -25,6 +28,7 @@
     display: block;
   }
 }
+
 .form-submit {
   .submit {
     padding-left: 60px;

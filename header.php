@@ -15,7 +15,7 @@ $apple_icon = get_option('mb_apple_icon');
     <link rel="apple-touch-icon" href="<?php echo $apple_icon; ?>">
     <link rel="shortcut icon" href="<?php echo $favicon; ?>"/>
     <!--[if lt IE 9]>
-    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/javascript/html5.js"></script>
+    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/javascript/html5.js"></script>
     <![endif]-->
 
     <?php if ($theme_color == 'main') { ?>

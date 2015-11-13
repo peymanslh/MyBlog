@@ -2,7 +2,7 @@
 
 get_header();
 
-get_template_part('layouts/header', 'home');
+get_template_part('layouts/header');
 
 get_template_part('layouts/query', 'one');
 

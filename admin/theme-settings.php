@@ -55,15 +55,11 @@ if (!function_exists('propanel_of_options')) {
         $options[] = array("name" => __('1 -Header options', 'myblog'),
             "type" => "heading");
 
-        $options[] = array("name" => __('Favorites icon', 'myblog'),
-            "id" => $shortname . "_favicon",
-            "std" => "",
-            "type" => "upload");
-
-        $options[] = array("name" => __('Apple touch icon', 'myblog'),
-            "id" => $shortname . "_apple_icon",
-            "std" => "",
-            "type" => "upload");
+        $options[] = array("name" => __('Attention', 'myblog'),
+            "desc" => "",
+            "id" => $shortname . "_attention",
+            "std" => __('Go to the <b>Themes > Customize </b> to adjust the header background, Favicon and header text color.', 'myblog'),
+            "type" => "info");
 
         $options[] = array("name" => __(' Main title', 'myblog'),
             "id" => $shortname . "_head_h1",
@@ -72,12 +68,6 @@ if (!function_exists('propanel_of_options')) {
 
         $options[] = array("name" => __('Website logo', 'myblog'),
             "id" => $shortname . "_nav_logo",
-            "std" => "",
-            "type" => "upload");
-
-
-        $options[] = array("name" => __('Background image', 'myblog'),
-            "id" => $shortname . "_head_bg",
             "std" => "",
             "type" => "upload");
 
@@ -95,15 +85,6 @@ if (!function_exists('propanel_of_options')) {
             "id" => $shortname . "_head_description",
             "std" => "",
             "type" => "textarea");
-
-        $options[] = array("name" => __('Text color', 'myblog'),
-            "id" => $shortname . "_head_txt_color",
-            "std" => "#000000",
-            "type" => "radio",
-            "options" => array(
-                '#000000' => __('Black', 'myblog'),
-                '#ffffff' => __('White', 'myblog')
-            ));
 
 
         /* Option Page 2 - Show Articles */

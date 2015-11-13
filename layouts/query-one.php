@@ -11,11 +11,11 @@
                     <?php endwhile; ?>
                 <?php endif; ?>
                 <?php
-                    the_posts_pagination( array(
-                        'prev_text'          => __( 'Previous page', 'myblog' ),
-                        'next_text'          => __( 'Next page', 'myblog' ),
-                        'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'myblog' ) . ' </span>',
-                    ) );
+                the_posts_pagination(array(
+                    'prev_text' => __('Previous page', 'myblog'),
+                    'next_text' => __('Next page', 'myblog'),
+                    'before_page_number' => '<span class="meta-nav screen-reader-text">' . __('Page', 'myblog') . ' </span>',
+                ));
                 ?>
             </div>
         </div>
