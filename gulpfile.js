@@ -62,7 +62,7 @@ gulp.task('clean', function () {
 gulp.task('images', function () {
     return gulp.src(images.in)
         .pipe(newer(images.out))
-        .pipe(imagemin())
+        // .pipe(imagemin())
         .pipe(gulp.dest(images.out));
 });
 

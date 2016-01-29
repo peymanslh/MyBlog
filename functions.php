@@ -12,9 +12,10 @@ require_once(TEMPLATEPATH . '/inc/posttype-taxonomy.php');
 require_once(TEMPLATEPATH . '/inc/gallery.php');
 
 //admin panel -------------------------------
-require_once(TEMPLATEPATH . '/admin/admin-functions.php');
-require_once(TEMPLATEPATH . '/admin/admin-interface.php');
-require_once(TEMPLATEPATH . '/admin/theme-settings.php');
+require_once ('admin/index.php');
+// require_once(TEMPLATEPATH . '/admin/admin-functions.php');
+// require_once(TEMPLATEPATH . '/admin/admin-interface.php');
+// require_once(TEMPLATEPATH . '/admin/theme-settings.php');
 
 /**
  * Implement the Custom Header feature.
