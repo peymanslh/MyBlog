@@ -1,13 +1,18 @@
 <?php
-$head_txt_color = get_option('mb_head_txt_color');
-$head_bg = get_option('mb_head_bg');
-$head_logo = get_option('mb_head_logo');
-$head_logo_avatar_check = get_option('mb_head_logo_avatar_check');
-$head_description = get_option('mb_head_description');
+// Theme option var
+global $data;
+// $head_txt_color = get_option('mb_head_txt_color');
+// $head_bg = get_option('mb_head_bg');
+$head_logo = $data['head_logo'];
+$head_logo_avatar_check = $data['head_logo_avatar_check'];
+$head_description = $data['head_description'];
+// worpdress header image
 $header_image = get_header_image();
-?>
-<?php
+
+// Build header - layouts/header.php
 function get_header_home(){
+
+    // global variable
     global $head_logo;
     global $head_logo_avatar_check;
     global $head_description;
@@ -19,7 +24,7 @@ function get_header_home(){
         <?php } ?>
         <div class="container p-tb-40">
             <?php
-            if ($head_logo_avatar_check == "true") {
+            if ($head_logo_avatar_check == 1) {
                 $yesorno = ' avatar';
             } else {
                 $yesorno = '';
@@ -34,6 +39,7 @@ function get_header_home(){
     </div>
 <?php } ?>
 <?php
+// Export custom css style
 add_action('wp_head', 'home_header_styles', 100);
 function home_header_styles(){
     global $head_logo;

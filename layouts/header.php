@@ -1,6 +1,7 @@
 <?php
-$head_h1 = get_option('mb_head_h1');
-$nav_logo = get_option('mb_nav_logo');
+global $data;
+$head_h1 = $data['head_h1'];
+$nav_logo = $data['nav_logo'];
 ?>
 
 <header id="second-header">
@@ -18,8 +19,7 @@ $nav_logo = get_option('mb_nav_logo');
             <?php } else { ?>
 
                 <div class="col-md-2 col-xs-12">
-                    <a href="<?php echo site_url(); ?>" id="nav-logo-img"><img src="<?php echo $nav_logo; ?>"
-                                                                               alt="<?php bloginfo(); ?>"></a>
+                    <a href="<?php echo site_url(); ?>" id="nav-logo-img"><img src="<?php echo $nav_logo; ?>" alt="<?php bloginfo(); ?>"></a>
                 </div>
 
             <?php } ?>
@@ -57,6 +57,8 @@ $nav_logo = get_option('mb_nav_logo');
     </form>
 </div>
 
-<?php if (is_home()) {
-    get_header_home();
-} ?>
+<?php
+if (is_home()) {
+  get_header_home();
+}
+?>

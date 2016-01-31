@@ -2,8 +2,8 @@
 get_header();
 
 get_template_part('layouts/header');
-
-$project_column = get_option('mb_project_column');
+global $data;
+$project_column = $data['project_column'];
 ?>
 <div id="query-project">
     <div class="container">

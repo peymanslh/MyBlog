@@ -1,7 +1,6 @@
 <?php
-$theme_color = get_option('mb_theme_color');
-$favicon = get_option('mb_favicon');
-$apple_icon = get_option('mb_apple_icon');
+global $data;
+$theme_color = $data['theme_color'];
 ?>
 
 <!doctype html>
@@ -12,8 +11,6 @@ $apple_icon = get_option('mb_apple_icon');
     <meta name="description" content="<?php bloginfo('description'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-    <link rel="apple-touch-icon" href="<?php echo $apple_icon; ?>">
-    <link rel="shortcut icon" href="<?php echo $favicon; ?>"/>
     <!--[if lt IE 9]>
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/javascript/html5.js"></script>
     <![endif]-->

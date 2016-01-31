@@ -226,8 +226,8 @@ $of_options = array();
 						"type" 		=> "text"
 				);
 
-				$of_options[] = array( 	"name" 		=> __('Flicker', 'myblog'),
-						"id" 		=> "flicker",
+				$of_options[] = array( 	"name" 		=> __('Flickr', 'myblog'),
+						"id" 		=> "flickr",
 						"std" 		=> "",
 						"type" 		=> "text"
 				);
