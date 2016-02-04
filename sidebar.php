@@ -8,6 +8,9 @@
     <div class="overaly"></div>
 
     <section class="wrapper" style="z-index: 99999">
+          <div>
+              <button type="button" id="btnClose" name="close"><span class="icon-cross"></span></button>
+          </div>
         <?php if (is_active_sidebar('sidebar-1')) : ?>
             <?php dynamic_sidebar('sidebar-1'); ?>
         <?php endif; ?>

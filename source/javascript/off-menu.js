@@ -1,6 +1,6 @@
 $(document).ready(function () {
     var floater = false;
-    $('#shower, #my-menu .overaly').click(function (e) {
+    $('#shower, #my-menu .overaly, #btnClose').click(function (e) {
         var top = $(window).scrollTop();
         var left = $(window).scrollLeft()
         if (!floater) {
@@ -43,4 +43,3 @@ $(document).ready(function () {
         $('#my-menu .wrapper').css({'height': wh + 'px'});
     }
 });
-

@@ -19,6 +19,14 @@
   @include transition(all 30ms linear 10ms);
 }
 
+#btnClose {
+      background-color: transparent;
+      color: #000;
+      border: none;
+      margin-bottom: 10px;
+      padding-right: 0;
+}
+
 #my-menu {
   display: none;
   overflow: hidden;
