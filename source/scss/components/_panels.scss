@@ -69,7 +69,7 @@
     display: block;
     border-bottom: 1px solid #ececec;
     padding: 6px 5px;
-    @include transition(0.2s);
+    transition: all ease 0.2s;
 
     &:hover,
     &:focus {

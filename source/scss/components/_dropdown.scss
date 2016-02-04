@@ -63,7 +63,7 @@
     padding: 2px 10px 2px 5px;
     font-size: 0.9rem;
     font-weight: normal;
-    @include transition(0.2ms);
+    transition: all ease 0.2s;
 
     &:hover {
       background-color: $hover_color;

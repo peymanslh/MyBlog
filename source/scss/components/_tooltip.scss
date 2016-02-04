@@ -2,14 +2,14 @@
 [data-tooltip] {
   position: relative;
   display: inline-block;
-  @include box-sizing(content-box);
+  box-sizing: content-box;
   &:before, &:after {
     font-weight: normal;
     position: absolute;
     visibility: hidden;
     opacity: 0;
     z-index: 999999;
-    @include box-sizing(content-box);
+    box-sizing: content-box;
     // Force Hardware Acceleration in WebKit with translate3d - Refrence: http://davidwalsh.name/translate3d
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -67,7 +67,7 @@
   @if $multiline == true {
     &.simptip-multiline {
       &:before, &:after {
-        @include transform(translateY(50%));
+        transform: translateY(50%);
         -webkit-filter: blur(0px);
         filter: blur(0px);
         margin-bottom: 0;
@@ -115,7 +115,7 @@
         }
         &:hover {
           &:before, &:after {
-            @include transform(translateX(10px));
+            transform: translateX(10px);
           }
         }
         @if $half-arrows == true {
@@ -128,7 +128,7 @@
           &.simptip-multiline {
             &:hover {
               &:before, &:after {
-                @include transform(translate(10px, 50%));
+                transform: translate(10px, 50%);
               }
 
             }
@@ -172,7 +172,7 @@
         }
         &:hover {
           &:before, &:after {
-            @include transform(translateX(-10px));
+            transform: translateX(-10px);
           }
         }
         @if $half-arrows == true {
@@ -185,7 +185,7 @@
           &.simptip-multiline {
             &:hover {
               &:before, &:after {
-                @include transform(translate(-10px, 50%));
+                transform: translate(-10px, 50%);
               }
 
             }
@@ -209,7 +209,7 @@
 %shared--top-and-bottom {
   &:before, &:after {
     left: 50%;
-    @include transform(translateX(-50%));
+    transform: translateX(-50%);
   }
 
   &:after {
@@ -244,7 +244,7 @@
     }
     &:hover {
       &:before, &:after {
-        @include transform(translate(-50%, 0));
+        transform: translate(-50%, 0);
       }
     }
 
@@ -258,7 +258,7 @@
         }
         &:hover {
           &:before, &:after {
-            @include transform(translate(-50%, 10px));
+            transform: translate(-50%, 10px);
           }
         }
 
@@ -299,7 +299,7 @@
     }
     &:hover {
       &:before, &:after {
-        @include transform(translate(-50%, 0px));
+        transform: translate(-50%, 0px);
       }
     }
 
@@ -313,7 +313,7 @@
         }
         &:hover {
           &:before, &:after {
-            @include transform(translate(-50%, -10px));
+            transform: translate(-50%, -10px);
           }
         }
 
@@ -343,7 +343,7 @@
 @if $movable == true {
   .simptip-movable {
     &:before, &:after {
-      @include transition(all 0.1s linear);
+      transition: all 0.1s linear;
     }
   }
 }

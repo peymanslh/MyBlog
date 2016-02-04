@@ -12,7 +12,7 @@
     font-size: 1rem;
     border-bottom: 3px solid $pi_color;
     cursor: pointer;
-    @include transition(0.2s);
+    transition: all ease 0.2s;
 
     &:hover {
       color: lighten($pi_color, 10%);

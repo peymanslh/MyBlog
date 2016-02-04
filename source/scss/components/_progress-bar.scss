@@ -14,12 +14,12 @@
     color: #ffffff;
     border-radius: 3px;
 
-    @include background-image(linear-gradient(-45deg, rgba(255, 255, 255, 0.10) 25%,
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.10) 25%,
             transparent 25%,
             transparent 50%,
             rgba(255, 255, 255, 0.10) 50%,
             rgba(255, 255, 255, 0.10) 75%,
-            transparent 75%));
+            transparent 75%);
     background-size: 40px 40px;
     background-repeat: repeat-x;
 
@@ -30,7 +30,7 @@
     }
 
     &.active {
-      @include animation(progress 1s linear infinite);
+      animation: progress 1s linear infinite;
     }
 
   }

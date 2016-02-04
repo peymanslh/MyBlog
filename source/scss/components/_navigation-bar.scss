@@ -51,7 +51,7 @@
         font: 1rem/#{$nav_height} $h_font;
         font-weight: normal;
         color: inherit;
-        @include transition(background 190ms ease-in, 190ms ease-in);
+        transition: background 190ms ease-in, 190ms ease-in;
       }
     }
 
@@ -78,9 +78,7 @@
       padding-top: 0px;
       background-color: $nav_border_color;
       text-align: right;
-      //      border-bottom: 2px solid $nav_border_color;
-      //      border-radius: 0 0 3px 3px;
-      @include transition(all 210ms linear 20ms);
+      transition: all 210ms linear 20ms;
 
       & li.active > a,
       & li:hover > a,

@@ -13,7 +13,7 @@ textarea {
   font-family: $font;
   border: 1px solid #d2d2d2;
   border-radius: 3px;
-  @include transition(0.2ms);
+  transition: all ease 0.2s;
   -webkit-appearance: none; /*Removes default chrome and safari style*/
   -moz-appearance: none; /* Removes Default Firefox style*/
 

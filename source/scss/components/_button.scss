@@ -11,8 +11,8 @@
   border: 1px solid #777777;
   border-radius: 3px;
   font-weight: normal;
-  @include transition(all 0.2s ease-in-out);
-  @include user-select(none);
+  transition: all 0.2s ease-in-out;
+  user-select: none;
 
   &:hover {
     background-color: #777777;

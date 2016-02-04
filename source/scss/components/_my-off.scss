@@ -16,7 +16,7 @@
   border: 1px solid rgba(0, 0, 0, 1);
   border-right: none;
   transition-property: color, background-color;
-  @include transition(all 30ms linear 10ms);
+  transition: all 30ms linear 10ms;
 }
 
 #btnClose {
@@ -41,7 +41,7 @@
     background-color: rgba(0, 0, 0, 0.8);
     cursor: crosshair;
     overflow: hidden;
-    @include transition(all 210ms linear 20ms);
+    transition: all 210ms linear 20ms;
 
     @extend .animated;
     animation-name: fadeIn;

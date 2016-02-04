@@ -31,7 +31,7 @@
       border-radius: 50%;
       border: 7px solid rgba(0, 0, 0, 0.04);
 
-      @include transition(all 0.2s ease-in-out);
+      transition: all ease 0.2s;
 
       &:hover {
         border: 7px solid rgba(0, 0, 0, 0.6);
@@ -75,7 +75,7 @@
     border-radius: 50%;
     border: 7px solid rgba(0, 0, 0, 0.04);
 
-    @include transition(all 0.2s ease-in-out);
+    transition: all ease 0.2s;
 
     &:hover {
       border: 7px solid rgba(0, 0, 0, 0.6);
