@@ -6,6 +6,7 @@
   top: 120px;
   height: 35px;
   width: 50px;
+  line-height: 29px;
   color: #ffffff;
   z-index: 9999;
   font-family: $h_font;
@@ -70,19 +71,21 @@
       div {
 
         h3 {
-          font-size: 16px;
+          font-size: 1.1rem;
           border-bottom: 2px solid #E3E3E3;
+          padding-bottom: 5px;
 
           span {
             color: $lightgray;
             border-bottom: 2px solid $theme_color;
+            padding-bottom: 5px;
           }
         }
 
         ul {
           list-style: none;
           padding-right: 0;
-          font-size: 14px;
+          font-size: 1rem;
           font-weight: normal;
 
           li {

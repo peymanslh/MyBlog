@@ -36,9 +36,10 @@ blockquote {
   color: grey;
   font-weight: normal;
   font-style: italic;
+  margin: 0px auto;
 
   &:before {
-    width: 50px;
+    width: 60px;
     text-align: left;
     float: right;
     content: '\0201D';
@@ -46,5 +47,6 @@ blockquote {
     line-height: 100px;
     max-height: 70px;
     overflow: hidden;
+    margin-top: 15px
   }
 }

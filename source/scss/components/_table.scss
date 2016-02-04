@@ -48,7 +48,7 @@ table {
       padding: 0.75em 1em;
       color: $table_head_color;
       background-color: $table_head_bg_color;
-      font-size: 14px;
+      font-size: 1rem;
       font-weight: bold;
       border-bottom: 0px;
       border-right: 1px solid $table_border;
@@ -63,7 +63,7 @@ table {
   tbody {
     color: $table_body_color;
     td {
-      font-size: 14px;
+      font-size: 1rem;
       font-weight: normal;
       border-bottom: 0px;
       border-right: 1px solid $table_border;
