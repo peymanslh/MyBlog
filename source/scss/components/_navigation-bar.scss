@@ -48,7 +48,7 @@
         display: block;
         height: $nav_height;
         padding: 0 15px;
-        font: 14px/#{$nav_height} $h_font;
+        font: 1rem/#{$nav_height} $h_font;
         font-weight: normal;
         color: inherit;
         @include transition(background 190ms ease-in, 190ms ease-in);
@@ -95,10 +95,10 @@
         border-bottom: none;
 
         & a {
-          width: 140px;
+          width: 160px;
           height: $nav_submenu_height;
           padding-left: 0;
-          font-size: 12px;
+          font-size: 0.8rem;
           color: $nav_text_hover_color;
           line-height: $nav_submenu_height;
           text-transform: none;
@@ -111,7 +111,7 @@
           position: absolute;
           top: 0;
           left: 10px;
-          font-size: 15px;
+          font-size: 1rem;
         }
 
         &:hover > a {

@@ -19,9 +19,6 @@ function get_header_home(){
     global $header_image;
     ?>
     <div id="home-header">
-        <?php if (!empty($header_image)) { ?>
-            <img class="bg-image" src="<?php header_image();?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display'));?>"/>
-        <?php } ?>
         <div class="container p-tb-40">
             <?php
             if ($head_logo_avatar_check == 1) {
@@ -47,6 +44,10 @@ function home_header_styles(){
     global $header_image;
     ?>
     <style>
+      #home-header {
+            background: url('<?php echo $header_image; ?>') center top no-repeat;
+            min-height: 390px;
+      }
         .main-head-title {
             color: #<?php header_textcolor();?> !important;
         }
@@ -64,10 +65,12 @@ function home_header_styles(){
         if(! $head_description ) {
         if(! $header_image ) { ?>
         #home-header {
-            min-height: 0 !important;
+             min-height: 390px;
+             min-height: 0 !important;
+             background: url('<?php echo $header_image; ?>') center top no-repeat;
         }
         .p-tb-40 {
-            padding: 0 !important;
+             padding: 0 !important;
         }
         <?php }
             }

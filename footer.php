@@ -11,7 +11,7 @@ $foot_social_check = $data['foot_social_check'];
 <footer id="footer">
     <div class="container">
 
-        <div class="row bt-footer">
+        <div class="row footer-content">
             <div class="col-md-6">
                 <div class="copyright"><?php echo $copyright_txt ?></div>
                 <p class="designer"><?php _e('Made with', 'myblog'); ?> <span

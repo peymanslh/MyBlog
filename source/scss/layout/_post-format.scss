@@ -1,3 +1,9 @@
+.format-image {
+      .post-inner-content {
+            margin-top: 15px;
+      }
+}
+
 .format-quote {
 
   .post-inner-content {
@@ -38,7 +44,7 @@
       left: 0;
       padding: 30px 20px;
       font-weight: normal;
-      font-size: 14px;
+      font-size: 1rem;
       border-radius: 4px;
 
       &:after, &:before {
@@ -51,7 +57,7 @@
         line-height: 1;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        font-size: 26px;
+        font-size: 1.6rem;
       }
       &:before {
         display: block;
@@ -67,7 +73,7 @@
 
       .title {
         text-align: right;
-        font-size: 14px;
+        font-size: 0.9rem;
         font-weight: normal;
 
         a {
@@ -75,7 +81,7 @@
         }
         .post-edit-link {
           color: $theme_color !important;
-          font-size: 12px;
+          font-size: 0.9rem;
           font-weight: normal;
           padding-right: 10px;
         }
@@ -83,7 +89,7 @@
 
       .post-info {
         text-align: left;
-        font-size: 12px;
+        font-size: 0.9;
         font-weight: normal;
         color: #FFFFFF;
 
@@ -99,7 +105,7 @@
   .post-title {
 
     .edit-link {
-      font-size: 12px;
+      font-size: 0.9rem;
       font-weight: normal;
 
       a {
@@ -113,7 +119,7 @@
   .status-content {
     padding-top: 10px;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 1rem;
     color: rgb(131, 131, 131);
     // margin-top: -10px;
 
@@ -122,7 +128,7 @@
     }
 
     .edit-link {
-      font-size: 12px;
+      font-size: 0.9rem;
       font-weight: normal;
       padding-right: 20px;
 
@@ -145,7 +151,7 @@
       color: #000;
       border-bottom: 1px solid #000000;
       opacity: 0.5;
-      font-size: 13px;
+      font-size: 1rem;
       padding: 0 1px 0 8px;
 
       @include transition(all 0.2s ease-in-out);
@@ -170,9 +176,9 @@
 
   .post-info {
     margin-top: 5px;
-    text-align: center;
+    text-align: right;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 0.9rem;
     color: #939393;
 
     span {

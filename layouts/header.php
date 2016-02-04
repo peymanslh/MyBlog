@@ -2,6 +2,11 @@
 global $data;
 $head_h1 = $data['head_h1'];
 $nav_logo = $data['nav_logo'];
+
+$head_logo = $data['head_logo'];
+$head_description = $data['head_description'];
+// worpdress header image
+$header_image = get_header_image();
 ?>
 
 <header id="second-header">
@@ -59,6 +64,6 @@ $nav_logo = $data['nav_logo'];
 
 <?php
 if (is_home()) {
-  get_header_home();
+      get_header_home();
 }
 ?>

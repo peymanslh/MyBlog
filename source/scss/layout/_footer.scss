@@ -4,8 +4,9 @@
   color: $footer_color;
   background-color: $footer_bg_color;
 
-  .bt-footer {
+  .footer-content {
     border-top: $header_footer_border;
+    padding-top: 30px;
   }
 
   .social-box {
@@ -15,7 +16,7 @@
 
     a {
       padding: 3px;
-      font-size: 20px;
+      font-size: 1.4rem;
       color: inherit;
 
       &:hover {
@@ -29,7 +30,7 @@
     padding-top: 20px;
     font-weight: normal;
     color: inherit;
-    font-size: 14px;
+    font-size: 0.9rem;
   }
 
   .designer {
@@ -37,7 +38,7 @@
     padding-top: 5px;
     font-weight: normal;
     color: inherit;
-    font-size: 12px;
+    font-size: 0.9rem;
 
     a {
       direction: ltr;
