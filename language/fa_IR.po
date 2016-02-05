@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: myblog\n"
-"POT-Creation-Date: 2015-11-05 20:29+0330\n"
-"PO-Revision-Date: 2015-11-05 20:30+0330\n"
+"POT-Creation-Date: 2016-02-05 13:11+0330\n"
+"PO-Revision-Date: 2016-02-05 13:16+0330\n"
 "Last-Translator: \n"
 "Language-Team: peymanslh <peyman_salehi@icloud.com>\n"
 "Language: fa_IR\n"
@@ -40,171 +40,157 @@ msgstr "صفحه ای یافت نشد!"
 msgid "404"
 msgstr "404"
 
-#: admin/admin-functions.php:47
-msgid "Activation Successful!"
-msgstr "قالب با موفقیت فعال شد!"
+#: admin/classes/class.options_machine.php:535
+msgid "Last Backup : "
+msgstr "آخرین پشتیبان :"
 
-#: admin/admin-functions.php:47
-msgid "This theme's settings are located under"
-msgstr "تنظیمات این قالب در این قسمت قرار دارد"
+#: admin/front-end/options.php:43 admin/front-end/options.php:67
+msgid "Save All Changes"
+msgstr "ذخیره تنظیمات"
 
-#: admin/admin-functions.php:47
-msgid "Appearance > Site Options"
-msgstr "نمایش > ‌تنظیمات قالب"
-
-#: admin/admin-interface.php:24
-msgid "Theme options"
-msgstr "تنظیمات قالب"
-
-#: admin/admin-interface.php:64
-msgid "Options Updated"
-msgstr "تنظیمات بروزرسانی شد"
-
-#: admin/admin-interface.php:67
+#: admin/front-end/options.php:68
 msgid "Options Reset"
 msgstr "تنظیمات برگردانده شد"
 
-#: admin/admin-interface.php:72
-msgid "MyBlog Options"
+#: admin/functions/functions.interface.php:57
+msgid "Theme options"
 msgstr "تنظیمات قالب"
 
-#: admin/theme-settings.php:55
+#: admin/functions/functions.options.php:106
 msgid "1 -Header options"
 msgstr "1 ‪-‬ تنظیمات هدر"
 
-#: admin/theme-settings.php:58
-msgid "Favorites icon"
-msgstr "‏Favorites icon"
+#: admin/functions/functions.options.php:110
+msgid "Attention"
+msgstr "توجه"
 
-#: admin/theme-settings.php:63
-msgid "Apple touch icon"
-msgstr "‏Apple touch icon"
+#: admin/functions/functions.options.php:113
+msgid ""
+"Go to the <b>Themes > Customize </b> to adjust the header background, "
+"Favicon and header text color."
+msgstr ""
+"برای تنظیمات تصویر پس زمینه، favicon و رنگ متن هدر به قسمت ‪</‬b‪>‬ ویرایش > "
+"سفارشی سازی ‪<b‪>‬ بروید."
 
-#: admin/theme-settings.php:68
+#: admin/functions/functions.options.php:118
 msgid " Main title"
 msgstr "عنوان اصلی"
 
-#: admin/theme-settings.php:73
+#: admin/functions/functions.options.php:125
 msgid "Website logo"
 msgstr "لوگوی وبسایت"
 
-#: admin/theme-settings.php:79
-msgid "Background image"
-msgstr "تصویر پس زمینه"
-
-#: admin/theme-settings.php:84
+#: admin/functions/functions.options.php:132
 msgid "Header image"
 msgstr "آواتار شما در هدر"
 
-#: admin/theme-settings.php:89
+#: admin/functions/functions.options.php:139
 msgid "Is the image to be round?"
 msgstr "آیا عکس گرد شود؟"
 
-#: admin/theme-settings.php:94
+#: admin/functions/functions.options.php:143
+#: admin/functions/functions.options.php:194
+msgid "Yes"
+msgstr "بله"
+
+#: admin/functions/functions.options.php:144
+#: admin/functions/functions.options.php:195
+msgid "No"
+msgstr "خیر"
+
+#: admin/functions/functions.options.php:148
 msgid "Short Description"
 msgstr "توضیح کوتاه"
 
-#: admin/theme-settings.php:99
-msgid "Text color"
-msgstr "رنگ متن"
-
-#: admin/theme-settings.php:104
-msgid "Black"
-msgstr "مشکی"
-
-#: admin/theme-settings.php:105
-msgid "White"
-msgstr "سفید"
-
-#: admin/theme-settings.php:110
+#: admin/functions/functions.options.php:156
 msgid "2 - Show Articles"
 msgstr "2 ‪-‬ نمایش مطالب"
 
-#: admin/theme-settings.php:115
+#: admin/functions/functions.options.php:161
 msgid "Projects archive"
 msgstr "آرشیو پروژه ها"
 
-#: admin/theme-settings.php:116
+#: admin/functions/functions.options.php:162
 msgid "Count of project to show"
 msgstr "تعداد نمایش پروژه ها در هر سطر"
 
-#: admin/theme-settings.php:122
+#: admin/functions/functions.options.php:170
 msgid "Theme color"
 msgstr "رنگ قالب"
 
-#: admin/theme-settings.php:123
+#: admin/functions/functions.options.php:171
 msgid "Select your theme color"
 msgstr "رنگ قالب را انتخاب کنید"
 
-#: admin/theme-settings.php:138
+#: admin/functions/functions.options.php:186
 msgid "3 - Social networks"
 msgstr "3 ‪-‬ شبکه های اجتماعی"
 
-#: admin/theme-settings.php:141
+#: admin/functions/functions.options.php:190
 msgid "Show on footer?"
 msgstr "در فوتر نمایش داده شود؟"
 
-#: admin/theme-settings.php:147
+#: admin/functions/functions.options.php:199
 msgid "Google"
 msgstr "گوگل"
 
-#: admin/theme-settings.php:152 layouts/share-page.php:11
+#: admin/functions/functions.options.php:205 layouts/share-page.php:11
 #: layouts/share-single.php:8
 msgid "Facebook"
 msgstr "فیسبوک"
 
-#: admin/theme-settings.php:157
+#: admin/functions/functions.options.php:211
 msgid "Instagram"
 msgstr "اینستاگرام"
 
-#: admin/theme-settings.php:162 layouts/share-page.php:13
+#: admin/functions/functions.options.php:217 layouts/share-page.php:13
 #: layouts/share-single.php:10
 msgid "Twitter"
 msgstr "توییتر"
 
-#: admin/theme-settings.php:167
-msgid "Feed"
-msgstr "خبرخوان"
-
-#: admin/theme-settings.php:172
+#: admin/functions/functions.options.php:223
 msgid "Youtube"
 msgstr "یوتیوب"
 
-#: admin/theme-settings.php:177
-msgid "Flicker"
+#: admin/functions/functions.options.php:229
+msgid "Flickr"
 msgstr "فلیکر"
 
-#: admin/theme-settings.php:182
-msgid "Github"
+#: admin/functions/functions.options.php:235
+msgid "GitHub"
 msgstr "گیت هاب"
 
-#: admin/theme-settings.php:187 layouts/share-page.php:18
+#: admin/functions/functions.options.php:241 layouts/share-page.php:18
 #: layouts/share-single.php:15
 msgid "Linkedin"
 msgstr "لینکداین"
 
-#: admin/theme-settings.php:192
+#: admin/functions/functions.options.php:247
 msgid "Stackoverflow"
 msgstr "استک آورفلو"
 
-#: admin/theme-settings.php:197 layouts/share-page.php:23
+#: admin/functions/functions.options.php:253 layouts/share-page.php:23
 #: layouts/share-single.php:19
 msgid "Pinterest"
 msgstr "پینترست"
 
-#: admin/theme-settings.php:204
+#: admin/functions/functions.options.php:259
+msgid "Feed"
+msgstr "خبرخوان"
+
+#: admin/functions/functions.options.php:266
 msgid "4 - Footer options"
 msgstr "4 ‪-‬ تنظیمات فوتر"
 
-#: admin/theme-settings.php:208
+#: admin/functions/functions.options.php:270
 msgid "Copyright text"
 msgstr "متن کپی رایت"
 
-#: admin/theme-settings.php:213
+#: admin/functions/functions.options.php:276
 msgid "Custom CSS style"
 msgstr "‏css های سفارشی شما"
 
-#: admin/theme-settings.php:218
+#: admin/functions/functions.options.php:283
 msgid "Custom script"
 msgstr "کد های جاوااسکریپت برای فوتر"
 
@@ -220,21 +206,24 @@ msgstr "صفحه بعد"
 msgid "Page"
 msgstr "صفحه"
 
-#: comments.php:31 content-aside.php:10 content-audio.php:9 content-chat.php:9
-#: content-gallery.php:11 content-image.php:8 content-link.php:9
-#: content-quote.php:26 content-status.php:13 content-video.php:9 content.php:9
+#: comments.php:31 content-aside.php:11 content-audio.php:10
+#: content-chat.php:10 content-gallery.php:12 content-image.php:9
+#: content-link.php:10 content-quote.php:26 content-status.php:18
+#: content-video.php:10 content.php:10
 msgid "No comment"
 msgstr "بدون دیدگاه"
 
-#: comments.php:31 content-aside.php:10 content-audio.php:9 content-chat.php:9
-#: content-gallery.php:11 content-image.php:8 content-link.php:9
-#: content-quote.php:26 content-status.php:13 content-video.php:9 content.php:9
+#: comments.php:31 content-aside.php:11 content-audio.php:10
+#: content-chat.php:10 content-gallery.php:12 content-image.php:9
+#: content-link.php:10 content-quote.php:26 content-status.php:18
+#: content-video.php:10 content.php:10
 msgid "One comment"
 msgstr "یک دیدگاه"
 
-#: comments.php:31 content-aside.php:10 content-audio.php:9 content-chat.php:9
-#: content-gallery.php:11 content-image.php:8 content-link.php:9
-#: content-quote.php:26 content-status.php:13 content-video.php:9 content.php:9
+#: comments.php:31 content-aside.php:11 content-audio.php:10
+#: content-chat.php:10 content-gallery.php:12 content-image.php:9
+#: content-link.php:10 content-quote.php:26 content-status.php:18
+#: content-video.php:10 content.php:10
 #, php-format
 msgid "% comment"
 msgstr "% دیدگاه"
@@ -243,15 +232,15 @@ msgstr "% دیدگاه"
 msgid "Comments are closed."
 msgstr "امکان نظر دهی برای این پست بسته شده است."
 
-#: content-aside.php:4 content-audio.php:15 content-chat.php:15
-#: content-gallery.php:17 content-image.php:19 content-quote.php:16
-#: content-video.php:15 content.php:15
+#: content-aside.php:4 content-audio.php:16 content-chat.php:16
+#: content-gallery.php:18 content-image.php:20 content-quote.php:16
+#: content-video.php:16 content.php:16
 msgid "More"
 msgstr "ادامه"
 
 #: content-aside.php:8 content-audio.php:5 content-chat.php:5
 #: content-gallery.php:7 content-image.php:4 content-link.php:6
-#: content-quote.php:20 content-status.php:21 content-video.php:5 content.php:5
+#: content-quote.php:20 content-status.php:14 content-video.php:5 content.php:5
 #: inc/posttype-taxonomy.php:10 inc/posttype-taxonomy.php:45 page-about.php:19
 #: page.php:35 single-project.php:27
 msgid "Edit"
@@ -261,31 +250,31 @@ msgstr "ویرایش"
 msgid "Made with"
 msgstr "ساخته شده با"
 
-#: footer.php:17
+#: footer.php:18
 msgid "by"
 msgstr "توسط"
 
-#: footer.php:17
+#: footer.php:20
 msgid "@peymanslh,"
 msgstr "پیمان،"
 
-#: footer.php:17
+#: footer.php:20
 msgid "Powered by"
 msgstr "قدرت گرفته از"
 
-#: footer.php:17
+#: footer.php:22
 msgid "Wordpress"
 msgstr "وردپرس"
 
-#: functions.php:12 sidebar.php:3
+#: functions.php:29 sidebar.php:3
 msgid "Main menu"
 msgstr "منوی اصلی"
 
-#: functions.php:85
+#: functions.php:96
 msgid "right-sidebar"
 msgstr ""
 
-#: functions.php:87
+#: functions.php:98
 msgid "Right Sidebar"
 msgstr "نوار کناری سمت راست"
 
@@ -315,7 +304,7 @@ msgid "View Project"
 msgstr "نمایش پروژه"
 
 #: inc/posttype-taxonomy.php:14 inc/posttype-taxonomy.php:41
-#: layouts/navbar.php:13 layouts/navbar.php:23 searchform.php:4
+#: layouts/header.php:45 layouts/header.php:61 searchform.php:4
 msgid "Search"
 msgstr "جستجو"
 
@@ -356,19 +345,19 @@ msgstr "اضاقه کردن"
 msgid "Add"
 msgstr "اضافه"
 
-#: inc/template-tags.php:23
+#: inc/template-tags.php:14
 msgid "Comment navigation"
 msgstr "صفحه بندی دیدگاه ها"
 
-#: inc/template-tags.php:26
+#: inc/template-tags.php:18
 msgid "Older Comments"
 msgstr "دیدگاه های قدیمی تر"
 
-#: inc/template-tags.php:30
+#: inc/template-tags.php:22
 msgid "Newer Comments"
 msgstr "دیدگاه های جدیدتر"
 
-#: layouts/navbar.php:21
+#: layouts/header.php:59
 msgid "Keyword + Enter"
 msgstr "کلمه کلیدی + اینتر"
 
@@ -411,6 +400,45 @@ msgstr "برچسب ها:"
 #: single.php:45
 msgid "Continue this article:"
 msgstr "ادامه این مطلب :"
+
+#~ msgid "Activation Successful!"
+#~ msgstr "قالب با موفقیت فعال شد!"
+
+#~ msgid "This theme's settings are located under"
+#~ msgstr "تنظیمات این قالب در این قسمت قرار دارد"
+
+#~ msgid "Appearance > Site Options"
+#~ msgstr "نمایش > ‌تنظیمات قالب"
+
+#~ msgid "Options Updated"
+#~ msgstr "تنظیمات بروزرسانی شد"
+
+#~ msgid "MyBlog Options"
+#~ msgstr "تنظیمات قالب"
+
+#~ msgid "Favorites icon"
+#~ msgstr "‏Favorites icon"
+
+#~ msgid "Apple touch icon"
+#~ msgstr "‏Apple touch icon"
+
+#~ msgid "Background image"
+#~ msgstr "تصویر پس زمینه"
+
+#~ msgid "Text color"
+#~ msgstr "رنگ متن"
+
+#~ msgid "Black"
+#~ msgstr "مشکی"
+
+#~ msgid "White"
+#~ msgstr "سفید"
+
+#~ msgid "Flicker"
+#~ msgstr "فلیکر"
+
+#~ msgid "Github"
+#~ msgstr "گیت هاب"
 
 #~ msgid "Pages:"
 #~ msgstr "صفحه ها:"
