@@ -31,3 +31,5 @@ Mozilla Firefox, Google Chrome, Safari, IE ^10
 == Version history ==
 
 0.1.0 – Hello world!
+0.2.0
+0.3.0
