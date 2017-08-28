@@ -1,6 +1,6 @@
 
 # MyBlog
-* A WordPress Blogging Theme for Persian language *
+*A WordPress Blogging Theme for Persian language*
 <br>
 <hr>
 
